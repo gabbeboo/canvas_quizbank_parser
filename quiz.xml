@@ -1,0 +1,350 @@
+<?xml version="1.0" ?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="07ce56d0-fd01-4412-a65e-9b05aba7abee">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry># C &amp; M Variabler</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="609d5d45-a156-4a95-92a5-7e8e09f44c52" title="Fråga 1">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int 12a = 5;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="53151dc5-5471-4689-8ba6-26991bfd784e" title="Fråga 2">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln &lt;pre&gt;&lt;code&gt;b&lt;/code&gt;&lt;/pre&gt; om &lt;pre&gt;&lt;code&gt;int a = 7; int b = a;&lt;/code&gt;&lt;/pre&gt;?</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">7</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="50f60a0d-ac57-418c-8470-dda2ab658fbd" title="Fråga 3">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int _varName = 10;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a383cbfd-8843-4367-94e0-2b88c8a94b79" title="Fråga 4">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int var-name = 15;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="bd9026cd-3375-4b86-983b-5c0c2be9ac2b" title="Fråga 5">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int $value = 20;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="fddeedc0-e91c-4153-a1ac-466b1ebee4b4" title="Fråga 6">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int a_variable = 25;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="6b091163-c357-4207-8eab-627813a5cf5e" title="Fråga 7">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln &lt;pre&gt;&lt;code&gt;x&lt;/code&gt;&lt;/pre&gt; om &lt;pre&gt;&lt;code&gt;int x = 5 * 5;&lt;/code&gt;&lt;/pre&gt;?</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice/>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar/>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="5906e1c7-02d7-4f5b-8b04-43e3d2857eb6" title="Fråga 8">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int int = 30;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="svar1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="korrekt1">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="svar1">korrekt1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>
