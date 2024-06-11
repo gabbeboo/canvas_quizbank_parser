@@ -1,0 +1,1531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="g53b5b82fe14f40ce9cd9bab2dfbe2e5e" xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource" xmlns:lomimscc="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1 http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_imscp_v1p2_v1p0.xsd http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lomresource_v1p0.xsd http://ltsc.ieee.org/xsd/imsccv1p1/LOM/manifest http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lommanifest_v1p0.xsd">
+  <metadata>
+    <schema>IMS Common Cartridge</schema>
+    <schemaversion>1.1.0</schemaversion>
+    <lomimscc:lom>
+      <lomimscc:general>
+        <lomimscc:title>
+          <lomimscc:string>Datastrukturer och algoritmer (C)</lomimscc:string>
+        </lomimscc:title>
+      </lomimscc:general>
+      <lomimscc:lifeCycle>
+        <lomimscc:contribute>
+          <lomimscc:date>
+            <lomimscc:dateTime>2024-06-11</lomimscc:dateTime>
+          </lomimscc:date>
+        </lomimscc:contribute>
+      </lomimscc:lifeCycle>
+      <lomimscc:rights>
+        <lomimscc:copyrightAndOtherRestrictions>
+          <lomimscc:value>yes</lomimscc:value>
+        </lomimscc:copyrightAndOtherRestrictions>
+        <lomimscc:description>
+          <lomimscc:string>Private (Copyrighted) - http://en.wikipedia.org/wiki/Copyright</lomimscc:string>
+        </lomimscc:description>
+      </lomimscc:rights>
+    </lomimscc:lom>
+  </metadata>
+  <organizations>
+    <organization identifier="org_1" structure="rooted-hierarchy">
+      <item identifier="LearningModules">
+        <item identifier="g7a3de621e0a973757a23b390a8475e48">
+          <title>Vecka 3</title>
+        </item>
+        <item identifier="g2541d98eed9022d7f9d76fce56b21bb7">
+          <title>Vecka 4</title>
+        </item>
+        <item identifier="g90cf0ffaeab8d9b4392e94d12de107ab">
+          <title>Vecka 5</title>
+        </item>
+        <item identifier="g6272c38a9fa27683cc0bd7fabc12de6c">
+          <title>Vecka 6</title>
+        </item>
+        <item identifier="g86cfdeebdcb95abe90e8a9f4d3e0d7c9">
+          <title>Vecka 7</title>
+        </item>
+        <item identifier="gf63bb12442a0a9e6d976ce3b93695f7c">
+          <title>Vecka 8</title>
+        </item>
+        <item identifier="g5423cdcdd085b7815f3e3f4530542176">
+          <title>Vecka 9</title>
+        </item>
+        <item identifier="g62c2206e5a08564158aa8ca7fef87ed3">
+          <title>Vecka 10</title>
+        </item>
+        <item identifier="gf1e82fc62d7b6d85d785e438e70f7d46">
+          <title>Vecka 11</title>
+        </item>
+        <item identifier="g4b20eb9a10640b8f7e1c0d8c5d7c90a5">
+          <title>Vecka 12</title>
+        </item>
+        <item identifier="ga0a0b156ca7783c746c6309e8326775c">
+          <title>Vecka 13</title>
+        </item>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="g46e1a428340318a5eb3fa5a87076177c_syllabus" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="course_settings/syllabus.html" intendeduse="syllabus">
+      <file href="course_settings/syllabus.html"/>
+    </resource>
+    <resource identifier="g46e1a428340318a5eb3fa5a87076177c" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="course_settings/canvas_export.txt">
+      <file href="course_settings/course_settings.xml"/>
+      <file href="course_settings/module_meta.xml"/>
+      <file href="course_settings/assignment_groups.xml"/>
+      <file href="course_settings/rubrics.xml"/>
+      <file href="course_settings/learning_outcomes.xml"/>
+      <file href="course_settings/files_meta.xml"/>
+      <file href="course_settings/events.xml"/>
+      <file href="course_settings/late_policy.xml"/>
+      <file href="course_settings/context.xml"/>
+      <file href="course_settings/media_tracks.xml"/>
+      <file href="course_settings/canvas_export.txt"/>
+    </resource>
+    <resource identifier="gb13476bc5c52d915b757985920780566" type="webcontent" href="wiki_content/begrepp-att-kunna-infor-tentan.html">
+      <file href="wiki_content/begrepp-att-kunna-infor-tentan.html"/>
+    </resource>
+    <resource identifier="g2cb148f86b8a1c9b5e7ac1786888189d" type="webcontent" href="wiki_content/examination-doa-lp3.html">
+      <file href="wiki_content/examination-doa-lp3.html"/>
+    </resource>
+    <resource identifier="g2165ba93614e4256afa98c04524fa449" type="webcontent" href="wiki_content/go1-algoritmer-pseudokod-stack-och-ko.html">
+      <file href="wiki_content/go1-algoritmer-pseudokod-stack-och-ko.html"/>
+    </resource>
+    <resource identifier="gaed8faf6293a5df145b1b9dcda534fb0" type="webcontent" href="wiki_content/go1-losningsforslag.html">
+      <file href="wiki_content/go1-losningsforslag.html"/>
+    </resource>
+    <resource identifier="g17661206662eba47a38479cfddbecd0b" type="webcontent" href="wiki_content/go3-trad.html">
+      <file href="wiki_content/go3-trad.html"/>
+    </resource>
+    <resource identifier="g70ea283c7f1afcead412e55c8181d11d" type="webcontent" href="wiki_content/go4-hog-prioritetsko.html">
+      <file href="wiki_content/go4-hog-prioritetsko.html"/>
+    </resource>
+    <resource identifier="gdf4cb826764114b22ed8839888419a79" type="webcontent" href="wiki_content/go5-hashtabeller-losningsforslag.html">
+      <file href="wiki_content/go5-hashtabeller-losningsforslag.html"/>
+    </resource>
+    <resource identifier="gf917f0a2f025c41ac79827043bfd5fb0" type="webcontent" href="wiki_content/go5-hashtabeller.html">
+      <file href="wiki_content/go5-hashtabeller.html"/>
+    </resource>
+    <resource identifier="g0d62c6bb23c5426537cd61b727fb733c" type="webcontent" href="wiki_content/go6-grafer-grafalgoritmer-losningsforslag.html">
+      <file href="wiki_content/go6-grafer-grafalgoritmer-losningsforslag.html"/>
+    </resource>
+    <resource identifier="g243e620928c60c63337ceffa568d1ccb" type="webcontent" href="wiki_content/go6-grafer-grafalgoritmer.html">
+      <file href="wiki_content/go6-grafer-grafalgoritmer.html"/>
+    </resource>
+    <resource identifier="g32b95272b513a77436bf8c6ed80b5b05" type="webcontent" href="wiki_content/go7-binara-soktrad-huffman-kodning.html">
+      <file href="wiki_content/go7-binara-soktrad-huffman-kodning.html"/>
+    </resource>
+    <resource identifier="g092ecf0f012c110e6aa88b7040520683" type="webcontent" href="wiki_content/installera-programvaror.html">
+      <file href="wiki_content/installera-programvaror.html"/>
+    </resource>
+    <resource identifier="g85388e22ae7f288ba1c2122dffbc1dc0" type="webcontent" href="wiki_content/komplexitetsanalys-extra-fragor.html">
+      <file href="wiki_content/komplexitetsanalys-extra-fragor.html"/>
+    </resource>
+    <resource identifier="g176736b735d4ea80c25e282a88c81973" type="webcontent" href="wiki_content/lararmanual-ska-ej-publiceras.html">
+      <file href="wiki_content/lararmanual-ska-ej-publiceras.html"/>
+    </resource>
+    <resource identifier="g7e1fb5bcc2a5bfe89225cc58b15952be" type="webcontent" href="wiki_content/utvardering-for-datastrukturer-och-algorimer-2023-lp3.html">
+      <file href="wiki_content/utvardering-for-datastrukturer-och-algorimer-2023-lp3.html"/>
+    </resource>
+    <resource identifier="g62caa87352dc3f7e9d419dc68829490d" type="webcontent" href="wiki_content/utvardering-for-datastrukturer-och-algoritmer-c-lp3.html">
+      <file href="wiki_content/utvardering-for-datastrukturer-och-algoritmer-c-lp3.html"/>
+    </resource>
+    <resource identifier="g6d7051eb2d82313b8c30e9c84d78a830" type="webcontent" href="wiki_content/go2-komplexitet.html">
+      <file href="wiki_content/go2-komplexitet.html"/>
+    </resource>
+    <resource identifier="g64f8f10496844c7858399bad0401db2c" type="webcontent" href="wiki_content/utvardering-for-datastrukturer-och-algoritmer-2024-lp3.html">
+      <file href="wiki_content/utvardering-for-datastrukturer-och-algoritmer-2024-lp3.html"/>
+    </resource>
+    <resource identifier="g17c2ed80b59ac7f549e78e2e847b3936" type="webcontent" href="wiki_content/workshop-2-dot-1-konfigurera-vs-code-och-kodbasen-for-debugging.html">
+      <file href="wiki_content/workshop-2-dot-1-konfigurera-vs-code-och-kodbasen-for-debugging.html"/>
+    </resource>
+    <resource identifier="ge30ec239affa57315cf1a7cf31b79fa6" type="webcontent" href="wiki_content/planering-doa-lp3.html">
+      <file href="wiki_content/planering-doa-lp3.html"/>
+    </resource>
+    <resource identifier="ge6467154fb51f22664ebcf9a61124898" type="webcontent" href="wiki_content/workshop-3-dynamiskt-minne-valgrind-losningsforslag.html">
+      <file href="wiki_content/workshop-3-dynamiskt-minne-valgrind-losningsforslag.html"/>
+    </resource>
+    <resource identifier="g135424dc2c1590f3e428d6eb3ec3b5b0" type="webcontent" href="wiki_content/workshop-3-dynamiskt-minne-valgrind.html">
+      <file href="wiki_content/workshop-3-dynamiskt-minne-valgrind.html"/>
+    </resource>
+    <resource identifier="g6f1064b6ab72eec5c718a5adaa86db9c" type="webcontent" href="wiki_content/workshop-4-filhantering.html">
+      <file href="wiki_content/workshop-4-filhantering.html"/>
+    </resource>
+    <resource identifier="gbd8202c89057cd3967e3be267f890cf9" type="webcontent" href="wiki_content/go2-komplexitetsanalys-losningsforslag.html">
+      <file href="wiki_content/go2-komplexitetsanalys-losningsforslag.html"/>
+    </resource>
+    <resource identifier="g0e9f1251d47589fbd8b45cceaa82ccf3" type="webcontent" href="wiki_content/go3-trad-losningsforslag.html">
+      <file href="wiki_content/go3-trad-losningsforslag.html"/>
+    </resource>
+    <resource identifier="g03d4f3aae9926eba361d216b0a3646ec" type="webcontent" href="wiki_content/go4-hog-prioritetsko-losningsforslag.html">
+      <file href="wiki_content/go4-hog-prioritetsko-losningsforslag.html"/>
+    </resource>
+    <resource identifier="gc4e8356ec92cffa41fb5f10a674dafa5" type="webcontent" href="wiki_content/go7-binara-soktrad-huffman-kodning-losningsforslag.html">
+      <file href="wiki_content/go7-binara-soktrad-huffman-kodning-losningsforslag.html"/>
+    </resource>
+    <resource identifier="gd6a7ba63a45a877d780eba9af2ff6a90" type="webcontent" href="wiki_content/examination-doa-lp4.html">
+      <file href="wiki_content/examination-doa-lp4.html"/>
+    </resource>
+    <resource identifier="g96cd3b4e177ea15f0b08125fa73445bc" type="webcontent" href="wiki_content/workshop-2-debugging.html">
+      <file href="wiki_content/workshop-2-debugging.html"/>
+    </resource>
+    <resource identifier="g812533cfd13c28570ea6f4f650ebd80c" type="webcontent" href="wiki_content/planering-doa-lp4.html">
+      <file href="wiki_content/planering-doa-lp4.html"/>
+    </resource>
+    <resource identifier="g3e49250ed085d38e904709a65febc610" type="webcontent" href="wiki_content/workshop-1-ovningar-i-terminalen-med-kodbasen.html">
+      <file href="wiki_content/workshop-1-ovningar-i-terminalen-med-kodbasen.html"/>
+    </resource>
+    <resource identifier="gfdd59cfa84af4dc0dd98427794e94402" type="webcontent" href="wiki_content/workshop-1-ovningar-i-terminalen-med-kodbasen-svar.html">
+      <file href="wiki_content/workshop-1-ovningar-i-terminalen-med-kodbasen-svar.html"/>
+    </resource>
+    <resource identifier="geb462729ce9c19b3eef6fb019a2a012f" type="webcontent" href="wiki_content/utvardering-for-2024-doa-lp4.html">
+      <file href="wiki_content/utvardering-for-2024-doa-lp4.html"/>
+    </resource>
+    <resource identifier="g42e0ce899306007b43bf64e096dc0042" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g42e0ce899306007b43bf64e096dc0042/ou1-testning.html">
+      <file href="g42e0ce899306007b43bf64e096dc0042/ou1-testning.html"/>
+      <file href="g42e0ce899306007b43bf64e096dc0042/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="gf2f60cd82f1ed66fee39aa31972ba31f" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gf2f60cd82f1ed66fee39aa31972ba31f/ou3-tabeller.html">
+      <file href="gf2f60cd82f1ed66fee39aa31972ba31f/ou3-tabeller.html"/>
+      <file href="gf2f60cd82f1ed66fee39aa31972ba31f/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="gd6267380aed460e446b9321cdbc978ab" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gd6267380aed460e446b9321cdbc978ab/ou4-grafer-och-grafalgoritmer.html">
+      <file href="gd6267380aed460e446b9321cdbc978ab/ou4-grafer-och-grafalgoritmer.html"/>
+      <file href="gd6267380aed460e446b9321cdbc978ab/assignment_settings.xml"/>
+    </resource>
+    <resource identifier="g3830b56fadc41344c74af7670746f90e" type="imsdt_xmlv1p1">
+      <file href="g3830b56fadc41344c74af7670746f90e.xml"/>
+      <dependency identifierref="g0aabce54ee26b769650a76c3525f4cd4"/>
+    </resource>
+    <resource identifier="g0aabce54ee26b769650a76c3525f4cd4" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g0aabce54ee26b769650a76c3525f4cd4.xml">
+      <file href="g0aabce54ee26b769650a76c3525f4cd4.xml"/>
+    </resource>
+    <resource identifier="g90ffe337873629b44bbf490c0b0b8692" type="imsdt_xmlv1p1">
+      <file href="g90ffe337873629b44bbf490c0b0b8692.xml"/>
+      <dependency identifierref="g6744cbae3e0a06b096649629da239247"/>
+    </resource>
+    <resource identifier="g6744cbae3e0a06b096649629da239247" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6744cbae3e0a06b096649629da239247.xml">
+      <file href="g6744cbae3e0a06b096649629da239247.xml"/>
+    </resource>
+    <resource identifier="g1e7427780135c5392e9644b992d6c24d" type="imsdt_xmlv1p1">
+      <file href="g1e7427780135c5392e9644b992d6c24d.xml"/>
+      <dependency identifierref="g4d21c39b7ab5560fe55315b010701139"/>
+    </resource>
+    <resource identifier="g4d21c39b7ab5560fe55315b010701139" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g4d21c39b7ab5560fe55315b010701139.xml">
+      <file href="g4d21c39b7ab5560fe55315b010701139.xml"/>
+    </resource>
+    <resource identifier="g3baf9e469932f6381163b2a0f604737f" type="imsdt_xmlv1p1">
+      <file href="g3baf9e469932f6381163b2a0f604737f.xml"/>
+      <dependency identifierref="g1efeacd8b58c0994f5d4b5173dc38ccc"/>
+    </resource>
+    <resource identifier="g1efeacd8b58c0994f5d4b5173dc38ccc" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g1efeacd8b58c0994f5d4b5173dc38ccc.xml">
+      <file href="g1efeacd8b58c0994f5d4b5173dc38ccc.xml"/>
+    </resource>
+    <resource identifier="g8a9104c5c2f217f5c2c8e2dd75e20d36" type="imsdt_xmlv1p1">
+      <file href="g8a9104c5c2f217f5c2c8e2dd75e20d36.xml"/>
+      <dependency identifierref="g87b61015996de0706af0c23f490f57b8"/>
+    </resource>
+    <resource identifier="g87b61015996de0706af0c23f490f57b8" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g87b61015996de0706af0c23f490f57b8.xml">
+      <file href="g87b61015996de0706af0c23f490f57b8.xml"/>
+    </resource>
+    <resource identifier="g6b6e82def98eb492f8f398ce4277015c" type="imsdt_xmlv1p1">
+      <file href="g6b6e82def98eb492f8f398ce4277015c.xml"/>
+      <dependency identifierref="g6437c16e9a4c5a49f54dc75642028800"/>
+    </resource>
+    <resource identifier="g6437c16e9a4c5a49f54dc75642028800" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6437c16e9a4c5a49f54dc75642028800.xml">
+      <file href="g6437c16e9a4c5a49f54dc75642028800.xml"/>
+    </resource>
+    <resource identifier="gabceef37996f776a4c1753edc965a7c4" type="imsdt_xmlv1p1">
+      <file href="gabceef37996f776a4c1753edc965a7c4.xml"/>
+      <dependency identifierref="gf4457166e7148db2dd1ca9672f212ca9"/>
+    </resource>
+    <resource identifier="gf4457166e7148db2dd1ca9672f212ca9" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gf4457166e7148db2dd1ca9672f212ca9.xml">
+      <file href="gf4457166e7148db2dd1ca9672f212ca9.xml"/>
+    </resource>
+    <resource identifier="gedeaab2489eb8e406ae4fb8f40520d6f" type="imsdt_xmlv1p1">
+      <file href="gedeaab2489eb8e406ae4fb8f40520d6f.xml"/>
+      <dependency identifierref="g78d1963faf4bc645c9baec9f550522e9"/>
+    </resource>
+    <resource identifier="g78d1963faf4bc645c9baec9f550522e9" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g78d1963faf4bc645c9baec9f550522e9.xml">
+      <file href="g78d1963faf4bc645c9baec9f550522e9.xml"/>
+    </resource>
+    <resource identifier="g79d7f727ab41bb3e94180142fada92fc" type="imsdt_xmlv1p1">
+      <file href="g79d7f727ab41bb3e94180142fada92fc.xml"/>
+      <dependency identifierref="g91d64b10224ebe7d670d298b2c68c006"/>
+    </resource>
+    <resource identifier="g91d64b10224ebe7d670d298b2c68c006" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g91d64b10224ebe7d670d298b2c68c006.xml">
+      <file href="g91d64b10224ebe7d670d298b2c68c006.xml"/>
+    </resource>
+    <resource identifier="g2702b93dc8195d2d1367d94a9151fcff" type="imsdt_xmlv1p1">
+      <file href="g2702b93dc8195d2d1367d94a9151fcff.xml"/>
+      <dependency identifierref="g87a32e4673d1366ef890cf6c936ffdfc"/>
+    </resource>
+    <resource identifier="g87a32e4673d1366ef890cf6c936ffdfc" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g87a32e4673d1366ef890cf6c936ffdfc.xml">
+      <file href="g87a32e4673d1366ef890cf6c936ffdfc.xml"/>
+    </resource>
+    <resource identifier="gb55faf45445e707397e741527071ac96" type="imsdt_xmlv1p1">
+      <file href="gb55faf45445e707397e741527071ac96.xml"/>
+      <dependency identifierref="g32128400452d156a412aebd0309823a3"/>
+    </resource>
+    <resource identifier="g32128400452d156a412aebd0309823a3" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g32128400452d156a412aebd0309823a3.xml">
+      <file href="g32128400452d156a412aebd0309823a3.xml"/>
+    </resource>
+    <resource identifier="g981c061088f226fb6e212d4899ed0fd2" type="imsdt_xmlv1p1">
+      <file href="g981c061088f226fb6e212d4899ed0fd2.xml"/>
+      <dependency identifierref="ge06cfd05483dbbe9e3da1c5726b3df8f"/>
+    </resource>
+    <resource identifier="ge06cfd05483dbbe9e3da1c5726b3df8f" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge06cfd05483dbbe9e3da1c5726b3df8f.xml">
+      <file href="ge06cfd05483dbbe9e3da1c5726b3df8f.xml"/>
+    </resource>
+    <resource identifier="g18fba9bcef5fe0f404ca3a67f1dbc6d0" type="imsdt_xmlv1p1">
+      <file href="g18fba9bcef5fe0f404ca3a67f1dbc6d0.xml"/>
+      <dependency identifierref="ga0a78dfe87ace655a930bcd12c4771e7"/>
+    </resource>
+    <resource identifier="ga0a78dfe87ace655a930bcd12c4771e7" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ga0a78dfe87ace655a930bcd12c4771e7.xml">
+      <file href="ga0a78dfe87ace655a930bcd12c4771e7.xml"/>
+    </resource>
+    <resource identifier="g4165b5b34023ef798f2e7be4d6cbf4ca" type="imsdt_xmlv1p1">
+      <file href="g4165b5b34023ef798f2e7be4d6cbf4ca.xml"/>
+      <dependency identifierref="gfea8869fba10eacd1e596e53398823e1"/>
+    </resource>
+    <resource identifier="gfea8869fba10eacd1e596e53398823e1" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gfea8869fba10eacd1e596e53398823e1.xml">
+      <file href="gfea8869fba10eacd1e596e53398823e1.xml"/>
+    </resource>
+    <resource identifier="g640a86204b2d38794705bfe7d9747878" type="imsdt_xmlv1p1">
+      <file href="g640a86204b2d38794705bfe7d9747878.xml"/>
+      <dependency identifierref="gd2a08d432c22f3bde3977eb92fc7b7d8"/>
+    </resource>
+    <resource identifier="gd2a08d432c22f3bde3977eb92fc7b7d8" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gd2a08d432c22f3bde3977eb92fc7b7d8.xml">
+      <file href="gd2a08d432c22f3bde3977eb92fc7b7d8.xml"/>
+    </resource>
+    <resource identifier="g2f58848dc0f95cbbeb1b13dbae1bc839" type="imsdt_xmlv1p1">
+      <file href="g2f58848dc0f95cbbeb1b13dbae1bc839.xml"/>
+      <dependency identifierref="geefe9554ddcd9e826eeefd467622fd47"/>
+    </resource>
+    <resource identifier="geefe9554ddcd9e826eeefd467622fd47" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="geefe9554ddcd9e826eeefd467622fd47.xml">
+      <file href="geefe9554ddcd9e826eeefd467622fd47.xml"/>
+    </resource>
+    <resource identifier="g8ce2e000c22293d990cd5a5f7be76afb" type="imsdt_xmlv1p1">
+      <file href="g8ce2e000c22293d990cd5a5f7be76afb.xml"/>
+      <dependency identifierref="g7a91365b68a3a36f6e7d3052867d84ae"/>
+    </resource>
+    <resource identifier="g7a91365b68a3a36f6e7d3052867d84ae" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g7a91365b68a3a36f6e7d3052867d84ae.xml">
+      <file href="g7a91365b68a3a36f6e7d3052867d84ae.xml"/>
+    </resource>
+    <resource identifier="gbc606aaed14c414b085fa7a0c3003dcb" type="imsdt_xmlv1p1">
+      <file href="gbc606aaed14c414b085fa7a0c3003dcb.xml"/>
+      <dependency identifierref="g6bd40b3b644e6319d14e7089d40b2a1d"/>
+    </resource>
+    <resource identifier="g6bd40b3b644e6319d14e7089d40b2a1d" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6bd40b3b644e6319d14e7089d40b2a1d.xml">
+      <file href="g6bd40b3b644e6319d14e7089d40b2a1d.xml"/>
+    </resource>
+    <resource identifier="ge153bc45e2942c50e8d56a6bf3037ffc" type="imsdt_xmlv1p1">
+      <file href="ge153bc45e2942c50e8d56a6bf3037ffc.xml"/>
+      <dependency identifierref="g4c63384cbe0018a33b4195ecacbe0c1e"/>
+    </resource>
+    <resource identifier="g4c63384cbe0018a33b4195ecacbe0c1e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g4c63384cbe0018a33b4195ecacbe0c1e.xml">
+      <file href="g4c63384cbe0018a33b4195ecacbe0c1e.xml"/>
+    </resource>
+    <resource identifier="ge4b63b93567cee63fec1b1bc422f1004" type="imsdt_xmlv1p1">
+      <file href="ge4b63b93567cee63fec1b1bc422f1004.xml"/>
+      <dependency identifierref="g56ede24ecb3408717715686cc72c089a"/>
+    </resource>
+    <resource identifier="g56ede24ecb3408717715686cc72c089a" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g56ede24ecb3408717715686cc72c089a.xml">
+      <file href="g56ede24ecb3408717715686cc72c089a.xml"/>
+    </resource>
+    <resource identifier="g0bdd67a38000659dd0607b03cd4e0aac" type="imsdt_xmlv1p1">
+      <file href="g0bdd67a38000659dd0607b03cd4e0aac.xml"/>
+      <dependency identifierref="g8b06c83c8544f33227f3600dcd78ce11"/>
+    </resource>
+    <resource identifier="g8b06c83c8544f33227f3600dcd78ce11" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g8b06c83c8544f33227f3600dcd78ce11.xml">
+      <file href="g8b06c83c8544f33227f3600dcd78ce11.xml"/>
+    </resource>
+    <resource identifier="ge806f3495365b6b231c21b7e4b859191" type="imsdt_xmlv1p1">
+      <file href="ge806f3495365b6b231c21b7e4b859191.xml"/>
+      <dependency identifierref="g9f3309b1c93687adfba9e9fc9e35c997"/>
+    </resource>
+    <resource identifier="g9f3309b1c93687adfba9e9fc9e35c997" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g9f3309b1c93687adfba9e9fc9e35c997.xml">
+      <file href="g9f3309b1c93687adfba9e9fc9e35c997.xml"/>
+    </resource>
+    <resource identifier="g6b2dbd17ea658a3fabd676b04c1638c7" type="imsdt_xmlv1p1">
+      <file href="g6b2dbd17ea658a3fabd676b04c1638c7.xml"/>
+      <dependency identifierref="gad3f9843ce2c5451d2c1a0cb9b12ffe4"/>
+    </resource>
+    <resource identifier="gad3f9843ce2c5451d2c1a0cb9b12ffe4" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gad3f9843ce2c5451d2c1a0cb9b12ffe4.xml">
+      <file href="gad3f9843ce2c5451d2c1a0cb9b12ffe4.xml"/>
+    </resource>
+    <resource identifier="gd15219fd75d3b77e7f99ea25b93fab00" type="imsdt_xmlv1p1">
+      <file href="gd15219fd75d3b77e7f99ea25b93fab00.xml"/>
+      <dependency identifierref="ge7127885072e0ee8a166c27db02b0551"/>
+    </resource>
+    <resource identifier="ge7127885072e0ee8a166c27db02b0551" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge7127885072e0ee8a166c27db02b0551.xml">
+      <file href="ge7127885072e0ee8a166c27db02b0551.xml"/>
+    </resource>
+    <resource identifier="gb18eebe54698cc2130f174b192805222" type="imsdt_xmlv1p1">
+      <file href="gb18eebe54698cc2130f174b192805222.xml"/>
+      <dependency identifierref="gb06a21573e0ce152935e834f94df8f48"/>
+    </resource>
+    <resource identifier="gb06a21573e0ce152935e834f94df8f48" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gb06a21573e0ce152935e834f94df8f48.xml">
+      <file href="gb06a21573e0ce152935e834f94df8f48.xml"/>
+    </resource>
+    <resource identifier="g20edfb1fabbb1e5a1100c8c46158436c" type="imsdt_xmlv1p1">
+      <file href="g20edfb1fabbb1e5a1100c8c46158436c.xml"/>
+      <dependency identifierref="g04f5f580d6c14f71b115d32df0fd6033"/>
+    </resource>
+    <resource identifier="g04f5f580d6c14f71b115d32df0fd6033" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g04f5f580d6c14f71b115d32df0fd6033.xml">
+      <file href="g04f5f580d6c14f71b115d32df0fd6033.xml"/>
+    </resource>
+    <resource identifier="gc85263466905243475afb119fe108236" type="imsdt_xmlv1p1">
+      <file href="gc85263466905243475afb119fe108236.xml"/>
+      <dependency identifierref="g983446f4a94312a4c38ae7194a23a7a2"/>
+    </resource>
+    <resource identifier="g983446f4a94312a4c38ae7194a23a7a2" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g983446f4a94312a4c38ae7194a23a7a2.xml">
+      <file href="g983446f4a94312a4c38ae7194a23a7a2.xml"/>
+    </resource>
+    <resource identifier="g8800011baca49a6ef81bfa41b0338ad7" type="imsdt_xmlv1p1">
+      <file href="g8800011baca49a6ef81bfa41b0338ad7.xml"/>
+      <dependency identifierref="gfc1261efac1922ebb9d19b84e3a15e6a"/>
+    </resource>
+    <resource identifier="gfc1261efac1922ebb9d19b84e3a15e6a" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gfc1261efac1922ebb9d19b84e3a15e6a.xml">
+      <file href="gfc1261efac1922ebb9d19b84e3a15e6a.xml"/>
+    </resource>
+    <resource identifier="gd9e83e4f004c27bb9b02be83c4bc5db1" type="imsdt_xmlv1p1">
+      <file href="gd9e83e4f004c27bb9b02be83c4bc5db1.xml"/>
+      <dependency identifierref="gc94c66c31b224e35fdc049b6f474ba95"/>
+    </resource>
+    <resource identifier="gc94c66c31b224e35fdc049b6f474ba95" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gc94c66c31b224e35fdc049b6f474ba95.xml">
+      <file href="gc94c66c31b224e35fdc049b6f474ba95.xml"/>
+    </resource>
+    <resource identifier="ga6ccc8cee97b3fb5934aa267699ceac3" type="imsdt_xmlv1p1">
+      <file href="ga6ccc8cee97b3fb5934aa267699ceac3.xml"/>
+      <dependency identifierref="g8e86ef281f6a715db10640e8da5e8fa9"/>
+    </resource>
+    <resource identifier="g8e86ef281f6a715db10640e8da5e8fa9" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g8e86ef281f6a715db10640e8da5e8fa9.xml">
+      <file href="g8e86ef281f6a715db10640e8da5e8fa9.xml"/>
+    </resource>
+    <resource identifier="ge5657d89d92b6af7643e4a32b840b8d1" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="ge5657d89d92b6af7643e4a32b840b8d1/assessment_qti.xml"/>
+      <dependency identifierref="g94eb640938f1abaec829787f06650c2b"/>
+    </resource>
+    <resource identifier="g94eb640938f1abaec829787f06650c2b" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge5657d89d92b6af7643e4a32b840b8d1/assessment_meta.xml">
+      <file href="ge5657d89d92b6af7643e4a32b840b8d1/assessment_meta.xml"/>
+      <file href="non_cc_assessments/ge5657d89d92b6af7643e4a32b840b8d1.xml.qti"/>
+    </resource>
+    <resource identifier="g53b78b05c387640c5b46dc78a70989f9" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g53b78b05c387640c5b46dc78a70989f9/assessment_qti.xml"/>
+      <dependency identifierref="gd77835eacbac1ac22841fc2255265adb"/>
+    </resource>
+    <resource identifier="gd77835eacbac1ac22841fc2255265adb" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g53b78b05c387640c5b46dc78a70989f9/assessment_meta.xml">
+      <file href="g53b78b05c387640c5b46dc78a70989f9/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g53b78b05c387640c5b46dc78a70989f9.xml.qti"/>
+    </resource>
+    <resource identifier="g25624c71c051045913142b4cdf1eb867" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g25624c71c051045913142b4cdf1eb867/assessment_qti.xml"/>
+      <dependency identifierref="g0405ca14d15b4e81727616696e1ac4fd"/>
+    </resource>
+    <resource identifier="g0405ca14d15b4e81727616696e1ac4fd" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g25624c71c051045913142b4cdf1eb867/assessment_meta.xml">
+      <file href="g25624c71c051045913142b4cdf1eb867/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g25624c71c051045913142b4cdf1eb867.xml.qti"/>
+    </resource>
+    <resource identifier="gc59b83cd3d131407add186ff8dec2e77" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="gc59b83cd3d131407add186ff8dec2e77/assessment_qti.xml"/>
+      <dependency identifierref="gabc7a1381fccc4d4b95893bda55d3642"/>
+    </resource>
+    <resource identifier="gabc7a1381fccc4d4b95893bda55d3642" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gc59b83cd3d131407add186ff8dec2e77/assessment_meta.xml">
+      <file href="gc59b83cd3d131407add186ff8dec2e77/assessment_meta.xml"/>
+      <file href="non_cc_assessments/gc59b83cd3d131407add186ff8dec2e77.xml.qti"/>
+    </resource>
+    <resource identifier="ge305ff6628eff369acdc026249dfaf2f" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="ge305ff6628eff369acdc026249dfaf2f/assessment_qti.xml"/>
+      <dependency identifierref="g8dd2911091b8ae14d7f66c72c8c51669"/>
+    </resource>
+    <resource identifier="g8dd2911091b8ae14d7f66c72c8c51669" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge305ff6628eff369acdc026249dfaf2f/assessment_meta.xml">
+      <file href="ge305ff6628eff369acdc026249dfaf2f/assessment_meta.xml"/>
+      <file href="non_cc_assessments/ge305ff6628eff369acdc026249dfaf2f.xml.qti"/>
+    </resource>
+    <resource identifier="g5c5227c37bbad3f944adbb9af25ec22a" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g5c5227c37bbad3f944adbb9af25ec22a/assessment_qti.xml"/>
+      <dependency identifierref="g337d0fcd30037d6b807e0783dbfa3212"/>
+    </resource>
+    <resource identifier="g337d0fcd30037d6b807e0783dbfa3212" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g5c5227c37bbad3f944adbb9af25ec22a/assessment_meta.xml">
+      <file href="g5c5227c37bbad3f944adbb9af25ec22a/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g5c5227c37bbad3f944adbb9af25ec22a.xml.qti"/>
+    </resource>
+    <resource identifier="ge20f6dbb43904fd5f8c7f0e267b94848" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="ge20f6dbb43904fd5f8c7f0e267b94848/assessment_qti.xml"/>
+      <dependency identifierref="g12d5edc08ae319049ac6098bfadec4af"/>
+    </resource>
+    <resource identifier="g12d5edc08ae319049ac6098bfadec4af" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge20f6dbb43904fd5f8c7f0e267b94848/assessment_meta.xml">
+      <file href="ge20f6dbb43904fd5f8c7f0e267b94848/assessment_meta.xml"/>
+      <file href="non_cc_assessments/ge20f6dbb43904fd5f8c7f0e267b94848.xml.qti"/>
+    </resource>
+    <resource identifier="gfa73711cc36252173578508af5242c5f" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="gfa73711cc36252173578508af5242c5f/assessment_qti.xml"/>
+      <dependency identifierref="g83082d53e169cfefbe84a284cbee7a0e"/>
+    </resource>
+    <resource identifier="g83082d53e169cfefbe84a284cbee7a0e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="gfa73711cc36252173578508af5242c5f/assessment_meta.xml">
+      <file href="gfa73711cc36252173578508af5242c5f/assessment_meta.xml"/>
+      <file href="non_cc_assessments/gfa73711cc36252173578508af5242c5f.xml.qti"/>
+    </resource>
+    <resource identifier="g6fa821f01a400af9b2f1af32806a4323" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g6fa821f01a400af9b2f1af32806a4323/assessment_qti.xml"/>
+      <dependency identifierref="g66040f18247a72e95672d54d4243b39d"/>
+    </resource>
+    <resource identifier="g66040f18247a72e95672d54d4243b39d" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6fa821f01a400af9b2f1af32806a4323/assessment_meta.xml">
+      <file href="g6fa821f01a400af9b2f1af32806a4323/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g6fa821f01a400af9b2f1af32806a4323.xml.qti"/>
+    </resource>
+    <resource identifier="g628f84534bbb5b0801b0c9bf8bd59f6e" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g628f84534bbb5b0801b0c9bf8bd59f6e/assessment_qti.xml"/>
+      <dependency identifierref="g7b10c1ce2df8ef997deda53f4e374fee"/>
+    </resource>
+    <resource identifier="g7b10c1ce2df8ef997deda53f4e374fee" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g628f84534bbb5b0801b0c9bf8bd59f6e/assessment_meta.xml">
+      <file href="g628f84534bbb5b0801b0c9bf8bd59f6e/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g628f84534bbb5b0801b0c9bf8bd59f6e.xml.qti"/>
+    </resource>
+    <resource identifier="g3cc16d812bcddf8c2bb3ec5c0f2aa311" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g3cc16d812bcddf8c2bb3ec5c0f2aa311/assessment_qti.xml"/>
+      <dependency identifierref="gfdd32e82e23164e06331de1df50faad2"/>
+    </resource>
+    <resource identifier="gfdd32e82e23164e06331de1df50faad2" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g3cc16d812bcddf8c2bb3ec5c0f2aa311/assessment_meta.xml">
+      <file href="g3cc16d812bcddf8c2bb3ec5c0f2aa311/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g3cc16d812bcddf8c2bb3ec5c0f2aa311.xml.qti"/>
+    </resource>
+    <resource identifier="g1359c42dec81012e1b30b333671b0ab6" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g1359c42dec81012e1b30b333671b0ab6/assessment_qti.xml"/>
+      <dependency identifierref="g316ba94c3da6b64d26c08f59092ba50e"/>
+    </resource>
+    <resource identifier="g316ba94c3da6b64d26c08f59092ba50e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g1359c42dec81012e1b30b333671b0ab6/assessment_meta.xml">
+      <file href="g1359c42dec81012e1b30b333671b0ab6/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g1359c42dec81012e1b30b333671b0ab6.xml.qti"/>
+    </resource>
+    <resource identifier="ge79ba19daab846a71d9136db9f04866f" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="ge79ba19daab846a71d9136db9f04866f/assessment_qti.xml"/>
+      <dependency identifierref="g9423ad6ab661ebfe1112d647ecabaf73"/>
+    </resource>
+    <resource identifier="g9423ad6ab661ebfe1112d647ecabaf73" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="ge79ba19daab846a71d9136db9f04866f/assessment_meta.xml">
+      <file href="ge79ba19daab846a71d9136db9f04866f/assessment_meta.xml"/>
+      <file href="non_cc_assessments/ge79ba19daab846a71d9136db9f04866f.xml.qti"/>
+    </resource>
+    <resource identifier="g92652ce39bd50d0120a88c84e8002058" type="imsqti_xmlv1p2/imscc_xmlv1p1/assessment">
+      <file href="g92652ce39bd50d0120a88c84e8002058/assessment_qti.xml"/>
+      <dependency identifierref="g39707f82abf6edd5662b6ce97090adde"/>
+    </resource>
+    <resource identifier="g39707f82abf6edd5662b6ce97090adde" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g92652ce39bd50d0120a88c84e8002058/assessment_meta.xml">
+      <file href="g92652ce39bd50d0120a88c84e8002058/assessment_meta.xml"/>
+      <file href="non_cc_assessments/g92652ce39bd50d0120a88c84e8002058.xml.qti"/>
+    </resource>
+    <resource identifier="gc300042dfe8e7dc023aaf28b277392ea" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gc300042dfe8e7dc023aaf28b277392ea.xml.qti">
+      <file href="non_cc_assessments/gc300042dfe8e7dc023aaf28b277392ea.xml.qti"/>
+    </resource>
+    <resource identifier="g0fbe5274f22bc6f924174c09b08786bb" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g0fbe5274f22bc6f924174c09b08786bb.xml.qti">
+      <file href="non_cc_assessments/g0fbe5274f22bc6f924174c09b08786bb.xml.qti"/>
+    </resource>
+    <resource identifier="g4a52ab7cbb290fb033b45327f508b9b1" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g4a52ab7cbb290fb033b45327f508b9b1.xml.qti">
+      <file href="non_cc_assessments/g4a52ab7cbb290fb033b45327f508b9b1.xml.qti"/>
+    </resource>
+    <resource identifier="g6bc312f3db373a789bb6aa6ba6df61c9" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g6bc312f3db373a789bb6aa6ba6df61c9.xml.qti">
+      <file href="non_cc_assessments/g6bc312f3db373a789bb6aa6ba6df61c9.xml.qti"/>
+    </resource>
+    <resource identifier="g04b1122a48eab9efe7130f02b5d4ec8d" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g04b1122a48eab9efe7130f02b5d4ec8d.xml.qti">
+      <file href="non_cc_assessments/g04b1122a48eab9efe7130f02b5d4ec8d.xml.qti"/>
+    </resource>
+    <resource identifier="g537c67aaab49ebfa763db08860c0a0fc" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g537c67aaab49ebfa763db08860c0a0fc.xml.qti">
+      <file href="non_cc_assessments/g537c67aaab49ebfa763db08860c0a0fc.xml.qti"/>
+    </resource>
+    <resource identifier="gdb965fe25dfe55ca882f905a644cc818" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gdb965fe25dfe55ca882f905a644cc818.xml.qti">
+      <file href="non_cc_assessments/gdb965fe25dfe55ca882f905a644cc818.xml.qti"/>
+    </resource>
+    <resource identifier="g1700a3d83d08dbc76a7b3d3538dd688f" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g1700a3d83d08dbc76a7b3d3538dd688f.xml.qti">
+      <file href="non_cc_assessments/g1700a3d83d08dbc76a7b3d3538dd688f.xml.qti"/>
+    </resource>
+    <resource identifier="gf9aebc2a99f0d4b75e1a7e37ee6785d2" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gf9aebc2a99f0d4b75e1a7e37ee6785d2.xml.qti">
+      <file href="non_cc_assessments/gf9aebc2a99f0d4b75e1a7e37ee6785d2.xml.qti"/>
+    </resource>
+    <resource identifier="gcea42e1ac12a87c46492649360422d21" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gcea42e1ac12a87c46492649360422d21.xml.qti">
+      <file href="non_cc_assessments/gcea42e1ac12a87c46492649360422d21.xml.qti"/>
+    </resource>
+    <resource identifier="g49622c643649db1ac991eeb4e0d172ef" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g49622c643649db1ac991eeb4e0d172ef.xml.qti">
+      <file href="non_cc_assessments/g49622c643649db1ac991eeb4e0d172ef.xml.qti"/>
+    </resource>
+    <resource identifier="g69d9a02dba2e8008e80cb3e2692007b8" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g69d9a02dba2e8008e80cb3e2692007b8.xml.qti">
+      <file href="non_cc_assessments/g69d9a02dba2e8008e80cb3e2692007b8.xml.qti"/>
+    </resource>
+    <resource identifier="g4a69c08f64bf24d38bb290a53d0bf166" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g4a69c08f64bf24d38bb290a53d0bf166.xml.qti">
+      <file href="non_cc_assessments/g4a69c08f64bf24d38bb290a53d0bf166.xml.qti"/>
+    </resource>
+    <resource identifier="g47c4e7495326bfbf9967cd9f5a709034" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g47c4e7495326bfbf9967cd9f5a709034.xml.qti">
+      <file href="non_cc_assessments/g47c4e7495326bfbf9967cd9f5a709034.xml.qti"/>
+    </resource>
+    <resource identifier="gbf83d7c383476ec963b74d63939a038c" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gbf83d7c383476ec963b74d63939a038c.xml.qti">
+      <file href="non_cc_assessments/gbf83d7c383476ec963b74d63939a038c.xml.qti"/>
+    </resource>
+    <resource identifier="g7eaacaab4e545225dffd5d19db160744" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g7eaacaab4e545225dffd5d19db160744.xml.qti">
+      <file href="non_cc_assessments/g7eaacaab4e545225dffd5d19db160744.xml.qti"/>
+    </resource>
+    <resource identifier="g16bea9d248acddfd2822d954cddcff6e" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g16bea9d248acddfd2822d954cddcff6e.xml.qti">
+      <file href="non_cc_assessments/g16bea9d248acddfd2822d954cddcff6e.xml.qti"/>
+    </resource>
+    <resource identifier="gf530c16c67747463b76f8690aed189d4" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gf530c16c67747463b76f8690aed189d4.xml.qti">
+      <file href="non_cc_assessments/gf530c16c67747463b76f8690aed189d4.xml.qti"/>
+    </resource>
+    <resource identifier="gadc9813786adbc9bde288e2f94a64e0d" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gadc9813786adbc9bde288e2f94a64e0d.xml.qti">
+      <file href="non_cc_assessments/gadc9813786adbc9bde288e2f94a64e0d.xml.qti"/>
+    </resource>
+    <resource identifier="g67b7212ec7903c48fe8f589999f01df1" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g67b7212ec7903c48fe8f589999f01df1.xml.qti">
+      <file href="non_cc_assessments/g67b7212ec7903c48fe8f589999f01df1.xml.qti"/>
+    </resource>
+    <resource identifier="g9d0b8318727465a9710bb8b9cecccbfe" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g9d0b8318727465a9710bb8b9cecccbfe.xml.qti">
+      <file href="non_cc_assessments/g9d0b8318727465a9710bb8b9cecccbfe.xml.qti"/>
+    </resource>
+    <resource identifier="g66db5aa50703751aafbe12f0ad2ea4e6" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g66db5aa50703751aafbe12f0ad2ea4e6.xml.qti">
+      <file href="non_cc_assessments/g66db5aa50703751aafbe12f0ad2ea4e6.xml.qti"/>
+    </resource>
+    <resource identifier="gdd4ae9629f5437d8a176e4a6656a7eec" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gdd4ae9629f5437d8a176e4a6656a7eec.xml.qti">
+      <file href="non_cc_assessments/gdd4ae9629f5437d8a176e4a6656a7eec.xml.qti"/>
+    </resource>
+    <resource identifier="g9b9768cacd0df25021c2b9d014890900" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g9b9768cacd0df25021c2b9d014890900.xml.qti">
+      <file href="non_cc_assessments/g9b9768cacd0df25021c2b9d014890900.xml.qti"/>
+    </resource>
+    <resource identifier="g184dabe8e6832e92aa13d71d061ca003" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g184dabe8e6832e92aa13d71d061ca003.xml.qti">
+      <file href="non_cc_assessments/g184dabe8e6832e92aa13d71d061ca003.xml.qti"/>
+    </resource>
+    <resource identifier="g939f19e67558b7764687004f7ab46720" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g939f19e67558b7764687004f7ab46720.xml.qti">
+      <file href="non_cc_assessments/g939f19e67558b7764687004f7ab46720.xml.qti"/>
+    </resource>
+    <resource identifier="gedde18164613a5b62d51b9559cf71445" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gedde18164613a5b62d51b9559cf71445.xml.qti">
+      <file href="non_cc_assessments/gedde18164613a5b62d51b9559cf71445.xml.qti"/>
+    </resource>
+    <resource identifier="gaedbc992669febf68b9dbedf9b92d1f8" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gaedbc992669febf68b9dbedf9b92d1f8.xml.qti">
+      <file href="non_cc_assessments/gaedbc992669febf68b9dbedf9b92d1f8.xml.qti"/>
+    </resource>
+    <resource identifier="gcaacdb925619ec7febee9ae01b8b559f" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/gcaacdb925619ec7febee9ae01b8b559f.xml.qti">
+      <file href="non_cc_assessments/gcaacdb925619ec7febee9ae01b8b559f.xml.qti"/>
+    </resource>
+    <resource identifier="g01079fdc6764c2c668c7a4e11835e616" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g01079fdc6764c2c668c7a4e11835e616.xml.qti">
+      <file href="non_cc_assessments/g01079fdc6764c2c668c7a4e11835e616.xml.qti"/>
+    </resource>
+    <resource type="webcontent" identifier="g3458ec14350259883ad9175b8b8d5df0" href="web_resources/assessment_questions/heap_insert.jpg">
+      <file href="web_resources/assessment_questions/heap_insert.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g445dbef84ba11d45503bba82e707a75f" href="web_resources/assessment_questions/träd.jpg">
+      <file href="web_resources/assessment_questions/träd.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g68082339c6915266c92cf795be09f087" href="web_resources/assessment_questions/tree.jpg">
+      <file href="web_resources/assessment_questions/tree.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="gcbd6c545a5133e7b76b865e05dceafde" href="web_resources/assessment_questions/twotrees.png">
+      <file href="web_resources/assessment_questions/twotrees.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g5a4f70b4fe3b6c2ec894a51a49fe9102" href="web_resources/assessment_questions/binary_tree-1.png">
+      <file href="web_resources/assessment_questions/binary_tree-1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g6f8cb4c00cb64b3dcda994a5a78e7699" href="web_resources/assessment_questions/twotrees.png">
+      <file href="web_resources/assessment_questions/twotrees.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gd216032176807ab8898775697a0efcc7" href="web_resources/assessment_questions/quizz_graph.jpg">
+      <file href="web_resources/assessment_questions/quizz_graph.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g92676d511f9f8a4af6039b65abca04d5" href="web_resources/assessment_questions/quizz_graph.jpg">
+      <file href="web_resources/assessment_questions/quizz_graph.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g38d3c97e35bf064dd3f67a3515d8944a" href="web_resources/assessment_questions/quizz_graph.jpg">
+      <file href="web_resources/assessment_questions/quizz_graph.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="gd3c6df0cf731fa763d10900fe5d5f887" href="web_resources/assessment_questions/huffman_start.png">
+      <file href="web_resources/assessment_questions/huffman_start.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g85be318ed7af5a89234b13e1d4553051" href="web_resources/assessment_questions/threetries.png">
+      <file href="web_resources/assessment_questions/threetries.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gc3286981c70f81595631d208afe8368c" href="web_resources/assessment_questions/graph1.jpg">
+      <file href="web_resources/assessment_questions/graph1.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g09456f2c59d85104b44684c20f656a3e" href="web_resources/assessment_questions/graph1.jpg">
+      <file href="web_resources/assessment_questions/graph1.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g4fb5b1393971657dc19cdbce8d8d24e6" href="web_resources/assessment_questions/graph1.jpg">
+      <file href="web_resources/assessment_questions/graph1.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g1c8b51101ccbac128b15293c4931e7ba" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="gc8822a38059f977739e40132c9f1de83" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g31f06bb6c6575df19d5913a57affdfdd" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g6af4fb7b8b2dca5a276405579e3050c4" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g6618f2eaf1b3d151e2c6a5240b453482" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="ga566d249a7a12768e77cba51dfe29b84" href="web_resources/assessment_questions/graph3.jpg">
+      <file href="web_resources/assessment_questions/graph3.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g6f0f86ce5cd4e4a85e30a73ed30e0ffc" href="web_resources/assessment_questions/graph4.jpg">
+      <file href="web_resources/assessment_questions/graph4.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g862beccdf16a5acd9e42b18f77845b98" href="web_resources/assessment_questions/graph2.jpg">
+      <file href="web_resources/assessment_questions/graph2.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g17c4fb8b7af92ec57934f099d089f8a7" href="web_resources/assessment_questions/bst.png">
+      <file href="web_resources/assessment_questions/bst.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g9af36e76947c78007bd1b03a96ae1c1a" href="web_resources/assessment_questions/binary_tree.png">
+      <file href="web_resources/assessment_questions/binary_tree.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g1053005b612c79c24843c29cf83d065a" href="web_resources/doa_introduction_v2.pdf">
+      <file href="web_resources/doa_introduction_v2.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g39eaa3345a5e219c44a778102c5d6a7a" href="web_resources/6 - Kodexempel/allocstruct.c">
+      <file href="web_resources/6 - Kodexempel/allocstruct.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g8f3ecc8f74baf43a8f20d4e2ef860823" href="web_resources/6 - Kodexempel/array_1d_int.c">
+      <file href="web_resources/6 - Kodexempel/array_1d_int.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g5219edda2bad792bd002c51868d214c4" href="web_resources/6 - Kodexempel/array_1d_int.h">
+      <file href="web_resources/6 - Kodexempel/array_1d_int.h"/>
+    </resource>
+    <resource type="webcontent" identifier="ga34a602263c77d04e7e835be24a62099" href="web_resources/6 - Kodexempel/bindump.c">
+      <file href="web_resources/6 - Kodexempel/bindump.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g84abfda7479fa6bfbd7ad5ef3a452b83" href="web_resources/6 - Kodexempel/borlin-iso-8859-1.txt">
+      <file href="web_resources/6 - Kodexempel/borlin-iso-8859-1.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="g60c07e5f2cc49360ad0961f7acbb6fef" href="web_resources/6 - Kodexempel/borlin-utf8.txt">
+      <file href="web_resources/6 - Kodexempel/borlin-utf8.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="gc007dcebcdf326a203fe4967c2d95896" href="web_resources/6 - Kodexempel/c-267-dos.txt">
+      <file href="web_resources/6 - Kodexempel/c-267-dos.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="g50c53aa105697df77acd05a12b4eae4a" href="web_resources/6 - Kodexempel/c-267-unix.txt">
+      <file href="web_resources/6 - Kodexempel/c-267-unix.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="g498ab061b63d94d1096c2b8b8c0096ee" href="web_resources/6 - Kodexempel/cmdlineargs.c">
+      <file href="web_resources/6 - Kodexempel/cmdlineargs.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g797424b7b278ac72c131db6689497ad6" href="web_resources/6 - Kodexempel/dcount_abstract.c">
+      <file href="web_resources/6 - Kodexempel/dcount_abstract.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gd7bbd502e3bd09fb68a2f626c56ad563" href="web_resources/6 - Kodexempel/dcount_dynamic.c">
+      <file href="web_resources/6 - Kodexempel/dcount_dynamic.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g74d602859ff8e5372e28ed999be6dea7" href="web_resources/6 - Kodexempel/dcount_generic.c">
+      <file href="web_resources/6 - Kodexempel/dcount_generic.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g9892dbc2e0027ee3977f2d5838d5f708" href="web_resources/6 - Kodexempel/dcount_indexed.c">
+      <file href="web_resources/6 - Kodexempel/dcount_indexed.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g2d62913798a1df1205f09d61a66b2b0a" href="web_resources/6 - Kodexempel/dcount_naive.c">
+      <file href="web_resources/6 - Kodexempel/dcount_naive.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g1f48f3e9854a7cb0628c1f5df26defc3" href="web_resources/6 - Kodexempel/dlist.c">
+      <file href="web_resources/6 - Kodexempel/dlist.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g8493af4d99fed6205647de8366369b4a" href="web_resources/6 - Kodexempel/dlist.h">
+      <file href="web_resources/6 - Kodexempel/dlist.h"/>
+    </resource>
+    <resource type="webcontent" identifier="gd7d9a7ca2bad90220658c07266dc70e1" href="web_resources/6 - Kodexempel/fopenclose.c">
+      <file href="web_resources/6 - Kodexempel/fopenclose.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gd8a0cfee6be2c0a62271350355025491" href="web_resources/6 - Kodexempel/freedef.h">
+      <file href="web_resources/6 - Kodexempel/freedef.h"/>
+    </resource>
+    <resource type="webcontent" identifier="gb852f1b44ec4944f3a687d5ce0158228" href="web_resources/6 - Kodexempel/ghostptr.c">
+      <file href="web_resources/6 - Kodexempel/ghostptr.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g68459709c42c692cff5c36e52cdab754" href="web_resources/6 - Kodexempel/int_list_array.h">
+      <file href="web_resources/6 - Kodexempel/int_list_array.h"/>
+    </resource>
+    <resource type="webcontent" identifier="g6d13f530f64236993de069ff8656d16a" href="web_resources/6 - Kodexempel/linkedlist.c">
+      <file href="web_resources/6 - Kodexempel/linkedlist.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g7e86f2780a739996b5904c7eafcd3a5b" href="web_resources/6 - Kodexempel/longest.c">
+      <file href="web_resources/6 - Kodexempel/longest.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g3ffe0b4f07fb412425bd5e26a6825486" href="web_resources/6 - Kodexempel/lostmem.c">
+      <file href="web_resources/6 - Kodexempel/lostmem.c"/>
+    </resource>
+    <resource type="webcontent" identifier="ge3d7010a06374c97ef4d55aae17e9a87" href="web_resources/6 - Kodexempel/lostref.c">
+      <file href="web_resources/6 - Kodexempel/lostref.c"/>
+    </resource>
+    <resource type="webcontent" identifier="ga05e777e57beec4c5c97b60fe178a697" href="web_resources/6 - Kodexempel/mallocdef.h">
+      <file href="web_resources/6 - Kodexempel/mallocdef.h"/>
+    </resource>
+    <resource type="webcontent" identifier="ga2208649b471f3a60103fb13edfc0ed5" href="web_resources/6 - Kodexempel/mallocfree.c">
+      <file href="web_resources/6 - Kodexempel/mallocfree.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gd96673f35966bcc6c6de7d62157b6461" href="web_resources/6 - Kodexempel/mallocuse_ex.c">
+      <file href="web_resources/6 - Kodexempel/mallocuse_ex.c"/>
+    </resource>
+    <resource type="webcontent" identifier="ga1a9ad29db3ed978760f41b3f74d5e65" href="web_resources/6 - Kodexempel/months.txt">
+      <file href="web_resources/6 - Kodexempel/months.txt"/>
+    </resource>
+    <resource type="webcontent" identifier="g82b162f0251e85bfae98d7512294deaf" href="web_resources/6 - Kodexempel/multiptr.c">
+      <file href="web_resources/6 - Kodexempel/multiptr.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g769ebda88e768cd54493d91383a147c4" href="web_resources/6 - Kodexempel/mylist2cell.c">
+      <file href="web_resources/6 - Kodexempel/mylist2cell.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g6c20be7ccc38ff7f086eec22182af6f0" href="web_resources/6 - Kodexempel/rownumbers.c">
+      <file href="web_resources/6 - Kodexempel/rownumbers.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gce948d560651ce63ae1b12578e6bf557" href="web_resources/6 - Kodexempel/traverse.c">
+      <file href="web_resources/6 - Kodexempel/traverse.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g1d131568865e47306722c9f23876b0c2" href="web_resources/6 - Kodexempel/int_list_array.c">
+      <file href="web_resources/6 - Kodexempel/int_list_array.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g4aecf36c6d2ce825fe9e019467ba7551" href="web_resources/6 - Kodexempel/int_list_2cell.c">
+      <file href="web_resources/6 - Kodexempel/int_list_2cell.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gaf2605de78e72199d7c193dbfbc291c6" href="web_resources/6 - Kodexempel/int_list_2cell.h">
+      <file href="web_resources/6 - Kodexempel/int_list_2cell.h"/>
+    </resource>
+    <resource type="webcontent" identifier="g2086b0bf211025d3b368c7a942bed1b2" href="web_resources/6 - Kodexempel/struct_on_stack.c">
+      <file href="web_resources/6 - Kodexempel/struct_on_stack.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gc52a07c722eacfbbdfb0b0d957f7845b" href="web_resources/6 - Kodexempel/vars_on_stack.c">
+      <file href="web_resources/6 - Kodexempel/vars_on_stack.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g45452a186732a972b1011fc73f603739" href="web_resources/6 - Kodexempel/sudoku.c">
+      <file href="web_resources/6 - Kodexempel/sudoku.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g4a54a3b456d516d5d9aa653164f911f6" href="web_resources/Lärarmaterial - publicera inte!/Komplexitets analys.pptx">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/Lärarmaterial - publicera inte!/Komplexitets analys.pptx"/>
+    </resource>
+    <resource type="webcontent" identifier="g25dcce09d377426d809abcff02bd7fff" href="web_resources/Lärarmaterial - publicera inte!/workload.pdf">
+      <file href="web_resources/Lärarmaterial - publicera inte!/workload.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g3ff29faaf22b22bded01c6bf7e36a60b" href="web_resources/Lärarmaterial - publicera inte!/handledarmanual.pdf">
+      <file href="web_resources/Lärarmaterial - publicera inte!/handledarmanual.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf1547f6751c3ebd9e4c81150962ab8d8" href="web_resources/Lärarmaterial - publicera inte!/Manuellt registrerade 5DV149.xlsx">
+      <file href="web_resources/Lärarmaterial - publicera inte!/Manuellt registrerade 5DV149.xlsx"/>
+    </resource>
+    <resource type="webcontent" identifier="g3b1db432f5d4ee0d564e6d62222c25c8" href="web_resources/Lärarmaterial - publicera inte!/rättningsmanual-ou4.pdf">
+      <file href="web_resources/Lärarmaterial - publicera inte!/rättningsmanual-ou4.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7d0fcbd26a32854d1a34cd6d7f7df500" href="web_resources/unfiled/Huffman_exam_question_2022-04-20.pdf">
+      <file href="web_resources/unfiled/Huffman_exam_question_2022-04-20.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g25ef4b8953d16df7bc9ea17895907504" href="web_resources/unfiled/Huffman_exam_question_2022-04-20-1.pdf">
+      <file href="web_resources/unfiled/Huffman_exam_question_2022-04-20-1.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g809c69c0e55f0ef7263f329cb56ce9f8" href="web_resources/unfiled/doa_introduction_v2.pdf">
+      <file href="web_resources/unfiled/doa_introduction_v2.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd315f665b9364eaaa5044c74ca8880f6" href="web_resources/unfiled/exam.pdf">
+      <file href="web_resources/unfiled/exam.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g259a479c4df520099482bc15e5614bb8" href="web_resources/unfiled/exam-with-grading.pdf">
+      <file href="web_resources/unfiled/exam-with-grading.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g2e2cfb59af73684ad45a251776d070b5" href="web_resources/1 - Föreläsningar/the-bug-that-destroyed-a-rocket.pdf">
+      <file href="web_resources/1 - Föreläsningar/the-bug-that-destroyed-a-rocket.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gbf0039bc6895bd2bd25a17c4d85b347f" href="web_resources/1 - Föreläsningar/f03a-organisation-av-c-kod-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f03a-organisation-av-c-kod-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf357ecc183eba69a06f1d87de2b07356" href="web_resources/1 - Föreläsningar/f03a-organisation-av-c-kod-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f03a-organisation-av-c-kod-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf7bd0ff737eb34e17cf721db16569ca0" href="web_resources/1 - Föreläsningar/f02-listor-stack-testning-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f02-listor-stack-testning-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gde363c4ffeb35c85140221f03465ef9e" href="web_resources/1 - Föreläsningar/f02-listor-stack-testning-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f02-listor-stack-testning-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdc86444e70575ca39f3bf46b6ab19020" href="web_resources/1 - Föreläsningar/f01-begrepp-falt-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f01-begrepp-falt-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g6e4e53ef0876cc7e882589cbb084fcf1" href="web_resources/1 - Föreläsningar/f01-begrepp-falt-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f01-begrepp-falt-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf69674a050dcc6ab6a018fe29659edb4" href="web_resources/1 - Föreläsningar/f00-kursintro-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f00-kursintro-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g754206b7595575e90efde7f42b3fc220" href="web_resources/1 - Föreläsningar/f00-kursintro-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f00-kursintro-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gee77a871bfc9ce0250f5c7abd3e78b54" href="web_resources/1 - Föreläsningar/f04-riktad-lista-ko-algoritmer-pseudokod-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f04-riktad-lista-ko-algoritmer-pseudokod-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdd2cc6dd1244fdc18739272fa4f1f313" href="web_resources/1 - Föreläsningar/f04-riktad-lista-ko-algoritmer-pseudokod-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f04-riktad-lista-ko-algoritmer-pseudokod-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g395cbccfd55d82c2e7c06b7106dc8a8a" href="web_resources/1 - Föreläsningar/f03-dynamiskt-minne-i-c-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f03-dynamiskt-minne-i-c-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g8c528563f69bc9b1ffdb9d0fb144e681" href="web_resources/1 - Föreläsningar/f03-dynamiskt-minne-i-c-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f03-dynamiskt-minne-i-c-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g219ed0f6c1ce751e54504d9250463cc3" href="web_resources/1 - Föreläsningar/f06-problemlosningsstrategier-komplexitet-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f06-problemlosningsstrategier-komplexitet-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7f86fb4ec0d591fd7c3cba881d8b91ef" href="web_resources/1 - Föreläsningar/f06-problemlosningsstrategier-komplexitet-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f06-problemlosningsstrategier-komplexitet-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g09232d40096b841a19fb5793e80dfda7" href="web_resources/1 - Föreläsningar/f05-sortering-sokning-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f05-sortering-sokning-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g2e7fce12b7d2684849beb2d0c64426e9" href="web_resources/1 - Föreläsningar/f05-sortering-sokning-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f05-sortering-sokning-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9107837db992e64675c04f101d795394" href="web_resources/1 - Föreläsningar/f07-tabell-relation-lexikon-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f07-tabell-relation-lexikon-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g0f650aec9fe5c94ba52d8b490286db10" href="web_resources/1 - Föreläsningar/f07-tabell-relation-lexikon-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f07-tabell-relation-lexikon-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9ceeb9e6b8ffb8ba192751fa7bf01946" href="web_resources/1 - Föreläsningar/f08-trad-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f08-trad-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf7232b9fd8077196e71aeea4fd1c28a4" href="web_resources/1 - Föreläsningar/f08-trad-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f08-trad-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gcf21009003d07fd2296f3a4eb5305843" href="web_resources/1 - Föreläsningar/f09-hashtabell-prioko-hog-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f09-hashtabell-prioko-hog-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g086efdd82b92cbd228ee2e8468cc2a53" href="web_resources/1 - Föreläsningar/f09-hashtabell-prioko-hog-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f09-hashtabell-prioko-hog-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1192ea2bd31330ea0b615c6089dbb841" href="web_resources/1 - Föreläsningar/f10-mangd-graf-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f10-mangd-graf-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ge7684c69038bf4fbd456ebaea4026acf" href="web_resources/1 - Föreläsningar/f10-mangd-graf-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f10-mangd-graf-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g705c056162174559b5b8f204602da332" href="web_resources/1 - Föreläsningar/f11-grafalgoritmer-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f11-grafalgoritmer-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdbd32006e102ce905d74f69c08359248" href="web_resources/1 - Föreläsningar/f11-grafalgoritmer-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f11-grafalgoritmer-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g97830129cb30747df7a36f1bc3158155" href="web_resources/1 - Föreläsningar/f12-soktrad-trie-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f12-soktrad-trie-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd805767ebd98c826b54f7c939626485b" href="web_resources/1 - Föreläsningar/f12-soktrad-trie-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f12-soktrad-trie-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g920197f017d28be2eae722a9caebea45" href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9830f35f8658817191897bfc0e8eec2a" href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides-1.pdf">
+      <file href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides-1.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gad3998a71d4be24185ce2476398e9ba3" href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides-2.pdf">
+      <file href="web_resources/1 - Föreläsningar/f13-generella-teorier-slides-2.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd6ce8caa1022954df1f6bca214fd2e0b" href="web_resources/1 - Föreläsningar/f13-generella-teorier-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/f13-generella-teorier-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd5c9864c124ced58bece0a1d3bd353de" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f00-intro-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f00-intro-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1abd28b85793f6782f04e6430dc4a79f" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f00-intro-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f00-intro-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g0419b1cf6eaa27d4e2961fb674f1497c" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f01-intro-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f01-intro-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1ef4af4793e3f8539f030b06d556d47c" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f02-lasbarhet-val-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f02-lasbarhet-val-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g8b3060d98b2a2953abc3304cff7f5f5a" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f03-loopar-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f03-loopar-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g2c75caf670e0daecbc3040db2414097c" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f04-rep-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f04-rep-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7081a02becf86faf0ee735f78e8635f7" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f05-funktioner-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f05-funktioner-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g19d242dd5977432cf4cb05c6e86614db" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f06-ptr-arr-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f06-ptr-arr-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gc98d22ee4e49cb57e87a820af3c02bbf" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f07-const-types-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f07-const-types-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1191a6b55212bd78ebf64460d7bfa4d0" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f08-rep-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f08-rep-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g64b5cf5f448f907e01793f248f27fd74" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f09-struct-search-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f09-struct-search-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7b5a963b058eba63beb836fff7dbf4b9" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f10-recurse-sort-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f10-recurse-sort-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ga8bb21be5bdd638428a3c73e4b13a64f" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f10-recurse-sort-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f10-recurse-sort-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g684283ae2fcfac8385ecd15cd9611471" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f11-strings-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f11-strings-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7699b08cd4a5bb41b1e3e470664887b3" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f11-strings-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f11-strings-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g15523e4af1be901b81861c00f9fd4b87" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f12-rep-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f12-rep-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gde7ce0c0456049924449cce9d59312c0" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f12-rep-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f12-rep-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g22d936bd1c9b4a418d4b395559a09fa4" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f13-infor-tentan-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f13-infor-tentan-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gcedfb386832ee39e640b8609a9b05264" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f13-infor-tentan-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f13-infor-tentan-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g59ece8230ef13d6b60d0cc8d640e3625" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f01-intro-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f01-intro-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ga5015acee55e8ab7022f783c98b9121b" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f02-lasbarhet-val-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f02-lasbarhet-val-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gcf2879df9f88c5c8a6b0c5d0a8db703f" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f03-loopar-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f03-loopar-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g7d7ef58f2d22b8943ced1f72d0fd286a" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f04-rep-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f04-rep-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gc81c026e91e224355d96309a620aff08" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f05-funktioner-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f05-funktioner-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g37910bbb6dec74162398257b6e3604bf" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f06-ptr-arr-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f06-ptr-arr-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1c6aac323701c9aa4b2122fa5ecb8124" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f07-const-types-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f07-const-types-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gc272ffeb3e5ec1745a14c7552cbc9430" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f08-rep-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f08-rep-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g23c295b1f234a82ea8b623f4864c9d3a" href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f09-struct-search-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/00 - Föreläsningar från C-kursen i höstas/f09-struct-search-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g393b3ec50a9975854e1590ed43331dcf" href="web_resources/1 - Föreläsningar/old/f03a-organisation-av-c-kod-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f03a-organisation-av-c-kod-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gc229079c765185a2105994bc3f98c014" href="web_resources/1 - Föreläsningar/old/f03a-organisation-av-c-kod-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f03a-organisation-av-c-kod-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1d738a2d8727b3687ad8fd754ce9f3af" href="web_resources/1 - Föreläsningar/old/f03-dynamiskt-minne-i-c-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f03-dynamiskt-minne-i-c-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g357d29d10506bc0c3c16aed27c99b27e" href="web_resources/1 - Föreläsningar/old/f03-dynamiskt-minne-i-c-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f03-dynamiskt-minne-i-c-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g821563bcb6914f969b67e8d5761aad23" href="web_resources/1 - Föreläsningar/old/f04-riktad-lista-ko-algoritmer-pseudokod-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f04-riktad-lista-ko-algoritmer-pseudokod-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ga8e72cbf047cbe8ab5390650a5d20a42" href="web_resources/1 - Föreläsningar/old/f04-riktad-lista-ko-algoritmer-pseudokod-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f04-riktad-lista-ko-algoritmer-pseudokod-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gc6e1fb790bb058ab0be33a884da5cdbf" href="web_resources/1 - Föreläsningar/old/f05-sortering-sokning-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f05-sortering-sokning-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g5cee38b1a516e58f0e53e9f71a648d9e" href="web_resources/1 - Föreläsningar/old/f05-sortering-sokning-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f05-sortering-sokning-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdc93013a1d03fee8dc55da14c7d21f2b" href="web_resources/1 - Föreläsningar/old/f07-tabell-relation-lexikon-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f07-tabell-relation-lexikon-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g6f17b6f91e9822f463f3181bfc3e7148" href="web_resources/1 - Föreläsningar/old/f07-tabell-relation-lexikon-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f07-tabell-relation-lexikon-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g427e74902a055bf0998e038fd17a05d5" href="web_resources/1 - Föreläsningar/old/f06-problemlosningsstrategier-komplexitet-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f06-problemlosningsstrategier-komplexitet-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g0825d8d0add8e0c5133c709673971666" href="web_resources/1 - Föreläsningar/old/f06-problemlosningsstrategier-komplexitet-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f06-problemlosningsstrategier-komplexitet-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g0dea0607a9088c3182de08f36b416857" href="web_resources/1 - Föreläsningar/old/f08-trad-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f08-trad-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdaff1f3ab533b8c2c3d13a51c9b08618" href="web_resources/1 - Föreläsningar/old/f08-trad-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f08-trad-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gb63365b7f6366a1e4efed3bbe9c19d99" href="web_resources/1 - Föreläsningar/old/f09-hashtabell-prioko-hog-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f09-hashtabell-prioko-hog-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g54f4100c6c02d69677d7660f0146f07f" href="web_resources/1 - Föreläsningar/old/f09-hashtabell-prioko-hog-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f09-hashtabell-prioko-hog-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gdd2e1cc5ec07479837a59155ac1f9ad6" href="web_resources/1 - Föreläsningar/old/f10-mangd-graf-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f10-mangd-graf-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf7c9df5ba722995d11813901a103b37a" href="web_resources/1 - Föreläsningar/old/f10-mangd-graf-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f10-mangd-graf-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ga37f7d069ea8c3cff826e9fc561f98b8" href="web_resources/1 - Föreläsningar/old/f11-grafalgoritmer-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f11-grafalgoritmer-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g812c4ebe6ed29e0846c8ea83e6fd50d8" href="web_resources/1 - Föreläsningar/old/f11-grafalgoritmer-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f11-grafalgoritmer-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g4f3a1e0436611c8f1743676d405a95b3" href="web_resources/1 - Föreläsningar/old/f12-soktrad-trie-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f12-soktrad-trie-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g2a1ff0ede5c394a4cc2e60865169a745" href="web_resources/1 - Föreläsningar/old/f12-soktrad-trie-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f12-soktrad-trie-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g78f26289fcd05b952d15533b7018abc6" href="web_resources/1 - Föreläsningar/old/f13-generella-teorier-slides.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f13-generella-teorier-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1f8801ef2ac986f8b89c8cd7805672ac" href="web_resources/1 - Föreläsningar/old/f13-generella-teorier-handouts.pdf">
+      <file href="web_resources/1 - Föreläsningar/old/f13-generella-teorier-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf30aa1a9950a8bca31a06a451d8e6f9a" href="web_resources/Uppladdade media/step-over-button.png">
+      <file href="web_resources/Uppladdade media/step-over-button.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g23efc3ca8e7ee2bb9e6526c30fe2efca" href="web_resources/Uppladdade media/example_figure.png">
+      <file href="web_resources/Uppladdade media/example_figure.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gb573fa3dbd48bbd13008334a065a5fbe" href="web_resources/Uppladdade media/run-play-button-cropped.png">
+      <file href="web_resources/Uppladdade media/run-play-button-cropped.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g3ef96bff66c7086a3d9525ce0ba6a44c" href="web_resources/Uppladdade media/terminal_buttons.png">
+      <file href="web_resources/Uppladdade media/terminal_buttons.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gb9f055455010e54eea6b110ab74bd674" href="web_resources/Uppladdade media/image.png">
+      <file href="web_resources/Uppladdade media/image.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g784a86f8ce3badcf425f5ad9e9d836b8" href="web_resources/unfiled 2/exam.pdf">
+      <file href="web_resources/unfiled 2/exam.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gae1fb0001b7ea91a316f40ff5d6f922b" href="web_resources/unfiled 3/exam.pdf">
+      <file href="web_resources/unfiled 3/exam.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g3c34c3403ae5adecb8237c51d6d829d6" href="web_resources/2 - Workshops/WS3 - Dynamiskt minne, Valgrind/bug4.c">
+      <file href="web_resources/2 - Workshops/WS3 - Dynamiskt minne, Valgrind/bug4.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gd4514c475a97884f3cda5cd3363c538e" href="web_resources/2 - Workshops/WS3 - Dynamiskt minne, Valgrind/korrekt kod/bug4_correct.c">
+      <file href="web_resources/2 - Workshops/WS3 - Dynamiskt minne, Valgrind/korrekt kod/bug4_correct.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g0c98e9e93f0715a87f43359e524c9125" href="web_resources/2 - Workshops/WS4 - Filhantering/WS4_LS_Filhantering.pdf">
+      <file href="web_resources/2 - Workshops/WS4 - Filhantering/WS4_LS_Filhantering.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g706668ad87907e6908add1dce48067d3" href="web_resources/2 - Workshops/WS4 - Filhantering/WS4_lösningsförslag.c">
+      <file href="web_resources/2 - Workshops/WS4 - Filhantering/WS4_lösningsförslag.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g7618bdb1d4015465c6f7350155ec89b7" href="web_resources/2 - Workshops/WS2 - Debugging/bug3.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/bug3.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g5a48045d37000a0f8e35fe2fa0a17b9a" href="web_resources/2 - Workshops/WS2 - Debugging/bug2.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/bug2.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g6b4b2a3995c5138b00a6aa0a8ed83afd" href="web_resources/2 - Workshops/WS2 - Debugging/bug1.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/bug1.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g79e29bbe266a30176a12e9ac8aeba054" href="web_resources/2 - Workshops/WS2 - Debugging/WS3_slides.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/WS3_slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g8b83b711d16081564f9389a4b771f109" href="web_resources/2 - Workshops/WS2 - Debugging/debugging-handouts.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/debugging-handouts.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g48440de2e4ee29f47db6a4e11f84c3df" href="web_resources/2 - Workshops/WS2 - Debugging/debugging-slides.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/debugging-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gbb06a9da1316eb8834c211eed7c3ad1a" href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug2_correct.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug2_correct.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gc6c10535841abe136d344c0f71ed5f3a" href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug3_correct.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug3_correct.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g89ceb46cec3a1fa39688dd58523894c6" href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug1_correct.c">
+      <file href="web_resources/2 - Workshops/WS2 - Debugging/korrekt kod/bug1_correct.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g2215f12280f7da5dc2e4c1889e99e88c" href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/f02a-c-code-org-slides.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/f02a-c-code-org-slides.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gddbb027eaca3df99c54f724ce5f73937" href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/myfirstlist_with_dlist.c">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/myfirstlist_with_dlist.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g6eb896e4621094d7dac101546c4ba578" href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/myfirstlist.c">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/myfirstlist.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gb5d99036fc6fb7bfe686b579e60cd008" href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/Doa_WS1_Solutions.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/Doa_WS1_Solutions.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gf97198264b7a15ab6d5c73836217ec7a" href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/setup-vs-code-debug.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/2 - Workshops/WS1 - Enkla övningar i C, h-filer, mm/setup-vs-code-debug.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="ge896922dea3a401e6dc35e5e1e6ca326" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/GÖ2_lösningsförslag.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/GÖ2_lösningsförslag.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g557ab3e843c6110181375cfeb46802e4" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/komplexitetsanalys.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/komplexitetsanalys.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g26a5a917680e34dc7d6dbeba6f388eb6" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/StoraOrdo.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/StoraOrdo.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9553852e77e2dcbf487a319c5b15ad48" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/StoraOrdo_LF.pdf">
+      <metadata>
+        <lom:lom>
+          <lom:educational>
+            <lom:intendedEndUserRole>
+              <lom:source>IMSGLC_CC_Rolesv1p1</lom:source>
+              <lom:value>Instructor</lom:value>
+            </lom:intendedEndUserRole>
+          </lom:educational>
+        </lom:lom>
+      </metadata>
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/StoraOrdo_LF.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g95753e542ad84b683c8fde3bb49cab4b" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/grpovn2-komplexitet-losningsforslag.pdf">
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/grpovn2-komplexitet-losningsforslag.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g89bf3918657e57190fa8e5357b6f43e1" href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/grpovn2-komplexitet.pdf">
+      <file href="web_resources/3 - Gruppövningar/GÖ2 - Komplexitet/grpovn2-komplexitet.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g5b664a14428a84f5b1a3978f8130a162" href="web_resources/3 - Gruppövningar/GÖ3 - Träd/binarytree-1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ3 - Träd/binarytree-1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g9f953e8cbc9dafea9de93e7bd9dbb9bf" href="web_resources/3 - Gruppövningar/GÖ3 - Träd/search5.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ3 - Träd/search5.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g753c197fc8a8e89f4a2763261a366c67" href="web_resources/3 - Gruppövningar/GÖ3 - Träd/search6.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ3 - Träd/search6.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gfa0ff145d62a9001a54d7b2faf5d984c" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift1_1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift1_1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g884d76d11fc05789d36fae8dda9a39c6" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift1_2.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift1_2.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g463687bf612a1ad5a24d2bcfc2bbcac4" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g3e66eb5808105bffbc0ae36e90506d90" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_2.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_2.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g640665dccc8f832c79d2908f6e87b42a" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_3.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_3.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gbf9719d6656560665c6cf33996c982ca" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gbe564b18f223132b81b9fb86d2a20d48" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_4.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_4.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gea4383feaf65e11a92ecf451daa109e7" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_2.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_2.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g491a51d2a856a1fdd997e6f24ab42c46" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_3.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_3.png"/>
+    </resource>
+    <resource type="webcontent" identifier="ge144e3fc10f579bc9f2f60671eddc419" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_5.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_5.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g574b32acaf46eaa4c07bbd5ab04f3014" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_4.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_4.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g0fcdb914813d27bee9a6fb1fcbd0803d" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_6.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/uppgift3_6.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g885817706b538eb31907cf2bb2807e55" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_5.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_5.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g74731681e79ba4c1011ba1dc625abd97" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_6.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_6.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g08f4c41b1e02eb78843adec4ce35e302" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_7.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_7.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gd9304ac000f64c0dd9ec2e12c9826f29" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_8.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_8.png"/>
+    </resource>
+    <resource type="webcontent" identifier="ge00d4510e00f105311dbb1f9a69b8b55" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_9.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_9.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gd3e28c259f54ba62ff0bb56b333c3338" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_10.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_10.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g8538652026c5ce46e14079821dabf90b" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_11.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_11.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gbe9fff07cd445a8e1c975cee0dc72340" href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_12.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ7 - Binära sökträd, Huffman/BST2_12.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gc88878d61ebc22bd90b8548781860ced" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift1_1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift1_1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gf97fa8fb76c89e9bbfffc6174196032e" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift1_2.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift1_2.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gb56f5da46eb1a2f8372e2dcb255226c3" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_1.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_1.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g2eaab61d38d2356231a99818c117005d" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_2.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_2.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g63b5f18a43984896775aac5d66956edf" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_3.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_3.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g8421c0cc97ff777e30b61fee04e33b98" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_4.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_4.png"/>
+    </resource>
+    <resource type="webcontent" identifier="gf8798107f2d6ebce0779c2ea8679f02c" href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_extra.png">
+      <file href="web_resources/3 - Gruppövningar/GÖ4 - Hög, Priokö/Uppgift2_extra.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g5e65cf38d397a8c865ccd4f6f852fa3e" href="web_resources/3 - Gruppövningar/GÖ1 - Algoritmer, pseudokod, lista, stack, kö/grpovn1-algoritmer-pseudokod.pdf">
+      <file href="web_resources/3 - Gruppövningar/GÖ1 - Algoritmer, pseudokod, lista, stack, kö/grpovn1-algoritmer-pseudokod.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g0b8f5b1367fbcd6d053876c25f72a322" href="web_resources/3 - Gruppövningar/GÖ1 - Algoritmer, pseudokod, lista, stack, kö/grpovn1-algoritmer-pseudokod-losningsforslag.pdf">
+      <file href="web_resources/3 - Gruppövningar/GÖ1 - Algoritmer, pseudokod, lista, stack, kö/grpovn1-algoritmer-pseudokod-losningsforslag.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g658b32b61167fe4a1d69953567ac1d92" href="web_resources/0 - Datatypskod/datastructures-v2.1.0.0.zip">
+      <file href="web_resources/0 - Datatypskod/datastructures-v2.1.0.0.zip"/>
+    </resource>
+    <resource type="webcontent" identifier="g502d22038f060fb2f25b3970cb4fcc67" href="web_resources/0 - Datatypskod/datastructures-v2.2.1.5.zip">
+      <file href="web_resources/0 - Datatypskod/datastructures-v2.2.1.5.zip"/>
+    </resource>
+    <resource type="webcontent" identifier="g8519430cbdcded92fb502a27a8a7cbaa" href="web_resources/4 - Labbar/OU4/graph.h">
+      <file href="web_resources/4 - Labbar/OU4/graph.h"/>
+    </resource>
+    <resource type="webcontent" identifier="g9a7d25a5f32abb2f93bf564f16c486a5" href="web_resources/4 - Labbar/OU4/airmap1.map">
+      <file href="web_resources/4 - Labbar/OU4/airmap1.map"/>
+    </resource>
+    <resource type="webcontent" identifier="g5842d31d99da8b2b1f04a08ee0ac385b" href="web_resources/4 - Labbar/OU4/is_connected_help_functions.c">
+      <file href="web_resources/4 - Labbar/OU4/is_connected_help_functions.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g562fa649429cf0869c4c56fb623fb94e" href="web_resources/4 - Labbar/OU4/rapportmall/camwithimage8.jpg">
+      <file href="web_resources/4 - Labbar/OU4/rapportmall/camwithimage8.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="ge732e4f34ad352a43b63a86feb1f1090" href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.org">
+      <file href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.org"/>
+    </resource>
+    <resource type="webcontent" identifier="gb23d6500b1d12b56c785af4a9afeb093" href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.tex">
+      <file href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.tex"/>
+    </resource>
+    <resource type="webcontent" identifier="g20524a0466d22154f540479f62b65c1b" href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.pdf">
+      <file href="web_resources/4 - Labbar/OU4/rapportmall/rapportmall.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g09ad7769222f16bc2d7fdb236a49dd15" href="web_resources/4 - Labbar/OU1/screendump-ok.png">
+      <file href="web_resources/4 - Labbar/OU1/screendump-ok.png"/>
+    </resource>
+    <resource type="webcontent" identifier="g2c4fe955b58e96271853a7d1bc83cdb3" href="web_resources/4 - Labbar/OU1/rapportmall.tex">
+      <file href="web_resources/4 - Labbar/OU1/rapportmall.tex"/>
+    </resource>
+    <resource type="webcontent" identifier="g1f8144af135f5da78c7ff16bb53f1139" href="web_resources/4 - Labbar/OU1/rapportmall.pdf">
+      <file href="web_resources/4 - Labbar/OU1/rapportmall.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g750bedc9c074ecfd378f23d8d470fcde" href="web_resources/4 - Labbar/OU3/tabletest-1.9.c">
+      <file href="web_resources/4 - Labbar/OU3/tabletest-1.9.c"/>
+    </resource>
+    <resource type="webcontent" identifier="g50bb9d9d3d568de7c23239a481f91ae5" href="web_resources/4 - Labbar/OU3/tabletest-1.10.c">
+      <file href="web_resources/4 - Labbar/OU3/tabletest-1.10.c"/>
+    </resource>
+    <resource type="webcontent" identifier="gc94d622ec58f6e87189f0bb035a41a7c" href="web_resources/4 - Labbar/OU3/timeit.sh">
+      <file href="web_resources/4 - Labbar/OU3/timeit.sh"/>
+    </resource>
+    <resource type="webcontent" identifier="g083ed76f369ce9e488fe830069b5fa6b" href="web_resources/4 - Labbar/OU3/parse_timings.m">
+      <file href="web_resources/4 - Labbar/OU3/parse_timings.m"/>
+    </resource>
+    <resource type="webcontent" identifier="ga939a7723baca47e3be1f37385a88bc4" href="web_resources/4 - Labbar/OU3/rapportmall/img.jpg">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/img.jpg"/>
+    </resource>
+    <resource type="webcontent" identifier="g1190868e62aefa229f62772178979bc6" href="web_resources/4 - Labbar/OU3/rapportmall/fig3.pdf">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/fig3.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gad87100121321867b16537b82ea02c80" href="web_resources/4 - Labbar/OU3/rapportmall/fig2.pdf">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/fig2.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g149b3569d2f9e724a6a36ef9715489dc" href="web_resources/4 - Labbar/OU3/rapportmall/fig1.pdf">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/fig1.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd759fd5f5e93d78bddd7d1a598e38596" href="web_resources/4 - Labbar/OU3/rapportmall/rapportmall-overleaf.pdf">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/rapportmall-overleaf.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g93a7246774dc0da41ad3805f2254f0b2" href="web_resources/4 - Labbar/OU3/rapportmall/rapportmall-overleaf.tex">
+      <file href="web_resources/4 - Labbar/OU3/rapportmall/rapportmall-overleaf.tex"/>
+    </resource>
+    <resource type="webcontent" identifier="ge257a094640b5ff8bd955f768c3376cd" href="web_resources/5 - Gamla Tentor/t180308.pdf">
+      <file href="web_resources/5 - Gamla Tentor/t180308.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g48d8b0f6f2a888ac17b88f5d66f49722" href="web_resources/5 - Gamla Tentor/t130326.pdf">
+      <file href="web_resources/5 - Gamla Tentor/t130326.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g2432613ae1c3b62a3de1dc62f81bb04e" href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-03-11.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-03-11.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g1d1f9390c5b7dc9ebcaee6483bc60215" href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-04-20.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-04-20.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gd47f8790da4b8716203b756868222e06" href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-04-20_answers.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-04-20_answers.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g91acf0aa45f60c06ed37acb26eaef5e5" href="web_resources/5 - Gamla Tentor/Prims_algoritm_lösningsförslag_2022-04-20.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Prims_algoritm_lösningsförslag_2022-04-20.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gaf7e6d039ea8bb7a8015d39ac23886b5" href="web_resources/5 - Gamla Tentor/F14_gamla_tentor.pdf">
+      <file href="web_resources/5 - Gamla Tentor/F14_gamla_tentor.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gca9628751065fef98e226d0c8d35a69e" href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-03-11_answers.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tenta_DoA_2022-03-11_answers.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9728ddae90bdad04d836129765596b4f" href="web_resources/5 - Gamla Tentor/Tentagenomgång_2023-03-08.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tentagenomgång_2023-03-08.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="gb137be6d456d4f1b498fd84c259bd827" href="web_resources/5 - Gamla Tentor/exam-2024-03-06-reordered.pdf">
+      <file href="web_resources/5 - Gamla Tentor/exam-2024-03-06-reordered.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g9dcf2993081844950be3d672379dd565" href="web_resources/5 - Gamla Tentor/Tenta_DoA_2023-03-08_answers-complete.pdf">
+      <file href="web_resources/5 - Gamla Tentor/Tenta_DoA_2023-03-08_answers-complete.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g198448aa4b40e0e90eda921f2554b7ac" href="web_resources/5 - Gamla Tentor/exam-2024-03-06-with-answers-reordered.pdf">
+      <file href="web_resources/5 - Gamla Tentor/exam-2024-03-06-with-answers-reordered.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g25423e1e8064d645fce23ac1c545c896" href="web_resources/unfiled 4/exam-2024-05-13-with-grading-comments.pdf">
+      <file href="web_resources/unfiled 4/exam-2024-05-13-with-grading-comments.pdf"/>
+    </resource>
+    <resource type="webcontent" identifier="g31404ce6b8b7eb41e869b9d40503b0d6" href="web_resources/unfiled 5/exam-2024-05-13-with-grading-comments.pdf">
+      <file href="web_resources/unfiled 5/exam-2024-05-13-with-grading-comments.pdf"/>
+    </resource>
+    <resource identifier="g5d7703e40461412e54c9ebb3e8bb7673" type="imsbasiclti_xmlv1p0">
+      <file href="g5d7703e40461412e54c9ebb3e8bb7673.xml"/>
+    </resource>
+    <resource identifier="g699aa007eddbc1a76ca309105648287d" type="imsbasiclti_xmlv1p0">
+      <file href="g699aa007eddbc1a76ca309105648287d.xml"/>
+    </resource>
+    <resource identifier="ga1e58b118cdd9411067123f83e4ccb55" type="imsbasiclti_xmlv1p0">
+      <file href="ga1e58b118cdd9411067123f83e4ccb55.xml"/>
+    </resource>
+    <resource identifier="g3548d3a370d1cfa14f9e4abf24dd3040" type="imsbasiclti_xmlv1p0">
+      <file href="g3548d3a370d1cfa14f9e4abf24dd3040.xml"/>
+    </resource>
+    <resource identifier="g8ffc7c69016c54bc574f0a7f630f0c72" type="imsbasiclti_xmlv1p0">
+      <file href="g8ffc7c69016c54bc574f0a7f630f0c72.xml"/>
+    </resource>
+    <resource identifier="g648088714bb95158282f1ac024cc6abd" type="imsbasiclti_xmlv1p0">
+      <file href="g648088714bb95158282f1ac024cc6abd.xml"/>
+    </resource>
+    <resource identifier="gb678f282951f74671058eea018e6ab8d" type="imsbasiclti_xmlv1p0">
+      <file href="gb678f282951f74671058eea018e6ab8d.xml"/>
+    </resource>
+  </resources>
+</manifest>

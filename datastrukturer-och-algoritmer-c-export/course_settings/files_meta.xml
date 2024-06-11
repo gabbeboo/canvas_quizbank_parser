@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fileMeta xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <folders>
+    <folder path="assessment_questions">
+      <hidden>true</hidden>
+    </folder>
+    <folder path="Lärarmaterial - publicera inte!">
+      <locked>true</locked>
+    </folder>
+    <folder path="unfiled">
+      <hidden>true</hidden>
+    </folder>
+    <folder path="Uppladdade media">
+      <hidden>true</hidden>
+    </folder>
+    <folder path="4 - Labbar/OU3/rapportmall">
+      <locked>true</locked>
+    </folder>
+  </folders>
+  <files>
+    <file identifier="g4a54a3b456d516d5d9aa653164f911f6">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g7d0fcbd26a32854d1a34cd6d7f7df500">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g25ef4b8953d16df7bc9ea17895907504">
+      <hidden>true</hidden>
+      <display_name>Huffman_exam_question_2022-04-20-1.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g809c69c0e55f0ef7263f329cb56ce9f8">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gd315f665b9364eaaa5044c74ca8880f6">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g259a479c4df520099482bc15e5614bb8">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g2e2cfb59af73684ad45a251776d070b5">
+      <display_name>the-bug-that-destroyed-a-rocket.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g9830f35f8658817191897bfc0e8eec2a">
+      <display_name>f13-generella-teorier-slides-1.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gad3998a71d4be24185ce2476398e9ba3">
+      <display_name>f13-generella-teorier-slides-2.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gf30aa1a9950a8bca31a06a451d8e6f9a">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g23efc3ca8e7ee2bb9e6526c30fe2efca">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gb573fa3dbd48bbd13008334a065a5fbe">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g3ef96bff66c7086a3d9525ce0ba6a44c">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gb9f055455010e54eea6b110ab74bd674">
+      <hidden>true</hidden>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g706668ad87907e6908add1dce48067d3">
+      <display_name>WS4_lösningsförslag.c</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g7618bdb1d4015465c6f7350155ec89b7">
+      <display_name>bug3.c</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g5a48045d37000a0f8e35fe2fa0a17b9a">
+      <display_name>bug2.c</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g79e29bbe266a30176a12e9ac8aeba054">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g8b83b711d16081564f9389a4b771f109">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g48440de2e4ee29f47db6a4e11f84c3df">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gbb06a9da1316eb8834c211eed7c3ad1a">
+      <display_name>bug2_correct.c</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gc6c10535841abe136d344c0f71ed5f3a">
+      <display_name>bug3_correct.c</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g2215f12280f7da5dc2e4c1889e99e88c">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gddbb027eaca3df99c54f724ce5f73937">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g6eb896e4621094d7dac101546c4ba578">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gb5d99036fc6fb7bfe686b579e60cd008">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gf97198264b7a15ab6d5c73836217ec7a">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="ge896922dea3a401e6dc35e5e1e6ca326">
+      <locked>true</locked>
+      <display_name>GÖ2_lösningsförslag.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g557ab3e843c6110181375cfeb46802e4">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g26a5a917680e34dc7d6dbeba6f388eb6">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g9553852e77e2dcbf487a319c5b15ad48">
+      <locked>true</locked>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="g5b664a14428a84f5b1a3978f8130a162">
+      <display_name>binarytree-1.png</display_name>
+      <category>uncategorized</category>
+    </file>
+    <file identifier="gd47f8790da4b8716203b756868222e06">
+      <display_name>Tenta_DoA_2022-04-20_answers.pdf</display_name>
+      <category>uncategorized</category>
+    </file>
+  </files>
+</fileMeta>

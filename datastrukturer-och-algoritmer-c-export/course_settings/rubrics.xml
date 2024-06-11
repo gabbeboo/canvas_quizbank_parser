@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rubrics xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <rubric identifier="g32f3be2e71c12793891502c45e89f955">
+    <read_only>false</read_only>
+    <title>OU1 (1) (1) (1)</title>
+    <reusable>false</reusable>
+    <public>false</public>
+    <points_possible>1.0</points_possible>
+    <hide_score_total>false</hide_score_total>
+    <free_form_criterion_comments>false</free_form_criterion_comments>
+    <criteria>
+      <criterion>
+        <criterion_id>_9043</criterion_id>
+        <points>1.0</points>
+        <mastery_points>1.0</mastery_points>
+        <ignore_for_scoring>false</ignore_for_scoring>
+        <description>Minst 16p på OU1 - Quiz 1 - Komplexitet</description>
+        <long_description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</long_description>
+        <learning_outcome_identifierref>g5214641c33c4180f7d00dbd6ca89f409</learning_outcome_identifierref>
+        <ratings>
+          <rating>
+            <description>Uppfyller förväntningarna</description>
+            <points>1.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_6720</id>
+          </rating>
+          <rating>
+            <description>Uppfyller inte förväntningarna</description>
+            <points>0.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_4198</id>
+          </rating>
+        </ratings>
+      </criterion>
+    </criteria>
+  </rubric>
+  <rubric identifier="g7d4292560e761a7e846b9a5cf0fb4e77">
+    <read_only>false</read_only>
+    <title>OU1 (1) (1)</title>
+    <reusable>false</reusable>
+    <public>false</public>
+    <points_possible>1.0</points_possible>
+    <hide_score_total>false</hide_score_total>
+    <free_form_criterion_comments>false</free_form_criterion_comments>
+    <criteria>
+      <criterion>
+        <criterion_id>_9043</criterion_id>
+        <points>1.0</points>
+        <mastery_points>1.0</mastery_points>
+        <ignore_for_scoring>false</ignore_for_scoring>
+        <description>Minst 16p på OU1 - Quiz 1 - Komplexitet</description>
+        <long_description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</long_description>
+        <learning_outcome_identifierref>gb4aa1ece3fe6678eefb37fa59c2ae115</learning_outcome_identifierref>
+        <ratings>
+          <rating>
+            <description>Uppfyller förväntningarna</description>
+            <points>1.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_6720</id>
+          </rating>
+          <rating>
+            <description>Uppfyller inte förväntningarna</description>
+            <points>0.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_4198</id>
+          </rating>
+        </ratings>
+      </criterion>
+    </criteria>
+  </rubric>
+  <rubric identifier="ge514cbbc19ae6e2d029f3a013a438e04">
+    <read_only>false</read_only>
+    <title>OU1</title>
+    <reusable>false</reusable>
+    <public>false</public>
+    <points_possible>1.0</points_possible>
+    <hide_score_total>false</hide_score_total>
+    <free_form_criterion_comments>false</free_form_criterion_comments>
+    <criteria>
+      <criterion>
+        <criterion_id>_9043</criterion_id>
+        <points>1.0</points>
+        <mastery_points>1.0</mastery_points>
+        <ignore_for_scoring>false</ignore_for_scoring>
+        <description>Minst 16p på OU1 - Quiz 1 - Komplexitet</description>
+        <long_description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</long_description>
+        <learning_outcome_identifierref>g234a7695a0750e03aafa1d4dc0701469</learning_outcome_identifierref>
+        <ratings>
+          <rating>
+            <description>Uppfyller förväntningarna</description>
+            <points>1.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_6720</id>
+          </rating>
+          <rating>
+            <description>Uppfyller inte förväntningarna</description>
+            <points>0.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_4198</id>
+          </rating>
+        </ratings>
+      </criterion>
+    </criteria>
+  </rubric>
+  <rubric identifier="ge675b8baafea6843bd70cc60cac087b2">
+    <read_only>false</read_only>
+    <title>OU1 (1)</title>
+    <reusable>false</reusable>
+    <public>false</public>
+    <points_possible>1.0</points_possible>
+    <hide_score_total>false</hide_score_total>
+    <free_form_criterion_comments>false</free_form_criterion_comments>
+    <criteria>
+      <criterion>
+        <criterion_id>_9043</criterion_id>
+        <points>1.0</points>
+        <mastery_points>1.0</mastery_points>
+        <ignore_for_scoring>false</ignore_for_scoring>
+        <description>Minst 16p på OU1 - Quiz 1 - Komplexitet</description>
+        <long_description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</long_description>
+        <learning_outcome_identifierref>g3246068acc25ff6b945dc49f1c71cf10</learning_outcome_identifierref>
+        <ratings>
+          <rating>
+            <description>Uppfyller förväntningarna</description>
+            <points>1.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_6720</id>
+          </rating>
+          <rating>
+            <description>Uppfyller inte förväntningarna</description>
+            <points>0.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_4198</id>
+          </rating>
+        </ratings>
+      </criterion>
+    </criteria>
+  </rubric>
+  <rubric identifier="g11e0eb47b194a917422cf11679f8b827">
+    <read_only>false</read_only>
+    <title>OU1 (1) (1) (1) (1)</title>
+    <reusable>false</reusable>
+    <public>false</public>
+    <points_possible>1.0</points_possible>
+    <hide_score_total>false</hide_score_total>
+    <free_form_criterion_comments>false</free_form_criterion_comments>
+    <criteria>
+      <criterion>
+        <criterion_id>_9043</criterion_id>
+        <points>1.0</points>
+        <mastery_points>1.0</mastery_points>
+        <ignore_for_scoring>false</ignore_for_scoring>
+        <description>Minst 16p på OU1 - Quiz 1 - Komplexitet</description>
+        <long_description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</long_description>
+        <learning_outcome_identifierref>g22fca78dfea2096ca26016aadabeafed</learning_outcome_identifierref>
+        <ratings>
+          <rating>
+            <description>Uppfyller förväntningarna</description>
+            <points>1.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_6720</id>
+          </rating>
+          <rating>
+            <description>Uppfyller inte förväntningarna</description>
+            <points>0.0</points>
+            <criterion_id>_9043</criterion_id>
+            <id>195_4198</id>
+          </rating>
+        </ratings>
+      </criterion>
+    </criteria>
+  </rubric>
+</rubrics>

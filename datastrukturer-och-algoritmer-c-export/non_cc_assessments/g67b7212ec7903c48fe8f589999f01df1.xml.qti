@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g67b7212ec7903c48fe8f589999f01df1">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Algoritmer</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="gd2c33a7b39372366fb1dd9560146e12e" title="Algoritmer">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8478,4920,6086,8141</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad kallar man en ändlig stegvis beskrivning av en ändlig process med ett annat ord?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="8478">
+              <material>
+                <mattext texttype="text/plain">Algoritm</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4920">
+              <material>
+                <mattext texttype="text/plain">Pseudokod</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6086">
+              <material>
+                <mattext texttype="text/plain">Turingmaskin</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8141">
+              <material>
+                <mattext texttype="text/plain">Recept</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8478</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ged38f6b51927fef46c3db3dafd27ca10" title="Algoritmer">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_dropdowns_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9112,3582,6051,6104,6778,4493,9643,4619,8556,2710,5889,8688,3832,9200,1084,29,2276,1453,5436,9186,9323,2563,126,8065,1842</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Donald Knuth satte upp ett antal krav på en algoritm. Matcha ihop rätt krav med rätt beskrivning.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algoritmen måste bli färdig efter ett ändligt antal steg (terminera). [svar1]&lt;/li&gt;
+&lt;li&gt;Varje steg i algoritmen måste vara entydigt och precist definierat. [svar2]&lt;/li&gt;
+&lt;li&gt;Varje steg i algoritmen måste gå att utföra på ändlig tid. [svar3]&lt;/li&gt;
+&lt;li&gt;En algoritm har 0 eller flera indata, dvs värden som ges till algoritmen innan den startar. [svar4]&lt;/li&gt;
+&lt;li&gt;En algoritm har ett eller flera utdata, värden som beräknas av algoritmen. [svar5]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9112">
+              <material>
+                <mattext texttype="text/plain">Ändlighet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3582">
+              <material>
+                <mattext texttype="text/plain">Bestämdhet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6051">
+              <material>
+                <mattext texttype="text/plain">Effektivitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6104">
+              <material>
+                <mattext texttype="text/plain">Indata</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6778">
+              <material>
+                <mattext texttype="text/plain">Utdata</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="4493">
+              <material>
+                <mattext texttype="text/plain">Ändlighet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9643">
+              <material>
+                <mattext texttype="text/plain">Bestämdhet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4619">
+              <material>
+                <mattext texttype="text/plain">Effektivitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8556">
+              <material>
+                <mattext texttype="text/plain">Indata</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2710">
+              <material>
+                <mattext texttype="text/plain">Utdata</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="5889">
+              <material>
+                <mattext texttype="text/plain">Ändlighet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8688">
+              <material>
+                <mattext texttype="text/plain">Bestämdhet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3832">
+              <material>
+                <mattext texttype="text/plain">Effektivitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9200">
+              <material>
+                <mattext texttype="text/plain">Indata</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1084">
+              <material>
+                <mattext texttype="text/plain">Utdata</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="29">
+              <material>
+                <mattext texttype="text/plain">Ändlighet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2276">
+              <material>
+                <mattext texttype="text/plain">Bestämdhet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1453">
+              <material>
+                <mattext texttype="text/plain">Effektivitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5436">
+              <material>
+                <mattext texttype="text/plain">Indata</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9186">
+              <material>
+                <mattext texttype="text/plain">Utdata</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar5">
+          <material>
+            <mattext>svar5</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9323">
+              <material>
+                <mattext texttype="text/plain">Ändlighet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2563">
+              <material>
+                <mattext texttype="text/plain">Bestämdhet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="126">
+              <material>
+                <mattext texttype="text/plain">Effektivitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8065">
+              <material>
+                <mattext texttype="text/plain">Indata</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1842">
+              <material>
+                <mattext texttype="text/plain">Utdata</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">9112</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">20.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">9643</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">20.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">3832</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">20.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">5436</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">20.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar5">1842</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">20.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gb24afdee505ded6fc0bdc50fc9184243" title="Algoritmer">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>70910,13057,95886,74186</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p style="margin-bottom: 6.0pt;"&gt;&lt;span style="font-size: 11.0pt;"&gt;Du har funnit denna algoritm på ditt skrivbord:&lt;/span&gt;&lt;/p&gt;
+&lt;p style="margin-bottom: 0.0cm;"&gt;&lt;span style="font-family: courier new;"&gt; &lt;span style="font-size: 11.0pt;"&gt;Algoritm X(A)&lt;br&gt;Indata: en sekvens av tecken lagrad i en array&lt;br&gt;Utdata:???&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="margin-bottom: 0.0cm;"&gt;&lt;span style="font-family: courier new;"&gt; &lt;span style="font-size: 11.0pt;"&gt;S &amp;lt;- empty()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span style="font-family: courier new;"&gt; &lt;span style="font-size: 11.0pt;"&gt;for i = low(A) to high(A) do&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; if has-value(i, A) then&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; S &amp;lt;- push(S, inspect-value(i, A))&lt;br&gt;while not isempty(S)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; print(top(S))&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; S &amp;lt;- pop(S)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="margin-bottom: 0.0cm;"&gt;&lt;span style="font-size: 11.0pt;"&gt;Vad får algoritmen för resultat om sekvensen som skickas in till den är A = [’h’, ’e’, ’j’]? &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="70910">
+              <material>
+                <mattext texttype="text/plain">['j', 'e', 'h']</mattext>
+              </material>
+            </response_label>
+            <response_label ident="13057">
+              <material>
+                <mattext texttype="text/plain">['h', 'e', 'j']</mattext>
+              </material>
+            </response_label>
+            <response_label ident="95886">
+              <material>
+                <mattext texttype="text/plain">['j', 'h', 'e']</mattext>
+              </material>
+            </response_label>
+            <response_label ident="74186">
+              <material>
+                <mattext texttype="text/plain">['e', 'j', 'h']</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">70910</varequal>
+              <not>
+                <varequal respident="response1">13057</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">95886</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">74186</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ge783b097daeb3622c34419ebb6769f06" title="Algoritmer">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>1554,8018,3417,5233</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Du har funnit denna algoritm på ditt skrivbord:&lt;/p&gt;
+&lt;pre&gt;Algoritm X(A) 
+Indata: en sekvens av tecken lagrad i en array 
+Utdata:??? 
+q &amp;lt;- empty() 
+for i = low(A) to high(A) do 
+    if has-value(i, A) then 
+        q &amp;lt;- enqueue(q, inspect-value(i, A)) 
+while not isempty(q) do
+    print(front(q)) 
+    q &amp;lt;- dequeue(q) &lt;/pre&gt;
+&lt;p&gt;Vad får algoritmen för resultat om sekvensen som skickas in till den är A = [’h’, ’e’, ’j’]?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="1554">
+              <material>
+                <mattext texttype="text/plain">[’h’, ’e’, ’j’]</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8018">
+              <material>
+                <mattext texttype="text/plain">[’j’, ’e’, ’h’]</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3417">
+              <material>
+                <mattext texttype="text/plain">[’e’, ’h’, ’j’]</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5233">
+              <material>
+                <mattext texttype="text/plain">[’h’, ’j’, ’e’]</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">1554</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

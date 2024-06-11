@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g939f19e67558b7764687004f7ab46720">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Stack och kö</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g9bcda402f046196e168c98a39280083a" title="ObesvaradFill in Blank">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>162,881,5636,5851,9729,1795,8432,3673</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;LIFO står för [svar1] [svar2] [svar3] [svar4] .&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="162">
+              <material>
+                <mattext texttype="text/plain">Last</mattext>
+              </material>
+            </response_label>
+            <response_label ident="881">
+              <material>
+                <mattext texttype="text/plain">last</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="5636">
+              <material>
+                <mattext texttype="text/plain">In</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5851">
+              <material>
+                <mattext texttype="text/plain">in</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9729">
+              <material>
+                <mattext texttype="text/plain">Last</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1795">
+              <material>
+                <mattext texttype="text/plain">last</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="8432">
+              <material>
+                <mattext texttype="text/plain">Out</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3673">
+              <material>
+                <mattext texttype="text/plain">out</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">162</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">5636</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">9729</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">8432</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g7085f26b16fbed8818ee8be17cce9df8" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>1419,67,9798</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Antag att vi har en datatyp ADT1 som är skapad med hjälp av en annan datatyp ADT2. Hur benämner man komplexiteten när man enbart tittar på "ytan" och ser hur många ADT2-operationer som behövs i en ADT1-operation?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="1419">
+              <material>
+                <mattext texttype="text/plain">Relativ komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="67">
+              <material>
+                <mattext texttype="text/plain">Absolut komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9798">
+              <material>
+                <mattext texttype="text/plain">Komplex komplexitet</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">1419</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g28a00cd447fca5c36441118a137f19a5" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>41526,3400,66029</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Antag att vi har en datatyp ADT1 som är skapad med hjälp av en annan datatyp ADT2. Hur benämner man komplexiteten när inte bara tittar på "ytan" och ser hur många ADT2-operationer som behövs i en ADT1-operation utan även undersöker komplexiteten hos ADT2-operationerna och komplexitete hos de ADT-operationer de eventuellt bygger på?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="41526">
+              <material>
+                <mattext texttype="text/plain">Absolut komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3400">
+              <material>
+                <mattext texttype="text/plain">Relativ komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="66029">
+              <material>
+                <mattext texttype="text/plain">Komplex komplexitet</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">41526</varequal>
+              <not>
+                <varequal respident="response1">3400</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">66029</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g7ae89025a4d34496ba8916771ec92394" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>262,8510,201,9853,1291</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;&lt;br&gt;Man brukar använda en förkortning för att förklara hur en stack fungerar. Vilken av följande är det?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="262">
+              <material>
+                <mattext texttype="text/plain">LIFO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8510">
+              <material>
+                <mattext texttype="text/plain">FIFO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="201">
+              <material>
+                <mattext texttype="text/plain">FILO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9853">
+              <material>
+                <mattext texttype="text/plain">LILO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1291">
+              <material>
+                <mattext texttype="text/plain">RORO</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">262</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g66c2c6b3e1e740153a7efd609842a086" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>55640,82518,29447,8945,37864</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Man brukar använda en förkortning för att förklara hur en kö fungerar. Vilken av följande är det?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="55640">
+              <material>
+                <mattext texttype="text/plain">LIFO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="82518">
+              <material>
+                <mattext texttype="text/plain">FIFO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="29447">
+              <material>
+                <mattext texttype="text/plain">FILO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8945">
+              <material>
+                <mattext texttype="text/plain">LILO</mattext>
+              </material>
+            </response_label>
+            <response_label ident="37864">
+              <material>
+                <mattext texttype="text/plain">RORO</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <not>
+                <varequal respident="response1">55640</varequal>
+              </not>
+              <varequal respident="response1">82518</varequal>
+              <not>
+                <varequal respident="response1">29447</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">8945</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">37864</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g6c7ad5c8c0bd76586ec8ead51f09bf10" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9113,8471,9153,2568,7636,3202,3436,2922</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;FIFO står för [svar1] [svar2] [svar3] [svar4] .&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9113">
+              <material>
+                <mattext texttype="text/plain">First</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8471">
+              <material>
+                <mattext texttype="text/plain">first</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9153">
+              <material>
+                <mattext texttype="text/plain">In</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2568">
+              <material>
+                <mattext texttype="text/plain">in</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="7636">
+              <material>
+                <mattext texttype="text/plain">First</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3202">
+              <material>
+                <mattext texttype="text/plain">first</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="3436">
+              <material>
+                <mattext texttype="text/plain">Out</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2922">
+              <material>
+                <mattext texttype="text/plain">out</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">9113</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">9153</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">7636</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">3436</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g8858b4d9171405fb80d6c934024e9c69" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6845,9072,8519,9849</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad får v1 och v2 för värden efter att följande kö-operationer utförts?&lt;br&gt;&lt;br&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;q &amp;lt;- empty()&lt;br&gt;q &amp;lt;- enqueue(1,q)&lt;br&gt;q &amp;lt;- enqueue(2,enqueue(3,q))&lt;br&gt;v1 &amp;lt;- front(q)&lt;br&gt;q &amp;lt;- dequeue(dequeue(q))&lt;br&gt;v2 &amp;lt;- front(q)&lt;/span&gt;&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="6845">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1: 1&lt;br&gt;v2: 3&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9072">
+              <material>
+                <mattext texttype="text/html">&amp;nbsp;v1: 3&lt;br&gt;v2: 1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8519">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1: 1&lt;br&gt;v2: 2&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9849">
+              <material>
+                <mattext texttype="text/html">v1: 2&lt;br&gt;v2: 3</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8519</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g42df8a8baef85fa1c73c372afeef6704" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2037,1428,8506,9745</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vi har följande uttryck:&lt;/p&gt;
+&lt;pre&gt;Top(Pop(Push(3, Push(6, Pop(Push(7, Push(4, Empty))))))) &lt;/pre&gt;
+&lt;p&gt;Vad kan resultatet bli om man tillämpar Axiom 4 på uttrycket? Axiom 4 ser ut så här:&lt;/p&gt;
+&lt;pre&gt;Top(Push(v, s)) = v&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="2037">
+              <material>
+                <mattext texttype="text/plain">Det går inte att tillämpa axiom 4 på uttrycket</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1428">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8506">
+              <material>
+                <mattext texttype="text/plain">6</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9745">
+              <material>
+                <mattext texttype="text/plain">7</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">2037</varequal>
+              <not>
+                <varequal respident="response1">1428</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">8506</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">9745</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g18de6068a77ea4e000095f90e709791d" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4110,6466,8300,3168</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad får v1 och v2 för värden efter att följande stack operationer utförts?&lt;br&gt;&lt;br&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;s &amp;lt;- empty()&lt;br&gt;s &amp;lt;- push(1,s)&lt;br&gt;s &amp;lt;- push(2,s)&lt;br&gt;s &amp;lt;- push(3,s)&lt;br&gt;s &amp;lt;- pop(s)&lt;br&gt;v1 &amp;lt;- top(s)&lt;br&gt;s&amp;lt;-pop(s)&lt;br&gt;v2 &amp;lt;- isempty(s)&lt;/span&gt;&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="4110">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1: 1&lt;br&gt;v2: true&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6466">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1: 3&lt;br&gt;v2: false&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8300">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1: 2&lt;br&gt;v2: false&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3168">
+              <material>
+                <mattext texttype="text/html">v1: 1&lt;br&gt;v2: true</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8300</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gc69e33d11b4b77223faada141e1299c9" title="Stack och Kö">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7489,9653,489,1885</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vi har följande uttryck:&lt;/p&gt;
+&lt;pre&gt;Top(Pop(Push(3, Push(6, Pop(Push(7, Push(4, Empty))))))) &lt;/pre&gt;
+&lt;p&gt;Vad kan resultatet bli om man tillämpar Axiom 3 på uttrycket? Axiom 3 ser ut så här:&lt;/p&gt;
+&lt;pre&gt;Pop(Push(v, s)) = s&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="7489">
+              <material>
+                <mattext texttype="text/plain">Top(Push(6, Pop(Push(7, Push(4, Empty)))))</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9653">
+              <material>
+                <mattext texttype="text/plain">Top(Pop(Push(3, Push(6, Push(4, Empty)))))</mattext>
+              </material>
+            </response_label>
+            <response_label ident="489">
+              <material>
+                <mattext texttype="text/plain">Top(Pop(Push(7, Push(4, Empty))))</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1885">
+              <material>
+                <mattext texttype="text/plain">Man kan inte tillämpa axiom 3 på uttrycket.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">7489</varequal>
+              <varequal respident="response1">9653</varequal>
+              <not>
+                <varequal respident="response1">489</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">1885</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

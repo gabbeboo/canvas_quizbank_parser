@@ -1,0 +1,321 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>GÖ6 - Grafer, grafalgoritmer, lösningsförslag</title>
+<meta name="identifier" content="g0d62c6bb23c5426537cd61b727fb733c"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<h2>Fråga 1</h2>
+<p>Personerna A, B, C, D, E och F bor tillsammans i ett hus. De vill koppla samman sina datorer, men använda så lite kabel som möjligt. Minimala kabelavståndet mellan två datorer ges av följande grannmatris.</p>
+<table style="height: 300px; border-style: solid; width: 238px;" border="1" width="238" cellpadding="1">
+<tbody>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p>&nbsp;</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p><strong>A</strong></p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p><strong>B</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p><strong>C</strong></p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p><strong>D</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p><strong>E</strong></p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p><strong>F</strong></p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>A</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>0</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>2</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>1</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>7</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>5</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>B</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>2</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>0</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>10</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>6</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>9</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>C</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>1</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>0</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>6</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>4</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>D</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>10</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>0</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>8</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>2</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>E</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>7</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>6</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>6</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>8</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>0</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>4</p>
+</td>
+</tr>
+<tr style="height: 30px;">
+<td style="height: 30px; width: 30px; text-align: center;">
+<p><strong>F</strong></p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>5</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>9</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>4</p>
+</td>
+<td style="height: 30px; width: 36.6667px; text-align: center;">
+<p>2</p>
+</td>
+<td style="height: 30px; width: 28.6667px; text-align: center;">
+<p>4</p>
+</td>
+<td style="height: 30px; width: 31.3333px; text-align: center;">
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Rita en bild som visar hur A, B, C, D, E och F bör koppla samman sina datorer. Förklara också hur algoritmen du använt fungerar genom att rita bilder som visar hur algoritmen steg för steg konstruerar kabelnätet.</p>
+<p>Att finna den minsta mängden total kabel som krävs och samtidigt binda samman alla noder är ett Minimalt uppspännande träd problem. Detta kan lösas med Prims eller Kruskals algoritm.</p>
+<p>Kruskals algoritm: Lägg alla bågar i en prioritetskö och färglägg bågar som inte skapar cykler tills kön är tom.</p>
+<p>PQ = {AC1, AB2, DF2, CF4, EF4, AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}</p>
+<table style="border-collapse: collapse; width: 76.0615%;" border="1">
+<tbody>
+<tr style="height: 53px;">
+<td style="width: 82.6508%; height: 53px;">Steg 1: Ta ut AC1 ur kön, ny kö PQ = {AB2, DF2, CF4, EF4, AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}. <br>Varken A eller C har färg sen tidigare. Skapa en röd koppling.</td>
+<td style="width: 17.284%; height: 53px;"><span style="color: #e03e2d;">A -1- C</span></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 82.6508%; height: 29px;">Steg 2: Ta ut AB2 ur kön, ny kö PQ = {DF2, CF4, EF4, AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}. <br>A är röd och B ofärgad, skapa en röd koppling.</td>
+<td style="width: 17.284%; height: 29px;"><span style="color: #e03e2d;">A -1- C<br>|<br>2<br>|<br>B<br></span></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 82.6508%; height: 29px;">Steg 3: Ta ut DF2 ur kön, ny kö PQ = {CF4, EF4, AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}. <br>D och F ofärgade, skapa en blå&nbsp; koppling.</td>
+<td style="width: 17.284%; height: 29px;"><span style="color: #e03e2d;">A -1- C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #236fa1;">D-2-F</span><br>|<br>2<br>|<br>B</span></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 82.6508%; height: 29px;">Steg 4: Ta ut CF4 ur kön, ny kö PQ = {EF4, AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}. <br>C är röd och F är blå.&nbsp; Skapa en koppling och färga allt rött</td>
+<td style="width: 17.284%; height: 29px;"><span style="color: #e03e2d;">A -1- C -4- D -2- F<br>|<br>2<br>|<br>B</span></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 82.6508%; height: 29px;">Steg 5: Ta ut EF4 ur kön, ny kö PQ = {AD5, AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}. <br>F är röd och E är ofärgad. Skapa en röd koppling</td>
+<td style="width: 17.284%; height: 29px;"><span style="color: #e03e2d;">A -1- C -4- D -2- F -4- E<br>|<br>2<br>|<br>B</span></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 82.6508%; height: 29px;">Steg 6: Ta ut AD5 ur kön, ny kö PQ = {AF5, BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}.&nbsp; Både A och D är röda, skulle skapa cykel, kasta bort.<br>Steg 7: Ta ut AF5 ur kön, ny kö PQ = {BC5, CD5, BE6, CE6, AE7, DE8, BF9, BD10}.&nbsp; Både A och F är röda, skulle skapa cykel, kasta bort.<br>Steg 8: Ta ut BC5 ur kön, ny kö PQ = {CD5, BE6, CE6, AE7, DE8, BF9, BD10}.&nbsp; Både B och C är röda, skulle skapa cykel, kasta bort.<br>Steg 9: Ta ut CD5 ur kön, ny kö PQ = {BE6, CE6, AE7, DE8, BF9, BD10}. Både C och D är röda, skulle skapa cykel, kasta bort.<br>Steg 10: Ta ut BE6 ur kön, ny kö PQ = {CE6, AE7, DE8, BF9, BD10}. Både B och E är röda, skulle skapa cykel, kasta bort.<br>Steg 11: Ta ut CE6 ur kön, ny kö PQ = {AE7, DE8, BF9, BD10}. Både C och E är röda, skulle skapa cykel, kasta bort.<br>Steg 12: Ta ut AE7 ur kön, ny kö PQ = {DE8, BF9, BD10}. Både A och E är röda, skulle skapa cykel, kasta bort.<br>Steg 13: Ta ut DE8 ur kön, ny kö PQ = {BF9, BD10}. Både D och E är röda, skulle skapa cykel, kasta bort.<br>Steg 14: Ta ut BF9 ur kön, ny kö PQ = {BD10}. Både B och F är röda, skulle skapa cykel, kasta bort.<br>Steg 15: Ta ut BD10 ur kön, ny kö PQ = {}. Både B och D är röda, skulle skapa cykel, kasta bort.<br>Steg 16: Kön tom, algoritm klar. Vi har funnit ett MST med total längd 2+1+4+2+4 = 13</td>
+<td style="width: 17.284%; height: 29px;"></td>
+</tr>
+</tbody>
+</table>
+<p><br>Prims algoritm:</p>
+<table style="border-collapse: collapse; width: 98.5861%; height: 631px;" border="1">
+<tbody>
+<tr style="height: 101px;">
+<td style="width: 49.9674%; height: 101px;">
+<p>Steg 1. Välj en nod i grafen. Vi tar F och markerar den som stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {DF2, CF4, EF4, AF5, BF9}</p>
+</td>
+<td style="width: 49.9674%; height: 101px;">
+<pre>F</pre>
+</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 2: Ta ut första noden ur kön och skapa en båge om den inte är stängd. DF4 och D är inte stängd.</td>
+<td style="width: 49.9674%; height: 29px;">
+<pre>D -2- F</pre>
+</td>
+</tr>
+<tr style="height: 53px;">
+<td style="width: 49.9674%; height: 53px;">Steg 3. Markera D stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {CF4,&nbsp; EF4, &nbsp;CD5, AD5, AF5, DE8, BF9, BD10}</td>
+<td style="width: 49.9674%; height: 53px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 4: Ta ut första noden ur kön och skapa en båge om den inte är stängd. CF4 och C är inte stängd.&nbsp;</td>
+<td style="width: 49.9674%; height: 29px;">
+<pre>D -2- F -4- C</pre>
+</td>
+</tr>
+<tr style="height: 53px;">
+<td style="width: 49.9674%; height: 53px;">Steg 5. Markera C stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {AC1, EF4, BC5, AD5, CD5, AF5, CE6, DE8, BF9, BD10}</td>
+<td style="width: 49.9674%; height: 53px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 6: Ta ut första noden ur kön och skapa en båge om den inte är stängd. AC1 och A är inte stängd.&nbsp;</td>
+<td style="width: 49.9674%; height: 29px;">
+<pre>D -2- F -4- C -1- A</pre>
+</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 7. Markera A stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {AB2, EF4, BC5, AD5, CD5, AF5, CE6, AE7, DE8, BF9, BD10}</td>
+<td style="width: 49.9674%; height: 29px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 8: Ta ut första noden ur kön och skapa en båge om den inte är stängd. AB2 och B är inte stängd.&nbsp;</td>
+<td style="width: 49.9674%; height: 29px;">
+<pre>D -2- F -4- C -1- A -2- B</pre>
+</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 9. Markera B stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {EF4, BC5, AD5, CD5, AF5, CE6, BE7, AE7, DE8, BF9, BD10}</td>
+<td style="width: 49.9674%; height: 29px;"></td>
+</tr>
+<tr style="height: 192px;">
+<td style="width: 49.9674%; height: 192px;">Steg 10: Ta ut första noden ur kön och skapa en båge om den inte är stängd. EF4 och E är inte stängd.&nbsp;</td>
+<td style="width: 49.9674%; height: 192px;">
+<pre>D -2- F -4- C -1- A -2- B<br>      |<br>      4<br>      |<br>      E</pre>
+</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">Steg 11. Markera E stängd. Lägg in grannarna i en priokö (om de inte är stängda):<br>pg = {BC5, AD5, CD5, AF5, CE6, BE7, AE7, DE8, BF9, BD10}</td>
+<td style="width: 49.9674%; height: 29px;"></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 49.9674%; height: 29px;">
+<p>Steg 12: Ta ut första noden ur kön och skapa en båge om den inte är stängd. BC5 och båda stängda<br>pg = {AD5, CD5, AF5, CE6, BE7, AE7, DE8, BF9, BD10}</p>
+<p>Steg 13: Ta ut första noden ur kön och skapa en båge om den inte är stängd. AD5 och båda stängda<br>pg = {CD5, AF5, CE6, BE7, AE7, DE8, BF9, BD10}</p>
+<p>Steg 14: Ta ut första noden ur kön och skapa en båge om den inte är stängd. CD5 och båda stängda<br>pg = {AF5, CE6, BE7, AE7, DE8, BF9, BD10}</p>
+<p>... osv steg för steg tills kön är tom. Vi har funnit ett MST med vikterna 2+4+1+2+4 = 13</p>
+</td>
+<td style="width: 49.9674%; height: 29px;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Fråga 2</h2>
+<p><em>Vilka är skillnaderna mellan ett minsta uppspännande träd och en kortaste väg i en graf?</em></p>
+<p>Det minsta uppspännande trädet i en graf är en samling av kanter som kopplar ihop alla noder i grafen. Denna samling av kanter har tillsammans den minsta möjliga vikten. Alla noder måste alltså ingå.</p>
+<p>Den kortaste vägen i en graf måste inte innehålla alla noder, utan den ska koppla samman en given startnod med en given slutnod med ett antal kanter. Vikten av de sammankopplande kanterna ska vara den minsta möjliga.</p>
+<p>Alltså: skillnaden är att i det minsta uppspännande trädet måste alla noder ingå medan att i den kortaste vägen måste bara två noder ingå, men fler kan behöva ingå. Gemensamt är att målet är att minimera vikterna av kanterna som ingår.</p>
+<h2>Fråga 3</h2>
+<p>Vilka begrepp är det som förklaras nedan:</p>
+<ol>
+<li><span data-offset-key="44ke4-0-0">Varje nod har en väg till varje annan nod. =&gt; </span><span data-offset-key="44ke4-0-0">Sammanhängande graf</span></li>
+<li><span data-offset-key="44ke4-0-0">En delmängd av noderna och kanterna som formar en graf. =&gt;Delgraf<br></span></li>
+<li><span data-offset-key="44ke4-0-0">Varje nod är grannar till alla andra noder. =&gt; Komplett graf<br></span></li>
+<li><span data-offset-key="44ke4-0-0">Ett annat namn på riktad graf. =&gt; Directed graph eller DiGraph<br></span></li>
+<li><span data-offset-key="44ke4-0-0">Ett annat namn på en riktad graf utan cykler.&nbsp; =&gt; Directed Acyclic Graph eller DAG<br></span></li>
+<li><span data-offset-key="44ke4-0-0">En graf där bågarna har vikter. =&gt; Viktad graf<br></span></li>
+<li><span data-offset-key="44ke4-0-0">En graf där det kan finnas flera bågar mellan två noder.&nbsp; =&gt; Multigraf<br></span></li>
+<li><span data-offset-key="44ke4-0-0">En graf där det finns en inbördes ordning mellan grannarna till en nod.&nbsp; =&gt; Ordnad graf<br></span></li>
+</ol>
+<h2>Fråga 4</h2>
+<p>I matrisrepresentationerna nedan motsvaras <em>A</em>(<em>i</em>,<em> j</em>) = 1 av att <em>j</em> är granne till <em>i</em> (mer specifikt att det går en båge från <em>i</em> till <em>j</em>). Motivera vilken/vilka av följande matrisrepresentationer motsvarar en DAG?</p>
+<table style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td style="width: 25%;">
+<pre>    0 1 0 <br>A = 0 0 0<br>    1 0 0</pre>
+</td>
+<td style="width: 25%;">
+<pre>    0 1 0<br>B = 1 0 0 <br>    1 0 0</pre>
+</td>
+<td style="width: 25%;">
+<pre>    0 1 0<br>C = 0 1 0<br>    1 0 0</pre>
+</td>
+<td style="width: 25%;">
+<pre>    0 1 0 <br>D = 0 0 1<br>    1 0 0</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Om vi säger att alla fyra grafer består av noderna a, b och c så ser vi följande:</p>
+<p>A kan ritas c-&gt; a -&gt; b&nbsp; och saknar cykler och är riktad så den är en DAG<br>B c-&gt;a&lt;-&gt;b har cykler (a-b-a) och är inte en DAG<br>C c-&gt;a-&gt;b och sen har b en väg till sig själv också. Då kan man få en cykel b-b så det är inte en DAG<br>D a-&gt;b-&gt;c-&gt;a har en cykel och är inte en DAG.</p>
+</body>
+</html>

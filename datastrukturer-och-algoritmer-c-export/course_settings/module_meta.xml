@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <module identifier="g7a3de621e0a973757a23b390a8475e48">
+    <title>Vecka 3</title>
+    <workflow_state>active</workflow_state>
+    <position>1</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g2541d98eed9022d7f9d76fce56b21bb7">
+    <title>Vecka 4</title>
+    <workflow_state>active</workflow_state>
+    <position>2</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g90cf0ffaeab8d9b4392e94d12de107ab">
+    <title>Vecka 5</title>
+    <workflow_state>active</workflow_state>
+    <position>3</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g6272c38a9fa27683cc0bd7fabc12de6c">
+    <title>Vecka 6</title>
+    <workflow_state>active</workflow_state>
+    <position>4</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g86cfdeebdcb95abe90e8a9f4d3e0d7c9">
+    <title>Vecka 7</title>
+    <workflow_state>active</workflow_state>
+    <position>5</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="gf63bb12442a0a9e6d976ce3b93695f7c">
+    <title>Vecka 8</title>
+    <workflow_state>active</workflow_state>
+    <position>6</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g5423cdcdd085b7815f3e3f4530542176">
+    <title>Vecka 9</title>
+    <workflow_state>active</workflow_state>
+    <position>7</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g62c2206e5a08564158aa8ca7fef87ed3">
+    <title>Vecka 10</title>
+    <workflow_state>active</workflow_state>
+    <position>8</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="gf1e82fc62d7b6d85d785e438e70f7d46">
+    <title>Vecka 11</title>
+    <workflow_state>active</workflow_state>
+    <position>9</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="g4b20eb9a10640b8f7e1c0d8c5d7c90a5">
+    <title>Vecka 12</title>
+    <workflow_state>unpublished</workflow_state>
+    <position>10</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+  <module identifier="ga0a0b156ca7783c746c6309e8326775c">
+    <title>Vecka 13</title>
+    <workflow_state>unpublished</workflow_state>
+    <position>11</position>
+    <require_sequential_progress>false</require_sequential_progress>
+    <locked>false</locked>
+    <items>
+    </items>
+  </module>
+</modules>

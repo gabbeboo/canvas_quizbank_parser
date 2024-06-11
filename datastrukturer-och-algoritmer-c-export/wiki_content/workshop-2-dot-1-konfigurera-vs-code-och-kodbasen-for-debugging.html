@@ -1,0 +1,1280 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Workshop 2.1 - Konfigurera VS code och kodbasen för debugging</title>
+<meta name="identifier" content="g17c2ed80b59ac7f549e78e2e847b3936"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org740b752">1. Document history</a></li>
+<li><a href="#org7ecdf71">2. Overview</a></li>
+<li><a href="#org4d59677">3. Install VS code</a>
+<ul>
+<li><a href="#orge222730">3.1. Install in Linux</a></li>
+<li><a href="#org1632df3">3.2. Install in Windows/WSL</a></li>
+<li><a href="#org0085e90">3.3. Install in macOS</a></li>
+<li><a href="#org26e9163">3.4. Other</a></li>
+</ul>
+</li>
+<li><a href="#orge90cbe7">4. Install C/C++ extensions</a></li>
+<li><a href="#orgc928a69">5. Configure global editor settings</a></li>
+<li><a href="#org9def280">6. Work locally (Linux/Windows/WSL)</a>
+<ul>
+<li><a href="#org40beed5">6.1. Create directories</a></li>
+<li><a href="#org1353bb6">6.2. Work with a minimal source code example</a>
+<ul>
+<li><a href="#org700db40">6.2.1. Create an example source code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf7dcd17">7. Configure VS code to run remotely over ssh (all platforms)</a>
+<ul>
+<li><a href="#org50bb5a0">7.1. Install</a></li>
+<li><a href="#orgf12e370">7.2. Login remote via SSH</a></li>
+<li><a href="#org2862531">7.3. Set up VS code to use your SSH login credentials</a></li>
+<li><a href="#org569f967">7.4. Clean up after VS code</a></li>
+</ul>
+</li>
+<li><a href="#org99cd9a0">8. Compile</a>
+<ul>
+<li><a href="#org6697fb4">8.1. Compile and run</a></li>
+<li><a href="#orgf58f512">8.2. Modify, compile and run</a></li>
+<li><a href="#org40520d9">8.3. Set up compiler options required for the DoA course</a></li>
+</ul>
+</li>
+<li><a href="#org6dd6277">9. Run the program in a debugger</a></li>
+<li><a href="#orga833e16">10. A slightly more interesting example</a></li>
+<li><a href="#org695acac">11. Work with multiple files from the code base for the DoA course</a>
+<ul>
+<li><a href="#org1a6ef51">11.1. Download and unpack the code base</a></li>
+<li><a href="#orgb7044f9">11.2. Create a symbolic link to the code base</a></li>
+<li><a href="#org6dc5a33">11.3. Create a new work folder and copy source files here</a></li>
+<li><a href="#orgf4fce88">11.4. Open the project folder in VS code</a></li>
+<li><a href="#orgfaf13e4">11.5. Compile and run</a></li>
+</ul>
+</li>
+<li><a href="#orgb583ade">12. Tell the ''intelligent'' editor where to find stuff</a></li>
+</ul>
+</div>
+</div>
+<p>
+
+</p>
+<div id="outline-container-org740b752" class="outline-2">
+<h2 id="org740b752"><span class="section-number-2">1.</span> Document history</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>v1.0  2023-03-21: First published version.</li>
+<li>v1.1 2024-01-17: Changed tab size to 4 to match labres. Introduced a
+<code>current</code> symbolic link for the code base in Section 11.</li>
+</ul>
+
+<p>
+
+</p>
+</div>
+</div>
+<div id="outline-container-org7ecdf71" class="outline-2">
+<h2 id="org7ecdf71"><span class="section-number-2">2.</span> Overview</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The following are suggestions for the respective platforms:
+</p>
+
+<ul class="org-ul">
+<li>Linux users
+<ol class="org-ol">
+<li>Install VS code (section <a href="#orge222730">Install in Linux</a>)
+<ol class="org-ol">
+<li>run locally or</li>
+<li>remote via SSH</li>
+</ol></li>
+</ol></li>
+<li>Windows users
+<ol class="org-ol">
+<li>Install VS code and WSL2 (WSL2 is needed for <code>valgrind</code> support)
+(section <a href="#org1632df3">Install in Windows/WSL</a>)
+<ol class="org-ol">
+<li>run locally under WSL2 or</li>
+<li>remote via SSH</li>
+</ol></li>
+</ol></li>
+<li>macOS users
+<ol class="org-ol">
+<li>Install VS code (<a href="#org0085e90">Install in macOS</a>)
+<ol class="org-ol">
+<li>run remote via SSH (no <code>valgrind</code> support under macOS)</li>
+<li>there have been rumours of <code>valgrind</code> support for intel-based
+hardware, but the rumours are so far</li>
+</ol></li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4d59677" class="outline-2">
+<h2 id="org4d59677"><span class="section-number-2">3.</span> Install VS code</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+
+
+
+
+
+</p>
+
+<p>
+
+</p>
+</div>
+
+<div id="outline-container-orge222730" class="outline-3">
+<h3 id="orge222730"><span class="section-number-3">3.1.</span> Install in Linux</h3>
+<div class="outline-text-3" id="text-3-1">
+<ol class="org-ol">
+<li>Install VS Code
+<ol class="org-ol">
+<li>Via the graphical user interface (GUI)
+<ol class="org-ol">
+<li>Open Software Center/Ubuntu Software
+<ol class="org-ol">
+<li>Search for <code>code</code>.</li>
+<li>Select code (Visual Studio Code). You may have to scroll down a few items.</li>
+<li>Press <code>Install</code>.</li>
+</ol></li>
+</ol></li>
+<li>Or: Via the command line interface (CLI)
+<ol class="org-ol">
+<li><p>
+Open a terminal and execute the following command:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo snap install code --classic
+</pre>
+</div></li>
+</ol></li>
+</ol></li>
+<li><p>
+Open a terminal and execute the following command to launch the VS code environment
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">code
+</pre>
+</div></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1632df3" class="outline-3">
+<h3 id="org1632df3"><span class="section-number-3">3.2.</span> Install in Windows/WSL</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Follow the instructions here to install VS code: <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>.</li>
+<li>Then follow the instructions here to install and configure WSL: <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0085e90" class="outline-3">
+<h3 id="org0085e90"><span class="section-number-3">3.3.</span> Install in macOS</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Follow the instructions here: <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org26e9163" class="outline-3">
+<h3 id="org26e9163"><span class="section-number-3">3.4.</span> Other</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Global instructions are found here: <sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge90cbe7" class="outline-2">
+<h2 id="orge90cbe7"><span class="section-number-2">4.</span> Install C/C++ extensions</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>Start VS code</li>
+<li>Install extension packs:
+<ul class="org-ul">
+<li>Inside VS Code, press Ctrl-Shift-X (hold down the Ctrl and Shift
+keys and press the X key) to enter the Extensions View
+<dl class="org-dl">
+<dt>1) C/C++ extensions</dt><dd>-
+<ol class="org-ol">
+<li>Enter <code>C/C++</code> in the search window</li>
+<li>Select the <code>C/C++ Extension pack</code> from Microsoft</li>
+<li>Press the Install button</li>
+</ol></dd>
+<dt>2) Doxygen</dt><dd>-
+<ol class="org-ol">
+<li>Enter <code>Doxygen</code> in the search window</li>
+<li>Select the <code>Doxygen Documentation Generator</code> from Christoph Schlosser</li>
+<li>Press the Install button</li>
+</ol></dd>
+</dl></li>
+</ul></li>
+<li>Exit VS code by selecting File/Exit (Ctrl-Q)</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc928a69" class="outline-2">
+<h2 id="orgc928a69"><span class="section-number-2">5.</span> Configure global editor settings</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+This HOWTO was inspired by the guide in <sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>.
+</p>
+
+<ol class="org-ol">
+<li>Inside VS Code, select File/Preferences/Settings (Ctrl-,)
+<ol class="org-ol">
+<li>Write <code>tab size</code> in the search window
+<ol class="org-ol">
+<li><b>Enter</b> <code>4</code> as the Tab size</li>
+</ol></li>
+<li>Enter <code>detect indentation</code> in the search window
+<ol class="org-ol">
+<li><b>Uncheck</b> <code>Editor: Detect Indentation</code></li>
+</ol></li>
+<li>Enter <code>insert spaces</code> in the search window
+<ol class="org-ol">
+<li><b>Uncheck</b> <code>Editor: Insert Spaces</code></li>
+</ol></li>
+<li>Enter <code>encoding</code>
+<ol class="org-ol">
+<li><b>Ensure</b> that the selected file encoding is <code>UTF-8</code>, otherwise
+non-English characters may look weird</li>
+</ol></li>
+<li>Enter <code>files: eol</code>
+<ol class="org-ol">
+<li><b>Select</b> <code>\n</code> as the default end-of-line character</li>
+</ol></li>
+<li>Enter <code>telemetry</code> in the search window
+<ol class="org-ol">
+<li>If you don't want to send usage data to Microsoft, select
+<code>off</code> (optional)</li>
+</ol></li>
+<li>Exit VS code (Ctrl-Q).</li>
+</ol></li>
+
+<li><p>
+You should now have a file <code>settings.json</code> with the following content (the <code>editor.tabSize</code> may be missing):
+</p>
+<div class="org-src-container">
+<pre class="src src-js">{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false,
+    "telemetry.telemetryLevel": "off",
+    "files.eol": "\n"
+}
+</pre>
+</div></li>
+
+<li>The file is stored in
+<dl class="org-dl">
+<dt>Linux</dt><dd><code>~/.config/Code/User/settings.json</code></dd>
+<dt>Windows/WSL</dt><dd>(probably same as Linux)</dd>
+<dt>macOS</dt><dd>(probably same as Linux)</dd>
+</dl></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9def280" class="outline-2">
+<h2 id="org9def280"><span class="section-number-2">6.</span> Work locally (Linux/Windows/WSL)</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org40beed5" class="outline-3">
+<h3 id="org40beed5"><span class="section-number-3">6.1.</span> Create directories</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+In a terminal in Linux or WSL, run the following commands:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">mkdir -p ~/edu/doa/projects/helloworld
+cd ~/edu/doa/projects/helloworld
+code . # This will start code in the current directory
+</pre>
+</div>
+<p>
+If asked, check ''I trust the authors of the parent dir'' and answer
+   ''Yes, I trust the authors'' (it's you!).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1353bb6" class="outline-3">
+<h3 id="org1353bb6"><span class="section-number-3">6.2.</span> Work with a minimal source code example</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org700db40" class="outline-4">
+<h4 id="org700db40"><span class="section-number-4">6.2.1.</span> Create an example source code</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ol class="org-ol">
+<li>Select File/New (Alt-Ctrl-N)</li>
+<li>Name the file <code>helloworld.c</code> (not <code>.cpp</code>)</li>
+<li><p>
+Enter the following into the file:
+</p>
+<div class="org-src-container">
+<pre class="src src-c">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+        printf("Hello, world!\n");
+
+        return 0;
+}
+</pre>
+</div></li>
+<li>Press Ctrl-S (File/Save) to save the file.</li>
+</ol>
+
+<p>
+Now, continue in section <a href="#org99cd9a0">Compile</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf7dcd17" class="outline-2">
+<h2 id="orgf7dcd17"><span class="section-number-2">7.</span> Configure VS code to run remotely over ssh (all platforms)</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Inspired by <sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>.
+</p>
+</div>
+<div id="outline-container-org50bb5a0" class="outline-3">
+<h3 id="org50bb5a0"><span class="section-number-3">7.1.</span> Install</h3>
+<div class="outline-text-3" id="text-7-1">
+<ol class="org-ol">
+<li>Install an SSH client
+<ol class="org-ol">
+<li>See <sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup>.</li>
+</ol></li>
+<li>Install the Remote Development extension pack in VS code
+<ol class="org-ol">
+<li>Start VS code</li>
+<li>Press Ctrl-Shift-X (hold down the Ctrl and Shift keys and press
+the X key) to enter the Extensions View</li>
+<li>Enter <code>Remote</code> in the search window</li>
+<li>Select the <code>Remote - SSH</code> extension from Microsoft</li>
+<li>Press the Install button</li>
+<li>Exit VS code by selecting File/Exit (Ctrl-Q)</li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf12e370" class="outline-3">
+<h3 id="orgf12e370"><span class="section-number-3">7.2.</span> Login remote via SSH</h3>
+<div class="outline-text-3" id="text-7-2">
+<ol class="org-ol">
+<li>Figure out you CS username
+<ol class="org-ol">
+<li>This is the same username you use to log onto other systems and the CS department.</li>
+<li>It is on the form <code>c22abc</code>, <code>id21def</code>, <code>tfy19ghi</code>, <code>oi20jkl</code>,
+<code>ens21mno</code>, <code>hed21pqr</code>.</li>
+<li>In this example, I will use the user name <code>c22abc</code>.</li>
+</ol></li>
+<li>Remember your password for your CS account</li>
+<li>Open a terminal/powershell
+<ol class="org-ol">
+<li><p>
+On the command line, write
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">ssh c22abc@itchy.cs.umu.se
+</pre>
+</div></li>
+<li>If this is your first remote login, you may get an warning that
+the host is unknown. In this case, and ''Yes'' to add
+itchy.cs.umu.se to the list of known hosts.</li>
+<li><p>
+Once logged in, you should get a prompt similar to
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$
+</pre>
+</div>
+<p>
+where <code>c22abc</code> is your login name, <code>itchy</code> is
+the host name, and <code>~</code> is the current directory, where <code>~</code> means
+your home directory at the CS file system.
+</p></li>
+<li><p>
+Verify that you can read files in this folder by entering the
+command <code>ls</code> at the prompt:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ ls
+</pre>
+</div></li>
+<li><p>
+You should see a list of folders and files in your home folder,
+one of which should be called <code>edu</code>. Now change the current
+directory to <code>edu</code>:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ cd edu
+c22abc@itchy:~/edu$ ls
+c22abc@itchy:~/edu$ ls -la
+</pre>
+</div>
+<p>
+The <code>-la</code> is a so called <i>switch</i> that tells <code>ls</code> to make a long
+(<code>l</code>) listing of all (<code>a</code>) files, including hidden files.
+</p></li>
+<li>If your <code>edu</code> folder is empty, the <code>ls</code> command will not show
+anything, but the <code>ls -la</code> command will show handles to the
+current directory (<code>.</code>) and the parent directory (<code>..</code>).</li>
+
+<li><p>
+Now create some directories to work with.
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~/edu$ mkdir doa
+c22abc@itchy:~/edu$ mkdir doa/projects
+c22abc@itchy:~/edu$ mkdir doa/projects/helloworld
+</pre>
+</div></li>
+
+<li><p>
+Now you can log out from itchy by entering
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~/edu$ exit
+Connection to itchy.cs.umu.se closed.
+</pre>
+</div></li>
+<li>You may exit your terminal/powershell session.</li>
+</ol></li>
+</ol>
+
+<p>
+      
+</p>
+</div>
+</div>
+<div id="outline-container-org2862531" class="outline-3">
+<h3 id="org2862531"><span class="section-number-3">7.3.</span> Set up VS code to use your SSH login credentials</h3>
+<div class="outline-text-3" id="text-7-3">
+<ol class="org-ol">
+<li>Start VS code
+<ol class="org-ol">
+<li>Press Ctrl-Shift-P or F1 and enter <code>remote-ssh</code> in the command palette window.</li>
+<li>Select <code>remote-SSH: Connect to Host...</code>
+<ol class="org-ol">
+<li>Enter your ssh login credentials as above <code>c22abc@itchy.cs.umu.se</code>.</li>
+<li>If asked, select <code>Linux</code> as the remote platform type.</li>
+<li>Enter your password.</li>
+<li>VS code will download and set up a few things. Once it has
+done that, the text <code>SSH:itchy.cs.umu.se</code> should appear in
+green-ish at the bottom left.</li>
+<li>If you end up with multiple VS Code windows, it is probably
+best to close all windows that do not have the green-ish
+<code>SSH:itchy.cs.umu.se</code> at the bottom left corner.</li>
+</ol></li>
+<li>Select <code>File/Open a folder...</code> and enter
+<code>/home/c22abc/edu/doa/projects/helloworld</code>. You may have to
+enter your password again.
+<ol class="org-ol">
+<li>If asked, check ''I trust the authors of the parent dir'' and
+answer ''Yes, I trust the authors'' (it's you!).</li>
+</ol></li>
+<li>Select <code>File/New Text File (Ctrl-N)</code> and enter\linebreak
+<code>/home/c22abc/edu/doa/projects/helloworld/helloworld.c</code>.</li>
+<li><p>
+Enter the following text in the file
+</p>
+<div class="org-src-container">
+<pre class="src src-c">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+        printf("Hello, world!\n");
+
+        return 0;
+}
+</pre>
+</div></li>
+<li>Press Ctrl-S to save the file.</li>
+<li>Press Ctrl-Shift-X to enter the extension panel.
+<ol class="org-ol">
+<li>Enter <code>@category:debuggers C</code> in the search window.</li>
+<li>Select the <code>C/C++</code> entry by Microsoft.</li>
+<li>Press Install in <code>SSH: itchy.cs.umu.se</code></li>
+</ol></li>
+<li>Switch back to the source file <code>helloworld.c</code></li>
+<li>Press the play icon (Run and debug, Ctrl-Shift-D)</li>
+<li>If asked for a debug configuration, select <code>C/C++: gcc build and
+       debug active file</code> and not any of the ones mentioning gcc with a
+specific version number.</li>
+<li>The program should compile and run. Switch to the <code>TERMINAL</code>
+window (right of <code>PROBLEMS</code>, <code>OUTPUT</code>, <code>DEBUG CONSOLE</code>).
+<ol class="org-ol">
+<li><p>
+Verify the output is
+</p>
+<div class="org-src-container">
+<pre class="src src-text">Hello, world!
+</pre>
+</div></li>
+</ol></li>
+</ol></li>
+</ol>
+
+<p>
+Now, continue in section <a href="#org99cd9a0">Compile</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org569f967" class="outline-3">
+<h3 id="org569f967"><span class="section-number-3">7.4.</span> Clean up after VS code</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+VS code is apparently not very good at cleaning up after itself in the
+remote end. One of the symptoms is that you run out of disk quota,
+i.e., the amount of disk space that is allocated to you. To counter
+this problem, the sysadms have constructed a command
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ cleanup-vscode.sh
+</pre>
+</div>
+<p>
+that you can run to do the cleaning.
+</p>
+
+<p>
+The cleanup script deletes cache files older than 7 days. If you want
+to delete even newer files, run
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ find ~/.config/Code/Cache -mtime +1 -delete
+</pre>
+</div>
+<p>
+which deletes all files that are older than one day.
+</p>
+
+<p>
+If you want to figure out how much space is used by the cache folder, run
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ du -hs ~/.config/Code/Cache
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org99cd9a0" class="outline-2">
+<h2 id="org99cd9a0"><span class="section-number-2">8.</span> Compile</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org6697fb4" class="outline-3">
+<h3 id="org6697fb4"><span class="section-number-3">8.1.</span> Compile and run</h3>
+<div class="outline-text-3" id="text-8-1">
+<ol class="org-ol">
+<li>Open <code>helloworld.c</code> to make it the active file. The cursor
+should be blinking somewhere in the source text.</li>
+<li><p>
+Press the Play button at the top right of the window
+</p>
+
+<p>
+
+<img src="https://www.canvas.umu.se/courses/9944/files/1895232/preview" alt="The Play and Debug button" width="200" height="136">
+</p>
+<ol class="org-ol">
+<li>If asked for a debug configuration, select <code>C/C++: gcc build and
+      debug active file</code> and not any of the ones mentioning gcc with a
+specific version number.</li>
+<li>The VS code program will do the following things:
+<ol class="org-ol">
+<li>Compile the source code in <code>helloworld.c</code> and create an
+executable file called <code>helloworld</code> (same name as source,
+but without an extension).</li>
+<li>Run the executable file (<code>helloworld</code>).</li>
+</ol></li>
+</ol></li>
+<li>Inspect the output
+<ol class="org-ol">
+<li>The output is printed to the terminal window. The terminal
+window may be hidden, so we must bring it to the front.</li>
+<li>Select the <code>TERMINAL</code> panel at the bottom of the window (to
+the right of <code>PROBLEMS</code>, <code>OUTPUT</code>, <code>DEBUG CONSOLE</code>)
+<ol class="org-ol">
+<li><p>
+The panel should show some text, the first of which should read:
+</p>
+<div class="org-src-container">
+<pre class="src src-text">Hello, world!
+</pre>
+</div></li>
+<li><p>
+There may be a second line similar to
+</p>
+<div class="org-src-container">
+<pre class="src src-text">[1] + Done   "/usr/bin/gdb" --interpreter=mi ..
+</pre>
+</div></li>
+<li>Feel free to ignore this line for now.</li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf58f512" class="outline-3">
+<h3 id="orgf58f512"><span class="section-number-3">8.2.</span> Modify, compile and run</h3>
+<div class="outline-text-3" id="text-8-2">
+<ol class="org-ol">
+<li>Modify the source
+<ol class="org-ol">
+<li><p>
+Go back to the <code>helloworld.c</code> window and add the line
+</p>
+<div class="org-src-container">
+<pre class="src src-c">printf("Normal exit.\n\n");
+</pre>
+</div>
+<p>
+(note the double newlines) on the line before <code>return 0;</code>.
+</p></li>
+</ol></li>
+<li>Press Ctrl-S to save the file.</li>
+<li>Press the Play button again.
+<ol class="org-ol">
+<li>The VSCode program will re-compile the source code and
+re-run the resulting executable program. Some commands may flash by.</li>
+<li><p>
+Verify that the new printout starts with
+</p>
+<div class="org-src-container">
+<pre class="src src-text">Hello, world!
+Normal exit.
+</pre>
+</div>
+<p>
+followed by a single blank line.
+</p></li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org40520d9" class="outline-3">
+<h3 id="org40520d9"><span class="section-number-3">8.3.</span> Set up compiler options required for the DoA course</h3>
+<div class="outline-text-3" id="text-8-3">
+<ol class="org-ol">
+<li>The VS code program stores several settings in files in a
+subdirectory of the current project directory.
+<dl class="org-dl">
+<dt>Linux/remote</dt><dd>The file is stored in a directory called <code>.vscode</code> in
+your project folder (here: <code>~/edu/doa/projects/helloworld</code>)</dd>
+<dt>Windows</dt><dd>Probably the same place.</dd>
+</dl></li>
+<li>The file that controls the compilation is called <code>tasks.json</code>.</li>
+<li>Open the configuration file
+<ol class="org-ol">
+<li>Switch to the explorer window (press the document icon to the upper left/Ctrl-Shift-E)
+<ol class="org-ol">
+<li>The window should contain a row <code>.vscode</code></li>
+</ol></li>
+<li>Press the small arrow to the left of <code>.vscode</code> to view the content
+of the directory
+<ol class="org-ol">
+<li>There should be a single file <code>tasks.json</code></li>
+</ol></li>
+<li><p>
+Press the <code>tasks.json</code> row. The file should open in the editor
+with a content similar to:
+</p>
+<div class="org-src-container">
+<pre class="src src-js">{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task generated by Debugger."
+        }
+    ],
+    "version": "2.0.0"
+}
+</pre>
+</div></li>
+<li>The important items are:
+<dl class="org-dl">
+<dt><code>label</code></dt><dd>The name of this build configuration. This
+name is presented in menus. Use a name that reflects the
+content of the configuration.</dd>
+<dt><code>commands</code></dt><dd>The command to run, which is our
+<code>gcc</code> compiler.</dd>
+<dt><code>args</code></dt><dd>The arguments to give the compiler. The arguments are:
+<dl class="org-dl">
+<dt><code>-fdiagnostics-color=always</code></dt><dd>The compiler will produce
+an output with special ''escape codes'' that will color the
+text to make it simpler to read. Change to
+<code>-fdiagnostics-color=never</code> if your output is a mix of text
+and messy strings.</dd>
+<dt><code>-g</code></dt><dd>Put debug information in the output file.</dd>
+<dt><code>${file}</code></dt><dd>The file to compile. The expression is replaced
+by the currently active file, e.g. <code>helloworld.c</code>.</dd>
+<dt><code>-o</code></dt><dd>The next argument is the name to give the output file.</dd>
+<dt><code>${fileDirname}/${fileBasenameNoExtension}</code></dt><dd>The
+name to give the output file. The expression
+<code>${fileDirname}</code> is replaced by the directory of the
+currently active file, e.g.,
+<code>~/edu/doa/projects/helloworld</code>. The expression
+<code>${fileBasenameNoExtension}</code> is replaced by the namn of the
+active source file <b>without the .c extension</b>, e.g.,
+<code>helloworld</code>. Thus, in this case the output name will be
+<code>~/edu/doa/projects/helloworld/helloworld</code>.</dd>
+</dl></dd>
+<dt>(no term)</dt><dd>Modify the configuration file
+<ol class="org-ol">
+<li>Description
+<ol class="org-ol">
+<li>All assignments and excercises on the course requires two
+compiler flags:
+<dl class="org-dl">
+<dt><code>-std=c99</code></dt><dd>Use the C99 code standard.</dd>
+<dt><code>-Wall</code></dt><dd>Turn on all warning.</dd>
+</dl></li>
+</ol></li>
+<li><p>
+Add the middle two lines below at the indicated place
+</p>
+<div class="org-src-container">
+<pre class="src src-js">"-fdiagnostics-color=always",
+"-std=c99",
+"-Wall",
+"-g",
+</pre>
+</div></li>
+</ol></dd>
+<dt>(no term)</dt><dd><p>
+Modify the following lines to read:
+</p>
+<div class="org-src-container">
+<pre class="src src-js">"label": "C/C++: gcc build active file with DoA options",
+"detail": "Task configuration updated to comply with DoA requirements."
+</pre>
+</div></dd>
+</dl></li>
+<li>Press Ctrl-S to save the file.</li>
+<li>Press the cross icon to close the <code>tasks.json</code> source window.</li>
+</ol></li>
+<li>Test compile and run with modified configuration file
+<ol class="org-ol">
+<li>Description
+<ol class="org-ol">
+<li>The VS code environment keeps track of which files have been
+changed, and compiles the source in the current project if it
+has been changed after the executable file was created.</li>
+<li>However, the environment does <b>not</b> track the configuration file.</li>
+<li>Thus, we need to change the source file to trigger a re-compilation.</li>
+</ol></li>
+<li><p>
+In the <code>helloworld.c</code> source window, add a third newline to read
+</p>
+<div class="org-src-container">
+<pre class="src src-c">printf("Normal exit.\n\n\n");
+</pre>
+</div></li>
+<li>Press Ctrl-S to save.</li>
+<li>Press the Play button to re-compile and run.</li>
+<li>The program should compile and run. Switch to the <code>TERMINAL</code>
+window and verify that the output now has two blank lines at the end.</li>
+<li><p>
+Furthermore, the <code>TERMINAL</code> window should have the following
+side window at the lower right:
+</p>
+
+<p>
+
+<img src="https://www.canvas.umu.se/courses/9944/files/1895248/preview" alt="Buttons in the TERMINAL window" width="197" height="200">
+</p></li>
+<li><p>
+Press the small arrow to the left of <code>C/C++</code> to unhide the
+output from the compiler. The following text should appear (line 4 split onto two lines to show the complete contents)
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">*  Executing task: C/C++: gcc build active file 
+
+Starting build...
+/usr/bin/gcc -fdiagnostics-color=always -std=c99 -Wall -g /home/c22abc/edu/doa/projects/helloworld/helloworld.c
+    -o /home/c22abc/edu/doa/projects/helloworld/helloworld
+
+Build finished successfully.
+ *  Terminal will be reused by tasks, press any key to close it. 
+</pre>
+</div></li>
+<li>Line 4 shows the actual command that was executed <code>/usr/bin/gcc</code>
+and its arguments, including <code>-std=c99</code> and <code>-Wall</code> and the full
+path of the file to compile (<code>/home/.../helloworld.c</code>) and the
+output file (<code>/home/.../helloworld</code>).</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org6dd6277" class="outline-2">
+<h2 id="org6dd6277"><span class="section-number-2">9.</span> Run the program in a debugger</h2>
+<div class="outline-text-2" id="text-9">
+<ol class="org-ol">
+<li>Go back to <code>helloworld.c</code> so that it is the active file.</li>
+<li>Set a breakpoint at the beginning of <code>main</code>
+<ol class="org-ol">
+<li>Either: Click on the editor margin (left of the row numbers)
+of the line with the opening brace of <code>main</code> (probably
+line 4)</li>
+<li>or: Move the cursor to the line containg the opening brace of
+the <code>main</code> function head (probably line 4) and press the F9
+key.</li>
+</ol></li>
+<li>Run the program in the debugger
+<ol class="org-ol">
+<li>Press the Play icon again or press the F5 key
+<ol class="org-ol">
+<li>Since the source has not changed, no recompile is necessary.</li>
+<li>When the executable is started, we will enter the debugger and
+stop on a line at or near the breakpoint.</li>
+<li>It is now possible to debug the code using either the buttons
+at the top center of the window or pressing some function
+keys.</li>
+<li><p>
+The available commands are (left to right in the image below):
+</p>
+
+<p>
+
+<img src="https://www.canvas.umu.se/courses/9944/files/1895108/preview" alt="Debugging command buttons">
+</p>
+<dl class="org-dl">
+<dt>Continue (key F5)</dt><dd>Run the code and stop in the debugger
+when the next breakpoint is encountered.</dd>
+<dt>Step over (key F10)</dt><dd>Run the code on the current line and
+stop in the debugger on the next line. If the line contains
+a function call, run the function until it returns and stop
+on the next line. Useful if you don't want to single-step
+the function, e.g. <code>printf</code>.</dd>
+<dt>Step into (key F11)</dt><dd>Run the code on the current line and
+stop in the debugger on the next line. If the line contains
+a function call, stop at the first executable line of the
+called function. Useful if you want to debug any of your
+own functions.</dd>
+<dt>Step out (key Shift-F11)</dt><dd>Run until the current function
+returns and stop on the next executable line in the calling
+function. Useful if you accidently pressed F11 when you
+intended to press F10.</dd>
+<dt>Restart debugging (key Ctrl-Shift-F5)</dt><dd>Quit the program at
+the current position and restart it.</dd>
+<dt>Stop debugging (key Shift-F5)</dt><dd>Quit the program without
+running the rest of it. Useful if you have seen a bug and
+want to fix it immediately.</dd>
+</dl></li>
+<li>You may find it useful to learn at least the keys F10, F11, Shift-F11 by heart.</li>
+</ol></li>
+</ol></li>
+</ol>
+
+<p>
+  
+</p>
+</div>
+</div>
+<div id="outline-container-orga833e16" class="outline-2">
+<h2 id="orga833e16"><span class="section-number-2">10.</span> A slightly more interesting example</h2>
+<div class="outline-text-2" id="text-10">
+<ol class="org-ol">
+<li><p>
+Create a new directory for a new project and copy the configuration file (locally or remote, showing remote commands):
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">c22abc@itchy:~$ cd ~/edu/doa/projects/
+c22abc@itchy:~/edu/doa/projects$ mkdir findmax
+c22abc@itchy:~/edu/doa/projects$ mkdir findmax/.vscode
+c22abc@itchy:~/edu/doa/projects$ cp helloworld/.vscode/tasks.json findmax/.vscode/
+</pre>
+</div></li>
+<li>Inside VS code, select <code>File/Open folder</code> (Ctrl-K Ctrl-O) and enter
+<code>/home/c22abc/edu/doa/projects/findmax/</code>.</li>
+<li>Select <code>File/New file...</code> and enter <code>findmax.c</code> as the file name.</li>
+<li><p>
+Input the following code into <code>findmax.c</code>:
+</p>
+<div class="org-src-container">
+<pre class="src src-c">#include &lt;stdio.h&gt;
+
+int main(void)
+{
+        int v[4] =  { 4, 2, 6, 3};
+
+        int mx = v[0];
+        for (int i=1; i&lt;4; i++) {
+                if (mx &lt; v[i]) {
+                        mx = v[i];
+                }
+        }
+
+        printf("The highest value was: %d.\n", mx);
+
+        printf("Normal exit.\n");
+        return 0;
+}
+</pre>
+</div></li>
+<li>Save the code, set a breakpoint at the start of <code>main</code>, compile and
+single-step the program in the debugger.
+<ol class="org-ol">
+<li>Notice what happens in the panel called <code>VARIABLES</code>, especially <code>Locals</code>.</li>
+<li>Enter the expression <code>v[i]</code> in the <code>WATCH</code> window. Notice how it
+changes as you step through the code.</li>
+</ol></li>
+</ol>
+<p>
+
+</p>
+</div>
+</div>
+<div id="outline-container-org695acac" class="outline-2">
+<h2 id="org695acac"><span class="section-number-2">11.</span> Work with multiple files from the code base for the DoA course</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-org1a6ef51" class="outline-3">
+<h3 id="org1a6ef51"><span class="section-number-3">11.1.</span> Download and unpack the code base</h3>
+<div class="outline-text-3" id="text-11-1">
+<ol class="org-ol">
+<li>Download the zip file <code>datastructures-v1.0.14.3.zip</code> from the
+<code>Filer/Datatypskod</code> folder on the Canvas course site.
+<ol class="org-ol">
+<li>If there is a later version available, download that
+instead. Note that the directory names below will change.</li>
+</ol></li>
+<li><p>
+Unpack the code base into a known folder (locally or remote)
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">mkdir ~/edu/doa/code_base
+cd ~/edu/doa/code_base
+unzip ~/Downloads/datastructures-v1.0.14.3.zip
+</pre>
+</div></li>
+<li>This should unpack the zip file into the directory
+<code>~/edu/doa/code_base/datastructures-v1.0.14.3</code>.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb7044f9" class="outline-3">
+<h3 id="orgb7044f9"><span class="section-number-3">11.2.</span> Create a symbolic link to the code base</h3>
+<div class="outline-text-3" id="text-11-2">
+<ol class="org-ol">
+<li><p>
+Create a symbolic link to the code base
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">cd ~/edu/doa/code_base
+ln -s datastructures-v1.0.14.3 current
+ls -l
+total 4
+drwxr-xr-x 5 niclas tdb 4096 Jan 16 11:34 datastructures-v1.0.14.3/
+lrwxrwxrwx 1 niclas tdb   24 Jan 17 15:53 current -&gt; datastructures-v1.0.14.3/
+</pre>
+</div></li>
+<li>This has created a symbolic link <code>current</code> that points to
+<code>datastructures-v1.0.14.3</code>. The path <code>~/edu/doa/code_base/current</code>
+can now be used instead of the path containing the version number.</li>
+<li>If a new version of the code base is downloaded, the only thing you
+need to do is to update the link to point to the new
+<code>datastructures-v1.0.x.y</code> folder.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6dc5a33" class="outline-3">
+<h3 id="org6dc5a33"><span class="section-number-3">11.3.</span> Create a new work folder and copy source files here</h3>
+<div class="outline-text-3" id="text-11-3">
+<ol class="org-ol">
+<li><p>
+Execute the following commands
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">mkdir ~/edu/doa/projects/int_array_1d_mwe
+cd ~/edu/doa/projects/int_array_1d_mwe
+cp ~/edu/doa/code_base/current/src/int_array_1d/int_array_1d_mwe.c .
+</pre>
+</div>
+<p>
+Note the trailing dot (<code>.</code>) that indicates the current directory
+for the <code>cp</code> (copy) command.
+</p></li>
+<li>This should copy the source file <code>int_array_1d.c</code> to the current
+folder. The file contains a minimum working example (MWE) program
+(with a <code>main()</code> function) that uses the datatype <code>int_array_1d</code>.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf4fce88" class="outline-3">
+<h3 id="orgf4fce88"><span class="section-number-3">11.4.</span> Open the project folder in VS code</h3>
+<div class="outline-text-3" id="text-11-4">
+<ol class="org-ol">
+<li>In VS code, select <code>File/Open folder...</code> (Ctrl-K Ctrl-O) and navigate to the new
+<code>int_array_1d_mwe</code> folder.</li>
+<li>Open the file <code>int_array_1d_mwe.c</code>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfaf13e4" class="outline-3">
+<h3 id="orgfaf13e4"><span class="section-number-3">11.5.</span> Compile and run</h3>
+<div class="outline-text-3" id="text-11-5">
+<ol class="org-ol">
+<li>Now we will try to compile the code.
+<ol class="org-ol">
+<li>Press the play icon (Run and debug, Ctrl-Shift-D)</li>
+<li>If asked for a debug configuration, select <code>C/C++: gcc build and
+      debug active file</code> and not any of the ones mentioning gcc with a
+specific version number.</li>
+</ol></li>
+<li>This time the compile fails with an error message ''…Errors
+exist after running …''.
+<ol class="org-ol">
+<li>Press the <code>Show Errors</code> button.</li>
+<li><p>
+You should be directed to line 4 of <code>int_array_1d_mwe.c</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-c">#include &lt;int_array_1d.h&gt;
+</pre>
+</div></li>
+<li>The error messages indicate that the compiler cannot locate the
+file <code>int_array_1d.h</code>.</li>
+</ol></li>
+<li>What kind of file is this?
+<ol class="org-ol">
+<li>The code base contains several source files.</li>
+<li>Each source file contains the <b>definition</b> of the functions of a specific data
+type.</li>
+<li>The <b>declarations</b> of those functions are collected into a
+''header'' (<code>.h</code>) file.</li>
+<li>The header file for this data type is called <code>int_array_1d.h</code>.</li>
+<li>All header files of the code base are stored in a so called
+''include'' directory.</li>
+<li><b>The header files should remain in that directory! They should
+not be copied! Leave them alone!</b></li>
+<li>The actual path to the include directory in this example is
+<code>~/edu/doa/code_base/current/include</code>.</li>
+</ol></li>
+<li>We must tell the compiler where to look for the include files. This
+is done by added a compiler directive into the <code>tasks.json</code>
+file. You should find it in the folder <code>.vscode</code>.
+<ol class="org-ol">
+<li>You may copy a <code>tasks.json</code> file from any previous example, or
+start with a fresh one.</li>
+<li><p>
+Then update the file to contain:
+</p>
+<div class="org-src-container">
+<pre class="src src-js">{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build int_array_1d_mwe with DoA code base options",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c99",
+                "-Wall",
+                "-I",
+                "~/edu/doa/code_base/current/include/",
+                "-g",
+                "${workspaceFolder}/int_array_1d_mwe.c",
+                "-o",
+                "${workspaceFolder}/int_array_1d_mwe",
+                "~/edu/doa/code_base/current/src/int_array_1d/int_array_1d.c",
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Customized for int_array_1d_mwe and DoA code base 1.0.14.3."
+        }
+    ],
+    "version": "2.0.0"
+}
+</pre>
+</div></li>
+<li>Note the changed <code>label</code> and <code>detail</code> and:
+<dl class="org-dl">
+<dt>Line 11: <code>-I</code></dt><dd>The next argument is a directory the contains header
+files.</dd>
+<dt>Line 12: <code>~/edu/doa/code_base/current/include/</code></dt><dd>The actual
+path to the header files in the code base. Note that it
+contains the <code>current</code> link.</dd>
+<dt>Line 14: <code>${workspaceFolder}/int_array_1d.c</code></dt><dd>The source
+file we want to compile. This file contains our our <code>main()</code>
+function.</dd>
+<dt>Line 16: <code>${workspaceFolder}/int_array_1d_mwe</code></dt><dd>The name of the output file.</dd>
+<dt>Line 17: <code>"~/edu/doa/code_base/current/src/int_array_1d/int_array_1d.c</code></dt><dd>The
+source code for the <code>int_array_1d</code> module.</dd>
+</dl></li>
+<li>In this case, we want to compile <b>two</b> source files, so we need
+to specify them to the compiler.</li>
+<li>Verify that the <code>PROBLEMS</code> window at the bottom do not contain
+any error messages. It is easy to miss a comma sign somewhere.</li>
+<li>Save the <code>tasks.json</code> file (Ctrl-S) and close the window.</li>
+<li>Since the configuration no longer refers to the currently active
+file we do not need to open any source file.</li>
+</ol></li>
+<li>Now we will try to compile the code again.
+<ol class="org-ol">
+<li>Press the play icon (Run and debug, Ctrl-Shift-D).</li>
+<li>This time, the compile should succeed and we should end up in the debugger.</li>
+<li>However, the ''intelligent'' editor might claim that there are
+still problems, as presented in the <code>PROBLEMS</code> window. Please follow the instructions in section <a href="#orgb583ade">Tell the ''intelligent'' editor where to find stuff</a> to fix this.</li>
+<li>After this, you may single-step the code to investigate the MWE.</li>
+<li>Note that each data type has one or more MWE that are there to
+give you examples of how the data type might be used.</li>
+</ol></li>
+</ol>
+
+<p>
+      
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb583ade" class="outline-2">
+<h2 id="orgb583ade"><span class="section-number-2">12.</span> Tell the ''intelligent'' editor where to find stuff</h2>
+<div class="outline-text-2" id="text-12">
+<ol class="org-ol">
+<li>The editor is ''intelligent'', i.e., it wants to give you help
+about functions, etc. As such, it needs some configuration to know,
+e.g., where to find include files (and no, it does not read it from
+<code>tasks.json</code>. Sigh…). Furthermore, if the editor does not have this
+configuration, it might signal problems where there are none. Here
+is how to set up the ''intelligent'' editor.</li>
+<li>Press Ctrl-Shift-P to bring up the Command Palette. Select <code>C/C++:
+   Edit Configurations (UI)</code>.
+<ol class="org-ol">
+<li>In the windows that appears, set the following:
+<ol class="org-ol">
+<li>Leave the configuration name (''Linux'' on linux platforms,
+other on other platforms).</li>
+<li>Compiler path: <code>/usr/bin/gcc</code> (or another path to <code>gcc</code>)</li>
+<li>Compiler arguments: <code>-Wall</code></li>
+<li>Intellisense mode: <code>linux-gcc-x64</code></li>
+<li>Include path: Add the line
+<code>~/edu/doa/code_base/current/include/</code>.</li>
+<li>C standard: <code>c99</code>.</li>
+</ol></li>
+</ol></li>
+<li><p>
+Return to the Explorer window and open the file
+<code>.vscode/c_cpp_properties.json</code>. It should contain something similar to:
+</p>
+<div class="org-src-container">
+<pre class="src src-js">{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "~/edu/doa/code_base/current/include/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-Wall"
+            ]
+        }
+    ],
+    "version": 4
+}     
+</pre>
+</div></li>
+<li>Now the editor will hopefully be happy. (Try removing the trailing
+slash (<code>/</code>) after <code>/include</code> if it's not. Sigh…)</li>
+</ol>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/setup/windows">https://code.visualstudio.com/docs/setup/windows</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/cpp/config-wsl">https://code.visualstudio.com/docs/cpp/config-wsl</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/setup/mac">https://code.visualstudio.com/docs/setup/mac</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/setup/setup-overview">https://code.visualstudio.com/docs/setup/setup-overview</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/cpp/config-linux">https://code.visualstudio.com/docs/cpp/config-linux</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/remote/ssh">https://code.visualstudio.com/docs/remote/ssh</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client</a>      
+</p></div></div>
+
+
+</div>
+</div>
+</body>
+</html>

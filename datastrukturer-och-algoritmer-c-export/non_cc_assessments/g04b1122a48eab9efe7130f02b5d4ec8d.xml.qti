@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g04b1122a48eab9efe7130f02b5d4ec8d">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA:  Komplexitet</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g4f222b194760080bbf2362d1eca822c7" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4725,5290,7125,4088</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vi har fått reda på att f(n) = 7n&lt;sup&gt;2&lt;/sup&gt;+3n+8. Det innebär att funktionen är av O([svar1]) och att c = [svar2] och n&lt;sub&gt;0&lt;/sub&gt;= [svar3].&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="4725">
+              <material>
+                <mattext texttype="text/plain">n^2</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5290">
+              <material>
+                <mattext texttype="text/plain">n2</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="7125">
+              <material>
+                <mattext texttype="text/plain">8</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="4088">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">4725</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">7125</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">4088</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g10729f95e66c67e69a3561a83638c191" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7867,1286,9822,2220</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;&lt;br&gt;En algoritm har tidskomplexitet O(2&lt;sup&gt;n&lt;/sup&gt;).&amp;nbsp;Då ni implementerat&amp;nbsp;och testkört den så har ni funnit att algoritmen tar 20 sekunder att köra för n=20.&lt;br&gt;&lt;br&gt;Ungefär hur lång tid kan vi anta att algoritmen tar att köra för n=21?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7867">
+              <material>
+                <mattext texttype="text/plain">21 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1286">
+              <material>
+                <mattext texttype="text/plain">120 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9822">
+              <material>
+                <mattext texttype="text/plain">40 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2220">
+              <material>
+                <mattext texttype="text/plain">3 timmar</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">9822</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g99b667ccf75ff545408e8ae726e008ba" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8312,8063</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Om du ska köra en algoritm med 10 000 element och du vet att algoritm A är O(n) och algoritm B är O(n&lt;sup&gt;2&lt;/sup&gt; ), vilken algoritm borde du välja?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="8312">
+              <material>
+                <mattext texttype="text/plain">Algoritm A</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8063">
+              <material>
+                <mattext texttype="text/plain">Algoritm B</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8312</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gb1b8f0af6e9b5100a090898d56653d2d" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8543,9502,9154,3115,9150</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Om man placerar komplexiteterna n&lt;sup&gt;2&lt;/sup&gt; , log(n), 2&lt;sup&gt;n&lt;/sup&gt; , n, n&lt;sup&gt;3&amp;nbsp;&lt;/sup&gt; i storleksordning från minst till störst. Vilket är rätt svar?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="8543">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;n, n&lt;sup&gt;2&lt;/sup&gt; , n&lt;sup&gt;3&lt;/sup&gt; , log(n), 2&lt;sup&gt;n&lt;/sup&gt;&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9502">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;2&lt;sup&gt;n&lt;/sup&gt; , n, n&lt;sup&gt;2&lt;/sup&gt; , n&lt;sup&gt;3&lt;/sup&gt; , log(n)&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9154">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;log(n), 2&lt;sup&gt;n&lt;/sup&gt; , n, n&lt;sup&gt;2&lt;/sup&gt; , n&lt;sup&gt;3&lt;/sup&gt;&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3115">
+              <material>
+                <mattext texttype="text/html">&amp;nbsp;&lt;span class="mcAnswerText"&gt;log(n),&amp;nbsp; n, n&lt;sup&gt;2&lt;/sup&gt; , 2&lt;sup&gt;n&lt;/sup&gt; ,n&lt;sup&gt;3&lt;/sup&gt;&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9150">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;log(n), n, n&lt;sup&gt;2&lt;/sup&gt; ,n&lt;sup&gt;3&lt;/sup&gt; , 2&lt;sup&gt;n&lt;/sup&gt;&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">9150</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g2dc36e56c9650bcd48a681068467e90b" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7365,7371,9610,7361</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;En algoritm har tidskomplexitet O(n*log(n)) och då ni implementerat den och testkört den så har ni funnit att algoritmen tar 20 sekunder att köra då n är 100 000.&lt;/p&gt;
+&lt;p&gt;Ungefär hur lång tid kan vi anta att algoritmen tar att köra för 1 000 000 värden?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7365">
+              <material>
+                <mattext texttype="text/plain">200 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7371">
+              <material>
+                <mattext texttype="text/plain">240 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9610">
+              <material>
+                <mattext texttype="text/plain">24 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7361">
+              <material>
+                <mattext texttype="text/plain">1 timme</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7371</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g9678b07b9025f592305ce9edca537722" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>short_answer_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4690,6945,9917,6248</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Hur definierar man beräkningsbarhet? "Ett problem är beräkningsbart om och endast om det finns en [svar] som löser problemet."&lt;/div&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib>
+            <response_label ident="answer1" rshuffle="No"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">Turingmaskin</varequal>
+            <varequal respident="response1">turing maskin</varequal>
+            <varequal respident="response1">turing-maskin</varequal>
+            <varequal respident="response1">algoritm</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+        <respcondition continue="Yes">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <displayfeedback feedbacktype="Response" linkrefid="general_incorrect_fb"/>
+        </respcondition>
+      </resprocessing>
+      <itemfeedback ident="general_incorrect_fb">
+        <flow_mat>
+          <material>
+            <mattext texttype="text/plain">Läs kapitel 2.2</mattext>
+          </material>
+        </flow_mat>
+      </itemfeedback>
+    </item>
+    <item ident="gfb825cd758d60fc15f30268f7c5929cb" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>334,7865</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Om du ska köra en algoritm med 10 000 element och du vet att algoritm A är O(n) och algoritm B är O(n&lt;sup&gt;2&lt;/sup&gt; ) så kan du bestämma vilken algoritm du skulle köra.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Skulle ditt svar ändras om du får reda på att T(n) för algoritm A är 1 000 000n och T(n) för algoritm B är 2n&lt;sup&gt;2&lt;/sup&gt;?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="334">
+              <material>
+                <mattext texttype="text/plain">Ja i detta fall är algoritm A snabbare.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7865">
+              <material>
+                <mattext texttype="text/plain">Ja i detta fall är algoritm B snabbare.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7865</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g1394d5f56199c44930c9e846765b9779" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7132,98586,59796,70895</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Man kan säga att f(n) är av O(g(n)). Vilket/vilka av nedanstående stämmer då?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="7132">
+              <material>
+                <mattext texttype="text/html">&amp;nbsp;f(n) &amp;lt;= c*g(n) för n &amp;gt;= n&lt;sub&gt;0&lt;/sub&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="98586">
+              <material>
+                <mattext texttype="text/html">&amp;nbsp;g(n) &amp;lt;= c*f(n) för n &amp;gt;= n&lt;sub&gt;0&lt;/sub&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="59796">
+              <material>
+                <mattext texttype="text/plain">Funktionen f(n) är uppåt begränsad av en multipel av g(n) för tillräckligt stora värden på n.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="70895">
+              <material>
+                <mattext texttype="text/plain">Funktionen g(n) är uppåt begränsad av en multipel av f(n)för tillräckligt stora värden på n.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">7132</varequal>
+              <not>
+                <varequal respident="response1">98586</varequal>
+              </not>
+              <varequal respident="response1">59796</varequal>
+              <not>
+                <varequal respident="response1">70895</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gfbafe00196a5c1a0cc0dca4474e81e7a" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8279,5487,9484,5863</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;En algoritm har tidskomplexitet O(n&lt;sup&gt;2&lt;/sup&gt;).&amp;nbsp;Då ni implementerat&amp;nbsp;och testkört den så har ni funnit att algoritmen tar 20 sekunder att köra för n=1000000 (en miljon).&lt;br&gt;&lt;br&gt;Ungefär hur lång tid kan vi anta att algoritmen tar att köra för n=2000000 (två miljoner)?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="8279">
+              <material>
+                <mattext texttype="text/plain">40 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5487">
+              <material>
+                <mattext texttype="text/plain">80 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9484">
+              <material>
+                <mattext texttype="text/plain">120 sekunder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5863">
+              <material>
+                <mattext texttype="text/plain">3 timmar</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">5487</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g19273cb9010f97679ed34530a52c9d6e" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6840,3642</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;När man mäter tiden det tar för ett program att köra och bedömer&amp;nbsp; komplexiteten utifrån det kallas det för [svar1] analys och när man räknar operationer och sätter upp ett uttryck för komplexiteten kallas det för [svar2] analys.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="6840">
+              <material>
+                <mattext texttype="text/plain">experimentell</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="3642">
+              <material>
+                <mattext texttype="text/plain">asymptotisk</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">6840</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">3642</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gc54e867246eb0187e0e81c86f6862e90" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>short_answer_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>991,308</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Hur definierar man ett hanterbart problem? Det är ett [svar1] problem som kan lösas inom rimlig tid, dvs en tidskomplexitet som uppåt begränsas av ett [svar2].&lt;/div&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib>
+            <response_label ident="answer1" rshuffle="No"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">beräkningsbart</varequal>
+            <varequal respident="response1">polynom</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gade1cc652012b92b2e45479b431233b3" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7140,886,538</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Antag att vi har en datatyp ADT1 som är skapad med hjälp av en annan datatyp ADT2. Hur benämner man komplexiteten när inte bara tittar på "ytan" och ser hur många ADT2-operationer som behövs i en ADT1-operation utan även undersöker komplexiteten hos ADT2-operationerna och komplexitete hos de ADT-operationer de eventuellt bygger på?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7140">
+              <material>
+                <mattext texttype="text/plain">Absolut komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="886">
+              <material>
+                <mattext texttype="text/plain">Relativ komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="538">
+              <material>
+                <mattext texttype="text/plain">Komplex komplexitet</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7140</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gd3bce5bbcccf6564e7978c82292357f2" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>1851,5222,5562</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Antag att vi har en datatyp ADT1 som är skapad med hjälp av en annan datatyp ADT2. Hur benämner man komplexiteten när man enbart tittar på "ytan" och ser hur många ADT2-operationer som behövs i en ADT1-operation?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="1851">
+              <material>
+                <mattext texttype="text/plain">Relativ komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5222">
+              <material>
+                <mattext texttype="text/plain">Absolut komplexitet</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5562">
+              <material>
+                <mattext texttype="text/plain">Komplex komplexitet</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">1851</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g551f966c35b9ce5c2fcf9c4e306617c1" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4236,1344,7215,6827</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad av följande är sant gällande tids-/minnes-komplexiteten för funktionen nedan?&lt;br&gt;&lt;br&gt;&lt;tt&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;Algorithm sum(n) &lt;/span&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp; result &amp;lt;- 0&lt;/span&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp; i &amp;lt;- 0&lt;br&gt;&amp;nbsp;&amp;nbsp; while i &amp;lt; n do &lt;/span&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;span style="font-family: 'courier new' , courier , monospace;"&gt;result &amp;lt;- result + n&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; n &amp;lt;- n-1&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; i = i +1&lt;br&gt;&lt;span style="font-family: 'courier new' , courier , monospace;"&gt;&amp;nbsp; &amp;nbsp;return result&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;table&gt;&lt;/table&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="4236">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Funktionens tidskomplexitet är O(n)&lt;/p&gt;
+&lt;p&gt;Funktionens minneskomplexitet är O(1)&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1344">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Funktionens tidskomplexitet är O(n&lt;sup&gt;2&lt;/sup&gt;)&lt;/p&gt;
+&lt;p&gt;Funktionens minneskomplexitet är O(1)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7215">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Funktionens tidskomplexitet är O(1)&lt;/p&gt;
+&lt;p&gt;Funktionens minneskomplexitet är O(1)&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6827">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Funktionens tidskomplexitet är O(1)&lt;/p&gt;
+&lt;p&gt;Funktionens minneskomplexitet är O(n)&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">4236</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gc088c37723734f7c3022d5ef2ef974f4" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>5879,250,9898,4287,7618</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;&lt;span style="font-size: 10.0pt;"&gt;Betrakta följande algoritmer:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;algoritm isNotWithin(val, values, m)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; for i &amp;lt;-&lt;/span&gt;&lt;/span&gt; &lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt; 1 to m do&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if val = values[i] then&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;return False&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return True&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;algoritm areSubset(xList, n, yList, m)&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; for i &lt;/span&gt;&lt;/span&gt;&amp;lt;- &lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;1 to n do&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if isNotWithin(xList[i], yList, m)then&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; return False&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;span style="font-family: courier;"&gt; &lt;span style="font-size: 10.0pt;"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; return True&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;br&gt;Vilken komplexitet har algoritmen&amp;nbsp; &lt;span style="font-family: courier;"&gt;areSubset&lt;/span&gt; (glöm inte räkna med komplexiteten för funktionen som anropas)?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="5879">
+              <material>
+                <mattext texttype="text/plain">O(n*m)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="250">
+              <material>
+                <mattext texttype="text/plain">O(n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9898">
+              <material>
+                <mattext texttype="text/plain">O(m)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4287">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;2&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7618">
+              <material>
+                <mattext texttype="text/html">O(m&lt;sup&gt;2&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">5879</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gec1a9a0c7e94107748a5b4112a3354e0" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>348,5231,3081</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vi har följande algoritm som läser in värden till en stack och sen skriver ut den.&lt;/p&gt;
+&lt;pre&gt;Algoritm readAndPrint(n)
+Indata: n - antalet tecken att läsa in
+Utdata:-
+S &amp;lt;- empty() 
+for i = 1 to n do 
+    val &amp;lt;- read("Ge ett värde")
+    S &amp;lt;- push(S, val)
+
+while not isempty(S) do
+    print(top(S)) 
+    S &amp;lt;- pop(S)&lt;/pre&gt;
+&lt;p&gt;Vad är den relativa komplexiteten för denna algoritm?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="348">
+              <material>
+                <mattext texttype="text/plain">O(n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5231">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;2&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3081">
+              <material>
+                <mattext texttype="text/plain">O(2n)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">348</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g78de0b797fedf24ad8d206a4d70626c5" title="Komplexitet">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>5057,6048,1436,9686</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vi har följande algoritm som läser in värden till en stack och sen skriver ut den.&lt;/p&gt;
+&lt;pre&gt;Algoritm readAndPrint(n) &lt;br&gt;Indata: n - antalet tecken att läsa in &lt;br&gt;Utdata:- &lt;br&gt;S &amp;lt;- empty() &lt;br&gt;for i = 1 to n do &lt;br&gt;    val &amp;lt;- read("Ge ett värde") &lt;br&gt;    S &amp;lt;- push(S, val) &lt;br&gt;while not isempty(S) do &lt;br&gt;    print(top(S)) &lt;br&gt;    S &amp;lt;- pop(S)&lt;/pre&gt;
+&lt;p&gt;Vi har valt att konstruera stacken som en lista enligt följande:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Empty konstrueras som List-Empty&lt;/li&gt;
+&lt;li&gt;Isempty konstrueras som List-Isempty&lt;/li&gt;
+&lt;li&gt;Top(s) konstrueras som List-Inspect(List-First(s), s)&lt;/li&gt;
+&lt;li&gt;Pop(s) konstrueras som List-Remove(List-First(s), s)&lt;/li&gt;
+&lt;li&gt;Push(v, s) konstrueras som List-Insert(v, List-First(s), s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Den relativa komplexiteten hos algoritmen O(n) är obereoende av denna konstruktion av stacken. Dvs ingen av operationerna Pop, Top och Push har en komplexitet som beror av antalet element på stacken. Men vad händer med den absoluta komplexiteten hos algoritmen om vi får reda på att listan är konstruerad med hjälp av den fysiska datatypen Fält där toppen på stacken är första elementet i listan och första elementet i listan ligger på index 0 i fältet?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="5057">
+              <material>
+                <mattext texttype="text/plain">Inget, den absoluta komplexiteten är densamma som den relativa komplexiteten i detta fall.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6048">
+              <material>
+                <mattext texttype="text/html">Den absoluta komplexiteten ökar till O(n&lt;sup&gt;2&lt;/sup&gt;).</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1436">
+              <material>
+                <mattext texttype="text/plain">Den absoluta komplexiteten ökar till O(n log n).</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9686">
+              <material>
+                <mattext texttype="text/html">Den absoluta komplexiteten ökar till O(n&lt;sup&gt;3&lt;/sup&gt;).</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6048</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

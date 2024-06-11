@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g01079fdc6764c2c668c7a4e11835e616">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA:  Binära sökträd</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="gedbc3375a552dfae249ddd8cc3ea9c46" title="Binära sökträd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>76172,26173,49818,13977</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vilka av nedanstående träd med tecken som etiketter uppfyller kraven på binära sökträd?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/bst.png?canvas_download=1" alt="bst.png" width="1362" height="543"&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="76172">
+              <material>
+                <mattext texttype="text/plain">Träd A</mattext>
+              </material>
+            </response_label>
+            <response_label ident="26173">
+              <material>
+                <mattext texttype="text/plain">Träd B</mattext>
+              </material>
+            </response_label>
+            <response_label ident="49818">
+              <material>
+                <mattext texttype="text/plain">Träd C</mattext>
+              </material>
+            </response_label>
+            <response_label ident="13977">
+              <material>
+                <mattext texttype="text/plain">Träd D</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <not>
+                <varequal respident="response1">76172</varequal>
+              </not>
+              <varequal respident="response1">26173</varequal>
+              <varequal respident="response1">49818</varequal>
+              <not>
+                <varequal respident="response1">13977</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g932510bd625c0b095e7d089d04a8c923" title="Binära sökträd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3710,877,364,6114</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;I bilden nedan finns ett exempel på ett binärt sökträd. Om man traverserar det i inorder så blir resultatet A, B, C, D, E, F, G, H, I. Sekvensen är alltså sorterad.&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/binary_tree.png?canvas_download=1" alt="binary_tree.png" width="250" height="199"&gt;&lt;/p&gt;
+&lt;p&gt;Är detta något som är alltid är uppfyllt för inorder-traversering av binära sökträd?&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3710">
+              <material>
+                <mattext texttype="text/plain">Ja, inorder-traversering av binära sökträd ger alltid en sorterad sekvens.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="877">
+              <material>
+                <mattext texttype="text/plain">Nej, inorder-traversering av binära sökträd ger bara en sorterad sekvens om det saknas dubletter i trädet.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="364">
+              <material>
+                <mattext texttype="text/plain">Nej, det är slumpen som styr. Ibland blir det en sorterad sekvens, ibland inte.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6114">
+              <material>
+                <mattext texttype="text/plain">No answer text provided.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3710</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g76a6328f06a8b8901864b155ae38b1e9" title="Binära sökträd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>54229,27455,2020,12209</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad är sant när det gäller binära sökträd?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="54229">
+              <material>
+                <mattext texttype="text/plain">Trädet är sorterat så att för en nod N gäller att alla etiketter i vänster delträd går före N som i sin tur går före alla etiketter i höger delträd i sorteringsordning.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="27455">
+              <material>
+                <mattext texttype="text/plain">Trädet är sorterat så att etiketterna kommer i sorterad ordning om man traverserar trädet i inorder.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2020">
+              <material>
+                <mattext texttype="text/plain">Alla noder i ett binärt sökträd måste ha etiketter.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="12209">
+              <material>
+                <mattext texttype="text/plain">Ett binärt sökträd är komplett.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">54229</varequal>
+              <varequal respident="response1">27455</varequal>
+              <varequal respident="response1">2020</varequal>
+              <not>
+                <varequal respident="response1">12209</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

@@ -1,0 +1,361 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Workshop 1 - Övningar i terminalen med kodbasen - svar</title>
+<meta name="identifier" content="gfdd59cfa84af4dc0dd98427794e94402"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1bc31cc">Svar och kommentarer till Workshop - Övningar i terminalen med kodbasen</a></li>
+<li><a href="#org95354f7">Övning 1</a></li>
+<li><a href="#org2e4f742">Övning 2 - skriv egen kod</a></li>
+<li><a href="#org8968d18">Dokumenthistorik</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1bc31cc" class="outline-2">
+<h2 id="org1bc31cc">Svar och kommentarer till Workshop - Övningar i terminalen med kodbasen</h2>
+</div>
+
+
+<div id="outline-container-org95354f7" class="outline-2">
+<h2 id="org95354f7">Övning 1</h2>
+<div class="outline-text-2" id="text-org95354f7">
+<dl class="org-dl">
+<dt>B1</dt><dd><ul class="org-ul">
+<li><p>
+Generiska datatyper (kan lagra elementvärde av godtycklig typ):
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fil</th>
+<th scope="col" class="org-left">Datatyp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>array_1d.h</code></td>
+<td class="org-left">Fält, endimensionellt</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>array_2d.h</code></td>
+<td class="org-left">Fält, tvådimensionellt</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>dlist.h</code></td>
+<td class="org-left">Riktad lista</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>list.h</code></td>
+<td class="org-left">Lista</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>queue.h</code></td>
+<td class="org-left">Kö</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>stack.h</code></td>
+<td class="org-left">Stack</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>table.h</code></td>
+<td class="org-left">Tabell</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>
+Typade datatyper (kan lagra heltal):
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fil</th>
+<th scope="col" class="org-left">Datatyp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>int_array_1d.h</code></td>
+<td class="org-left">Fält av Helta, endimensionellt</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>int_list.h</code></td>
+<td class="org-left">Lista av Heltal, implementerad med länkade celler</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>int_list_array.h</code></td>
+<td class="org-left">Lista av Heltal, implementerad med fält</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>int_stack.h</code></td>
+<td class="org-left">Stack av Heltal</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>
+Övrigt:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+
+<colgroup>
+<col class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fil</th>
+<th scope="col" class="org-left">Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>util.h</code></td>
+<td class="org-left">Allmänna definitioner och deklarationer som används av hela kodbasen</td>
+</tr>
+</tbody>
+</table></li>
+</ul></dd>
+<dt>B2</dt><dd><ol class="org-ol">
+<li>Filen <code>int_list.h</code> beskriver gränssnittet för datatypen Lista av Heltal.</li>
+<li>Filen i den andra <code>#include</code>-satsen är skriven inom
+citationstecken. Det betyder att komplatorn (pre-processorn om
+vi ska vara petiga) letar efter filen <code>util.h</code> <b>både</b> på
+''standard-platser'' (ni behöver inte veta) och i samma katalog
+som <code>int_list.h</code>.</li>
+<li>Den som ska använda datatypen behöver bara veta <b>gränssnittet</b>
+(deklarationerna) till funktionerna som tillhör datatypen, inte
+<b>implementationen</b> (definitionerna) av dem.</li>
+<li>Nej, det behövs inte.
+<ol class="org-ol">
+<li>Den första <code>typedef</code>-satsen definierar en <i>anonym</i>
+<code>struct</code>. Den berättar i princip att det <i>finns</i> en <code>struct</code> som
+heter <code>list</code>, men inte vad den innehåller. Det gör det möjligt
+att skriva kod som använder typen <code>list *</code> (pekare till list)
+utan att känna till innehållet i <code>struct</code>-en. Om ni studerar
+funktionsdeklarationerna i <code>int_list.h</code> ser ni att funktionerna
+använder just typen <code>list *</code>.</li>
+<li>Den andra <code>typedef</code>-satsen definierar att typen <code>list_pos</code>
+ska vara ekvivalent med <code>struct cell *</code> (pekare till <code>struct
+        cell</code>). Återigen är <code>struct cell</code> en anonym struct, dvs. ni
+får inte veta (<i>behöver</i> inte veta) vad den innehåller.</li>
+</ol></li>
+<li>Det bör framgå av funktionsnamnen och funktionskommentarerna vad funktionerna gör.</li>
+</ol></dd>
+<dt>C2</dt><dd><ol class="org-ol">
+<li>Filen <code>int_list.c</code> innehåller implementationerna av funktionerna
+vars deklarationer finns i <code>int_list.h</code>. För att garantera att
+funktionsnamn, parametrar, m.m. är konsistenta mellan
+<code>int_list.h</code> och <code>int_list.c</code> ska den förra inkluderas i den
+senare.</li>
+<li>Den här filen innehåller <i>definitionerna</i> av funktionerna i
+gränssnittet till Lista av Heltal. Dessa funktion behöver kunna manipulera
+<i>insidan</i> av Listan och t.ex. <code>struct list</code>.</li>
+<li>Filen <code>int_list.c</code> innehåller inga funktioner förutom de som
+listats i <code>int_list.h</code>. Det går däremot utmärkt att ha fler
+funktioner. Man kan vilja ha funktioner som är interna för
+datatypen —– som kan användas av funktionerna i gränssnittet men
+som är osynliga utåt. Tänk bara på att funktionerna måste listas
+i h-filen om de ska kunna användas utanför <code>int_list.c</code>!</li>
+</ol></dd>
+<dt>C3</dt><dd><dl class="org-dl">
+<dt>C3.1</dt><dd>Det här är ett litet exempel på ett huvudprogram som använder
+datatypen <code>int_list</code>.</dd>
+<dt>C3.2</dt><dd>Exemplen fyller minst två syften:
+<ol class="org-ol">
+<li>Det gör det möjligt för användare att testa att de kan
+kompilera och köra kod som fungerar innan de sätter igång
+och skriver egen kod.</li>
+<li>Exempelkoden kan fungera som — exempel — på hur man använder
+koden, så användarna kan utgå från exemplen när dom skriver
+egen kod.</li>
+</ol></dd>
+<dt>C3.4</dt><dd>Kompilatorn hittar inte filen <code>int_list.h</code>. Se nästa punkt för lösning.</dd>
+<dt>C3.6</dt><dd>Felmeddelandena säger att någon del av den kompilerade koden
+(i <code>int_list_mwe.c</code>) refererar till bl.a. funktionen <code>list_empty</code>
+och att denna funktion är odefinierad (''<i>undefined
+reference</i>''). Det beror på att ni inte tagit med filen
+<code>int_list.c</code> som innehåller funktionernas definitioner vid kompileringen.</dd>
+<dt>C3.7</dt><dd>Det program som ger felmeddelandet är inte kompilatorn <code>gcc</code> utan
+ett program som heter <code>ld</code> (<code>/usr/bin/ld</code>). Det programmet sätter
+samman ''halv-kompilerade'' versioner (objekt-filer är den
+tekniska termen) av de filer ni anger på command line.</dd>
+</dl></dd>
+<dt>D</dt><dd><dl class="org-dl">
+<dt>D1</dt><dd>Filen är en s.k. <code>make</code>-fil och innehåller instruktioner för
+att kompilera program när olika filer förändras.</dd>
+<dt>D3</dt><dd>Under linux bör ni fått en fil <code>libdoa.a</code> som är en
+s.k. <i>biblioteksfil</i> (<i>archive</i>). En biblioteksfil kan innehålla
+många objekt-filer och gör det möjligt att kompilera kod som
+använder alla datatyper i kodbasen utan att explicit ange vilka.</dd>
+</dl></dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org2e4f742" class="outline-2">
+<h2 id="org2e4f742">Övning 2 - skriv egen kod</h2>
+<div class="outline-text-2" id="text-org2e4f742">
+<dl class="org-dl">
+<dt>B</dt><dd><dl class="org-dl">
+<dt>B2</dt><dd><p>
+Lägg till raden
+</p>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;int_list.h&gt;</span>
+</pre>
+</div></dd>
+<dt>B3–B10</dt><dd><p>
+Följande kod löser problemet under punkt 3-10:
+</p>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;stdio.h&gt;</span>
+<span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;int_list.h&gt;</span>
+
+<span style="color: #228b22;">int</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">void</span>)
+{
+    <span style="color: #228b22;">list</span> *<span style="color: #a0522d;">l</span>;
+    <span style="color: #228b22;">list_pos</span> <span style="color: #a0522d;">p</span>;
+    <span style="color: #228b22;">int</span> <span style="color: #a0522d;">v</span>;
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B3 of the excercise</span>
+    l = list_empty();
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Where to put values in even list (at the end)</span>
+    p = list_first(l);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B4 --- start</span>
+    <span style="color: #a020f0;">do</span> {
+        scanf(<span style="color: #8b2252;">"%d"</span>, &amp;v);
+        <span style="color: #a020f0;">if</span> (v &gt;= 0) {
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">returned value is position of new element</span>
+            p = list_insert(l, v, p);
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">advance to next position (which is at the end of the list)</span>
+            p = list_next(l, p);
+        }
+    } <span style="color: #a020f0;">while</span> (v &gt;= 0);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B4 --- end</span>
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B5</span>
+    printf(<span style="color: #8b2252;">"These values were input and stored in the list:\n"</span>);
+    list_print(l);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B6 --- begin</span>
+    <span style="color: #228b22;">int</span> <span style="color: #a0522d;">sum</span> = 0;
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Start at the beginning of the list</span>
+    p = list_first(l);
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Iterate until end of list</span>
+    <span style="color: #a020f0;">while</span> (!list_pos_is_equal(l, p, list_end(l))) {
+        <span style="color: #b22222;">// </span><span style="color: #b22222;">Inspect value</span>
+        v = list_inspect(l, p);
+        <span style="color: #b22222;">// </span><span style="color: #b22222;">Add to sum</span>
+        sum += v;
+        <span style="color: #b22222;">// </span><span style="color: #b22222;">Advance in list</span>
+        p = list_next(l, p);
+    }
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Output</span>
+    printf(<span style="color: #8b2252;">"Sum of input values: %d\n"</span>, sum);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B7 --- begin</span>
+    <span style="color: #228b22;">list</span> *<span style="color: #a0522d;">even</span> = list_empty();
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Where to put values in even list (at the end)</span>
+    <span style="color: #228b22;">list_pos</span> <span style="color: #a0522d;">ep</span> = list_first(even);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Iterate over all elements of l</span>
+    p = list_first(l);
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Iterate until end of list</span>
+    <span style="color: #a020f0;">while</span> (!list_pos_is_equal(l, p, list_end(l))) {
+        <span style="color: #b22222;">// </span><span style="color: #b22222;">Inspect value</span>
+        v = list_inspect(l, p);
+        <span style="color: #a020f0;">if</span> (v % 2 == 0) {
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">If value is even, add value to the even list</span>
+            ep = list_insert(even, v, ep);
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">advance to next position (which is at the end of the list)</span>
+            ep = list_next(even, ep);
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">Remove element. The returned position will be after the</span>
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">removed element.</span>
+            p = list_remove(l, p);
+        } <span style="color: #a020f0;">else</span> {
+            <span style="color: #b22222;">// </span><span style="color: #b22222;">Advance in input list</span>
+            p = list_next(l, p);
+        }
+    }
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B7 --- end</span>
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B8</span>
+    printf(<span style="color: #8b2252;">"These are the even numbers that were entered:\n"</span>);
+    list_print(even);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B9</span>
+    printf(<span style="color: #8b2252;">"These are the odd numbers that were entered:\n"</span>);
+    list_print(l);
+
+    <span style="color: #b22222;">// </span><span style="color: #b22222;">Code for part B10:</span>
+    list_kill(l);
+    list_kill(even);
+
+    printf(<span style="color: #8b2252;">"Normal exit.\n"</span>);
+    <span style="color: #a020f0;">return</span> 0;
+}
+</pre>
+</div></dd>
+<dt>B11</dt><dd><p>
+Kompilera koden med
+</p>
+<pre class="example" id="org9b8be9a">niclas@earth:~/edu/doa/work$ gcc -Wall -std=c99 -o read_num_dynamic -I ../datastructures-v1.0.14.3/include read_num_dynamic.c ../datastructures-v1.0.14.3/src/int_list/int_list.c 
+</pre></dd>
+</dl></dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org8968d18" class="outline-2">
+<h2 id="org8968d18">Dokumenthistorik</h2>
+<div class="outline-text-2" id="text-org8968d18">
+<dl class="org-dl">
+<dt>v1.0 2024-01-15</dt><dd>Första publicerade version.</dd>
+<dt>v2.0 2024-01-15</dt><dd>Ny version som använder int<sub>list</sub> i stället för dlist.</dd>
+<dt>v3.0 2024-03-18</dt><dd>Lade till beskrivningar av prompter och magiska tangenter.</dd>
+</dl>
+</div>
+</div>
+
+</body>
+</html>

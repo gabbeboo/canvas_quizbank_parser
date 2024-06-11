@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>GÖ2 - Komplexitet</title>
+<meta name="identifier" content="g6d7051eb2d82313b8c30e9c84d78a830"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p>Storleksordning på några komplexiteter: <span style="left: 225.815px; top: 334.6px; font-size: 16.8395px; font-family: sans-serif;">log n &lt;&lt; n log n &lt;&lt; n<sup>2</sup> &lt;&lt; n<sup>3</sup> &lt;&lt; polynom av högre gradtal &lt;&lt; 2<sup>n</sup> &lt;&lt; n! &lt;&lt; n<sup>n</sup></span></p>
+<p>Först lite uppvärmning där vi får givna uppskattningar av T(n):</p>
+<h2>Uppgift 1</h2>
+<p>Bestäm c och n<sub>0</sub> för g(n) = n och T<sub>1</sub>(n) = 10n + 7.&nbsp; Är T<sub>1</sub>(n) O(n)?</p>
+<h2>Uppgift 2</h2>
+<ol style="list-style-type: upper-alpha;">
+<li>Bestäm c och n<sub>0</sub> för g(n) = n<sup>2</sup> och T<sub>2</sub>(n) = 4n<sup>3</sup> - 2n<sup>2</sup> + n + 12.</li>
+<li>Upprepa A för g(n) = n<sup>3<br></sup></li>
+<li>Upprepa A för g(n) = n<sup>4</sup></li>
+</ol>
+<h2>Uppgift 3</h2>
+<p>Om vi vet att T<sub>3</sub>(n) = 4n log n + 3 n<sup>3</sup>.&nbsp;</p>
+<ol style="list-style-type: upper-alpha;">
+<li>Är T<sub>3</sub>(n) O(n<sup>3</sup>)?</li>
+<li>Är T<sub>3</sub>(n) O(n<sup> </sup>log n)?</li>
+</ol>
+<h2>Uppgift 4</h2>
+<p>Om vi vet att T<sub>4</sub>(n) = 4<img class="equation_image" title="\cdot" src="https://www.canvas.umu.se/equation_images/%255Ccdot" alt="LaTeX: \cdot" data-equation-content="\cdot">2<sup>n</sup> + 3 n<sup>3</sup>.&nbsp;</p>
+<ol style="list-style-type: upper-alpha;">
+<li>Är T<sub>4</sub>(n) O(2<sup>n</sup>)?</li>
+<li>Är T<sub>4</sub>(n) O(n<sup>3</sup>)?</li>
+</ol>
+<p>&nbsp;</p>
+<p><span style="left: 158.605px; top: 509.131px; font-size: 15.8137px; font-family: sans-serif;">Nu går vi vidare till att analysera komplexiteten själva. <span style="left: 118.24px; top: 332.611px; font-size: 16.6px; font-family: sans-serif;">Uppgiften är att bestämma tidskomplexiteten för de nedanstående algoritmerna. Detta ska göras genom att räkna </span><span style="left: 118.24px; top: 354.411px; font-size: 16.6px; font-family: sans-serif;">antalet </span><span style="left: 173.233px; top: 354.411px; font-size: 16.6px; font-family: sans-serif;">primitiva operationer</span><span style="left: 337.083px; top: 354.411px; font-size: 16.6px; font-family: sans-serif;"> som utförs i varje algoritm. Utifrån detta ska sedan definitionen av </span><span style="left: 834.367px; top: 354.411px; font-size: 16.6px; font-family: sans-serif;">Ordo </span><span style="left: 118.24px; top: 376.011px; font-size: 16.6px; font-family: sans-serif;">användas för att ge uttryck för varje algoritms tidskomplexitet. Konstanterna </span><span style="left: 686.517px; top: 376.011px; font-size: 16.6px; font-family: sans-serif;">c</span><span style="left: 694.117px; top: 376.011px; font-size: 16.6px; font-family: sans-serif;"> och </span><span style="left: 728.567px; top: 376.011px; font-size: 16.6px; font-family: sans-serif;">n</span><span style="left: 738.367px; top: 382.93px; font-size: 10.8px; font-family: sans-serif;">0</span><span style="left: 744.967px; top: 376.011px; font-size: 16.6px; font-family: sans-serif;"> skall </span><span style="left: 118.24px; top: 397.611px; font-size: 16.6px; font-family: sans-serif;">bestämmas. För ett exempel på hur en analys kan se ut titta på föreläsningsanteckningarn</span><span style="left: 777.167px; top: 397.611px; font-size: 16.6px; font-family: sans-serif;">a. Tänk på </span><span style="left: 118.24px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;">att fundera kring om det finns ett </span><em><span style="left: 366.676px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;">worst-case</span></em><span style="left: 448.283px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;"> och</span><span style="left: 478.483px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;"> ett </span><em><span style="left: 506.317px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;">best-case</span></em><span style="left: 574.917px; top: 419.461px; font-size: 16.6px; font-family: sans-serif;"> och hur de i så fall ser ut.</span><br></span></p>
+<h2>Uppgift 5 - Summera talen 1 till n</h2>
+<pre>Algorithm sumN(n)<br>input: A number n<br>output: The sum of the numbers 1 to n<br>&nbsp;&nbsp;&nbsp; sum ← 0<br>&nbsp;&nbsp;&nbsp; for i ← 1 to n do<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum ← sum + i <br>&nbsp;&nbsp;&nbsp; return sum&nbsp;</pre>
+<h2>Uppgift 6 - Summera alla udda tal mellan 1 och n</h2>
+<pre>Algorithm sumN(n)<br>input: A number n<br>output: The sum of the odd numbers between 1 and n<br>&nbsp;&nbsp;&nbsp; sum ← 0<br>&nbsp;&nbsp;&nbsp; i ← 1<br>&nbsp;&nbsp;&nbsp; while i &lt;= n do<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum ← sum + i <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i = i + 2<br>&nbsp;&nbsp;&nbsp; return sum</pre>
+<h2>Uppgift 7 - Linjär sökning</h2>
+<pre>Algorithm linearSearch(v, n, num)<br>input: A vector v containing numbers&nbsp; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n is the length of the vector v&nbsp; <br>  &nbsp; &nbsp; &nbsp;A number num to be found in v<br>output: The index of num in the vector v or -1 if not found<br>&nbsp;&nbsp;&nbsp; index ← -1 <br>&nbsp; &nbsp; i ← 0<br>&nbsp; &nbsp; while (index == -1 and i &lt; n) do <br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; if v[i] == num then<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; index ← i;<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; i ← i + 1<br>&nbsp; &nbsp; return index </pre>
+<h2>Uppgift 8 - Naiv bubblesort</h2>
+<pre>Algorithm bubblesort(arr)<br>Input: An array to be sorted<br>Output: The sorted array<br>&nbsp; &nbsp; repeat <br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; swapped ← false<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; for j ← low(arr) to high(arr)-1 do <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; if arr[j] &gt; arr[j+1] then<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; temp ← arr[j]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; arr[j] ← arr[j+1]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; arr[j+1] ← temp <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; swapped ← true<br>&nbsp; &nbsp; until not swapped<br>&nbsp; &nbsp; return arr </pre>
+<h2>Uppgift 9 - Beräkna x<sup>n</sup>y<sup>m</sup></h2>
+<p>Nedan finns det två olika algoritmer <code>math1 </code>och <code>math2 </code>som båda löser samma problem. Om du granskar de två algoritmerna (du behöver inte räkna operationerna i denna uppgift utan se på det mer övergripande), vilken av algoritmerna har lägst tidskomplexitet? Varför?</p>
+<pre>Algorithm math1(x, y, n, m) <br>Input: x, y number to be multiplied <br>  &nbsp;    n, m how many multiplications that should be done<br>Output: x^n*y^m&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp; &nbsp; res ← 1 <br>&nbsp; &nbsp; for i ← 1 to n do<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; res ← res * x<br>&nbsp; &nbsp; for i ← 1 to m do<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; res ← res * y<br>&nbsp; &nbsp; return res </pre>
+<pre>Algorithm math2(x, y, n, m)<br>Input: x, y number to be multiplied&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp; &nbsp; n, m how many multiplications that should be done<br>Output: x^n*y^m <br>&nbsp; &nbsp; return pow(x, n)*pow(y, m)</pre>
+<pre>Algorithm pow(x, n) <br>Input: x number to be multiplied&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp; &nbsp; n how many multiplications that should be done<br>Output: x^n <br>&nbsp; &nbsp; if n = 0 then<br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; return 1 <br>&nbsp; &nbsp; temp ← pow(x, n/2)<br>&nbsp; &nbsp; if (n%2 = 1) then <br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; return x*temp*temp<br>&nbsp; &nbsp; else <br>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; return temp*temp</pre>
+<pre class="moz-signature"></pre>
+<p><a class="instructure_file_link instructure_scribd_file" title="GÖ1_lösningsförslag.pdf" href="$IMS-CC-FILEBASE$/3%20-%20Grupp%C3%B6vningar/G%C3%962%20-%20Komplexitet/G%C3%962_l%C3%B6sningsf%C3%B6rslag.pdf?canvas_download=1&amp;canvas_qs_wrap=1" data-api-endpoint="https://www.canvas.umu.se/api/v1/courses/6266/files/924554" data-api-returntype="File"></a></p>
+</body>
+</html>

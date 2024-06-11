@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g66db5aa50703751aafbe12f0ad2ea4e6">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Fält</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g14d1d7f9467a43229bf74002c53fe044" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3047,417,3621,274,4596</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Index i ett fält kallas också ibland för koordinater. Vad är det som gäller för index/koordinattypen?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="3047">
+              <material>
+                <mattext texttype="text/plain">Indextypen är diskret linjärt ordnad.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="417">
+              <material>
+                <mattext texttype="text/plain">Alla index i ett flerdimensionellt fält (t.ex. en matris eller en kub) måste vara av samma typ.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3621">
+              <material>
+                <mattext texttype="text/plain">Heltal är en diskret linjärt ordnad typ.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="274">
+              <material>
+                <mattext texttype="text/plain">Strängar är en diskret linjärt ordnad typ.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4596">
+              <material>
+                <mattext texttype="text/plain">Man anger en specifik plats i ett fält (en koordinat) som en n-tippel.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">3047</varequal>
+              <not>
+                <varequal respident="response1">417</varequal>
+              </not>
+              <varequal respident="response1">3621</varequal>
+              <not>
+                <varequal respident="response1">274</varequal>
+              </not>
+              <varequal respident="response1">4596</varequal>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="geec3a867bddd87148b9847ff27a65326" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>685,5072</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Ett fält kan innehålla element som saknar värde (är odefinierade).&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="685">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5072">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">685</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g7c1d73c58f31690fffc8196870f71935" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9744,1317</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;I ett fält kan datatypen för elementvärdena variera.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="9744">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1317">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">1317</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gdfe559eba6b83c465cd7db4eebcbb13d" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8076,1879,9888,1156</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;&lt;br&gt;Fält är en [svar1] datatyp, dvs. alla värden som lagras i ett fält är av samma&amp;nbsp; typ. Fält är också en [svar2] datatyp, dvs. strukturen fixeras när man skapar fältet.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="8076">
+              <material>
+                <mattext texttype="text/plain">homogen</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1879">
+              <material>
+                <mattext texttype="text/plain"></mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9888">
+              <material>
+                <mattext texttype="text/plain">statisk</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1156">
+              <material>
+                <mattext texttype="text/plain"></mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">8076</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">9888</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g7b753c73d08dc607ae7beb33ae917783" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>27,5165,3642,6706</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad har v1 och v2 för värde efter följande arrayoperationer utförts?&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;arr &amp;lt;- create(5,9)&lt;br&gt;arr &amp;lt;- set-value(5,1,arr)&lt;br&gt;arr &amp;lt;- set-value(9,2,arr)&lt;br&gt;arr &amp;lt;- set-value(6,3,arr)&lt;br&gt;arr &amp;lt;- set-value(5,4,arr)&lt;br&gt;v1 &amp;lt;- low(arr)&lt;br&gt;v2 &amp;lt;- inspect(5,arr)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="27">
+              <material>
+                <mattext texttype="text/html">v1: 5 &lt;br&gt;v2: 4</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5165">
+              <material>
+                <mattext texttype="text/html">v1: 6&lt;br&gt;v2: 5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3642">
+              <material>
+                <mattext texttype="text/html">v1: 0&lt;br&gt;v2: 6</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6706">
+              <material>
+                <mattext texttype="text/html">v1: 1&lt;br&gt;v2: 8</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">27</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g237fa73181cfb9f1542d47093bfbf1bf" title="Fält">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7241,9238,3398,8047</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad har v1 och v2 för värde efter följande arrayoperationer utförts?&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;arr &amp;lt;- create(5,9)&lt;br&gt;arr &amp;lt;- set-value(6,5,arr)&lt;br&gt;arr &amp;lt;- set-value(5,6,arr)&lt;br&gt;arr &amp;lt;- set-value(9,4,arr)&lt;br&gt;arr &amp;lt;- set-value(6,8,arr)&lt;br&gt;v1 &amp;lt;- has-value(8,arr)&lt;br&gt;v2 &amp;lt;- inspect(6,arr)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7241">
+              <material>
+                <mattext texttype="text/html">v1: true&lt;br&gt;v2: 6</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9238">
+              <material>
+                <mattext texttype="text/html">v1: true&lt;br&gt;v2: 5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3398">
+              <material>
+                <mattext texttype="text/html">v1: false&lt;br&gt;v2: 6</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8047">
+              <material>
+                <mattext texttype="text/html">v1: false&lt;br&gt;v2: 8</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8047</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

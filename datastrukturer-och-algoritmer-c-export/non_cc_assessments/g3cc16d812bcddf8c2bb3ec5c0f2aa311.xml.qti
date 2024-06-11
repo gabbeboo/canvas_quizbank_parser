@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g3cc16d812bcddf8c2bb3ec5c0f2aa311" title="Quiz 5 - Hashtabell, prioritetskö, Hög, Mängd och graf">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <section ident="g54a43ee8f00b59873c9ddd328bf18c2f" title="Hashtabell">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2603</sourcebank_ref>
+            <sourcebank_export_id>g1952990813c7c451f5230b94c7397180</sourcebank_export_id>
+            <selection_number>4</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="g8081ced35ebc39bf88b6cba56f36ddd6" title="Prioritetskö">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2611</sourcebank_ref>
+            <sourcebank_export_id>geb0ca32616b0bd4a6c1a722731c192af</sourcebank_export_id>
+            <selection_number>2</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="g53ebcbaf91bf717b4cb80eb198338f65" title="Hög">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2587</sourcebank_ref>
+            <sourcebank_export_id>ge93fc8ad16efd64e3d9b3693423125e2</sourcebank_export_id>
+            <selection_number>2</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="g1fa794e3b7d2b5a4cccb6e73d9dfca10" title="Mängd">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2593</sourcebank_ref>
+            <sourcebank_export_id>g388d0a8df48fd5f4c770fc7f7a3a6bd6</sourcebank_export_id>
+            <selection_number>2</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="ge6b1e4434aa735f03049da79d6cf8b6b" title="Graf">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2595</sourcebank_ref>
+            <sourcebank_export_id>g51db78d2bad23b04eca09469db532679</sourcebank_export_id>
+            <selection_number>8</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+    </section>
+  </assessment>
+</questestinterop>

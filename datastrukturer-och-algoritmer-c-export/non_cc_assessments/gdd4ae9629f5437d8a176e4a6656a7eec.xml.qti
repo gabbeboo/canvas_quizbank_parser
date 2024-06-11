@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gdd4ae9629f5437d8a176e4a6656a7eec">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Mängd</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="ga8318d535c5ad9db0aeedcaccaca5f0d" title="Mängd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2044,8776,2265,7331</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Mängd är en:&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="2044">
+              <material>
+                <mattext texttype="text/plain">Oordnad datatyp</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8776">
+              <material>
+                <mattext texttype="text/plain">Ordnad datatyp</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2265">
+              <material>
+                <mattext texttype="text/plain">Sorterad datatyp</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7331">
+              <material>
+                <mattext texttype="text/plain">Riktad datatyp</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">2044</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ga3c66eee1e2bd9d5aeb022ded972e51c" title="Mängd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7333,8607,3113,9966</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Om vi har två mängder S = {1,3,5} och T = {2,3,4} och beräknar unionen av dessa. Vad blir då resultatet?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7333">
+              <material>
+                <mattext texttype="text/plain">{1,2,3,3,4,5}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8607">
+              <material>
+                <mattext texttype="text/plain">{1,2,3,4,5}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3113">
+              <material>
+                <mattext texttype="text/plain">{3}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9966">
+              <material>
+                <mattext texttype="text/plain">{1,2,5,4}</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8607</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g902749f4968907d2a02622a8395c4630" title="Mängd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3238,1688,858,6741</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad får v1 och v2 för värde efter att följande gjorts.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;s ← single(2)&lt;br&gt;t ← single(3)&lt;br&gt;s ← union(s,t)&lt;br&gt;s ← insert(4,s)&lt;br&gt;s ← intersection(s,t)&lt;br&gt;v1← member-of(4,s)&lt;br&gt;v2← member-of(3,s)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3238">
+              <material>
+                <mattext texttype="text/html">v1=true&lt;br&gt;v2=true</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1688">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1=true&lt;br&gt;v2=false&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="858">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1=false&lt;br&gt;v2=true&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6741">
+              <material>
+                <mattext texttype="text/html">&lt;span class="mcAnswerText"&gt;v1=false&lt;br&gt;v2=false&lt;/span&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">858</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gc46cc5616ff614f63a40de41524b89b1" title="Mängd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9483,2118,2449,38</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Om vi har två mängder S = {1,3,5} och T = {2,3,4} och beräknar snittet (intersection) av dessa. Vad blir då resultatet?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="9483">
+              <material>
+                <mattext texttype="text/plain">{1,2,4,5}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2118">
+              <material>
+                <mattext texttype="text/plain">{3}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2449">
+              <material>
+                <mattext texttype="text/plain">{1,2,3,4,5}</mattext>
+              </material>
+            </response_label>
+            <response_label ident="38">
+              <material>
+                <mattext texttype="text/plain">{1,2,3,3,4,5}</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">2118</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g1329d6d7b80f5c31b9194a895268ee0e" title="Mängd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>1234,8733,8976,457</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad får v1 och v2 för värde efter att följande gjorts.&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-family: 'courier new' , courier , monospace;"&gt;t ← single(3)&lt;/span&gt;&lt;br&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;s ← union(single(2),single(3))&lt;br&gt;s ← intersection(s,t)&lt;/span&gt;&lt;br&gt;&lt;span style="font-family: 'courier new' , courier , monospace;"&gt;v1← insert(4,s)&lt;/span&gt;&lt;br&gt;&lt;span style="font-family: courier new , courier , monospace;"&gt;v2← isempty(t)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="1234">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;v1: {}&lt;/p&gt;
+&lt;p&gt;v2: true&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8733">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;v1: {4}&lt;/p&gt;
+&lt;p&gt;v2: false&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8976">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;v1: {3,4}&lt;/p&gt;
+&lt;p&gt;v2: false&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="457">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;v1: {3,4}&lt;/p&gt;
+&lt;p&gt;v2: true&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8976</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

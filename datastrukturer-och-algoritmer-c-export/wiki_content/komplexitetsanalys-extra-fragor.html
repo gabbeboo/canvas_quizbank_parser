@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Komplexitetsanalys extra frågor</title>
+<meta name="identifier" content="g85388e22ae7f288ba1c2122dffbc1dc0"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p>Det finns önskemål om att få fler övningar liknande sista uppgiften på OU2 att träna på. Så här kommer några uppgifter, lösningar finns längre ned på sidan.</p>
+<h2>Övningar</h2>
+<ol>
+<li>Du har en algoritm som du vet är O(n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br><br>
+</li>
+<li>Du har en algoritm som du vet är O(n<sup>2</sup>). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br><br>
+</li>
+<li>Du har en algoritm som du vet är O(log n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br><br>
+</li>
+<li>Du har en algoritm som går igenom en lista med 100 element på 5 sekunder. Hur lång tid tar det att går igenom 2 listor med 100 element i?<br><br>
+</li>
+<li>Du har en algoritm som går igenom en lista med 100 element på 5 sekunder. Hur lång tid tar det att går igenom 10 listor med 100 element i?<br><br>
+</li>
+<li>Du har en algoritm som arbetar med en lista som du vet är O(n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för 2 listor då n = 1000?</li>
+</ol>
+<h2>Lösningsskisser</h2>
+<ol>
+<li>Du har en algoritm som du vet är O(n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br>Det andra värdet på n är 10 gånger större än det första. Algoritmen har en linjär komplexitet vilket innebär att den borde ta 10 gånger så lång tid. Ett sätt att "tänka" kring det är att tiden T är O(n) dvs en funktion T(x) = x där T(n) = n. Om man då stoppar in 10n som värde på x får vi T(10n) = 10*n = 10*T(n). Så algoritmen borde ta 50 s att köra.<br><br>
+</li>
+<li>Du har en algoritm som du vet är O(n<sup>2</sup>). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br>I detta fall växer komplexiteten kvadratiskt. T(10n) = (10n)<sup>2 </sup>= 10<sup>2</sup>n<sup>2 </sup>= 100n<sup>2 </sup>= 100 T(n) = 100*5. Den andra algoritmen borde alltså ta 500 s att köra.<br><br>
+</li>
+<li>Du har en algoritm som du vet är O(log n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för n = 1000?<br>I detta fall växer komplexiteten logaritmiskt. T(10n) = log (10 n) = log 10 + log n = 1 + log n = 6 sekunder.<br>Nu räknar vi 10-logaritmen, ofta är det 2-logaritmen som man avser i ordo-utrycket men skillnaden mellan de två är bara en konstant för log<sub>10</sub>(n) = log<sub>2</sub>(n)/log<sub>2</sub>(10). <br><br>
+</li>
+<li>Du har en algoritm som går igenom en lista med 100 element på 5 sekunder. Hur lång tid tar det att går igenom 2 listor med 100 element i?<br>Två lika långa listor och antagandet att algoritmen beter sig likadant på båda listorna (har samma Ordo) innebär att det tar dubbelt så lång tid dvs 10 sek.<br><br>
+</li>
+<li>Du har en algoritm som går igenom en lista med 100 element på 5 sekunder. Hur lång tid tar det att går igenom 10 listor med 100 element i?<br>Tio lika långa listor och antagandet att algoritmen beter sig likadant på båda listorna (har samma Ordo) innebär att det tar tio gånger så lång tid dvs 50 sek.<br><br>
+</li>
+<li>Du har en algoritm som arbetar med en lista som du vet är O(n). Du vet också att när n = 100 så tar algoritmen 5 sekunder. Hur lång tid tar det troligen att köra algoritmen för 2 listor då n = 1000?<br>Först måste man se hur lång tid en lista med längden 1000 tar. 1000 = 10*100 och vi vet att T(100) = 5 och att algoritmen är linjär. Alltså borde T(10*100) = 10*T(100) = 50 s.<br>Sen är det två listor så då blir det 100s (2*50s) totalt.</li>
+</ol>
+</body>
+</html>

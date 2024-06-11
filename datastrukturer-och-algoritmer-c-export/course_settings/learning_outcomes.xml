@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<learningOutcomes xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <learningOutcome identifier="g234a7695a0750e03aafa1d4dc0701469">
+    <title>Minst 16p på OU1 - Quiz 1 - Komplexitet</title>
+    <description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</description>
+    <calculation_method>highest</calculation_method>
+    <copied_from_outcome_id>156410000000001271</copied_from_outcome_id>
+    <alignments>
+      <alignment>
+        <content_type>Rubric</content_type>
+        <content_id>ge514cbbc19ae6e2d029f3a013a438e04</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+    </alignments>
+    <points_possible>1.0</points_possible>
+    <mastery_points>1.0</mastery_points>
+    <ratings>
+      <rating>
+        <description>Uppfyller förväntningarna</description>
+        <points>1.0</points>
+      </rating>
+      <rating>
+        <description>Uppfyller inte förväntningarna</description>
+        <points>0.0</points>
+      </rating>
+    </ratings>
+  </learningOutcome>
+  <learningOutcome identifier="g3246068acc25ff6b945dc49f1c71cf10">
+    <title>Minst 16p på OU1 - Quiz 1 - Komplexitet</title>
+    <description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</description>
+    <calculation_method>highest</calculation_method>
+    <copied_from_outcome_id>156410000000001272</copied_from_outcome_id>
+    <alignments>
+      <alignment>
+        <content_type>Rubric</content_type>
+        <content_id>ge675b8baafea6843bd70cc60cac087b2</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+      <alignment>
+        <content_type>Assignment</content_type>
+        <content_id>g18fd04824ed662506001b36030d6b769</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+    </alignments>
+    <points_possible>1.0</points_possible>
+    <mastery_points>1.0</mastery_points>
+    <ratings>
+      <rating>
+        <description>Uppfyller förväntningarna</description>
+        <points>1.0</points>
+      </rating>
+      <rating>
+        <description>Uppfyller inte förväntningarna</description>
+        <points>0.0</points>
+      </rating>
+    </ratings>
+  </learningOutcome>
+  <learningOutcome identifier="g5214641c33c4180f7d00dbd6ca89f409">
+    <title>Minst 16p på OU1 - Quiz 1 - Komplexitet</title>
+    <description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</description>
+    <calculation_method>highest</calculation_method>
+    <copied_from_outcome_id>156410000000001273</copied_from_outcome_id>
+    <alignments>
+      <alignment>
+        <content_type>Rubric</content_type>
+        <content_id>g32f3be2e71c12793891502c45e89f955</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+      <alignment>
+        <content_type>Assignment</content_type>
+        <content_id>gc01154f0f483001472c4b7cf1eecd836</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+    </alignments>
+    <points_possible>1.0</points_possible>
+    <mastery_points>1.0</mastery_points>
+    <ratings>
+      <rating>
+        <description>Uppfyller förväntningarna</description>
+        <points>1.0</points>
+      </rating>
+      <rating>
+        <description>Uppfyller inte förväntningarna</description>
+        <points>0.0</points>
+      </rating>
+    </ratings>
+  </learningOutcome>
+  <learningOutcome identifier="gb4aa1ece3fe6678eefb37fa59c2ae115">
+    <title>Minst 16p på OU1 - Quiz 1 - Komplexitet</title>
+    <description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</description>
+    <calculation_method>highest</calculation_method>
+    <copied_from_outcome_id>156410000000001274</copied_from_outcome_id>
+    <alignments>
+      <alignment>
+        <content_type>Rubric</content_type>
+        <content_id>g7d4292560e761a7e846b9a5cf0fb4e77</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+      <alignment>
+        <content_type>Assignment</content_type>
+        <content_id>gc67aa154bfa4fc40db45923979c82b16</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+    </alignments>
+    <points_possible>1.0</points_possible>
+    <mastery_points>1.0</mastery_points>
+    <ratings>
+      <rating>
+        <description>Uppfyller förväntningarna</description>
+        <points>1.0</points>
+      </rating>
+      <rating>
+        <description>Uppfyller inte förväntningarna</description>
+        <points>0.0</points>
+      </rating>
+    </ratings>
+  </learningOutcome>
+  <learningOutcome identifier="g22fca78dfea2096ca26016aadabeafed">
+    <title>Minst 16p på OU1 - Quiz 1 - Komplexitet</title>
+    <description>&lt;p&gt;Har minst 16p på quiz 1&lt;/p&gt;</description>
+    <calculation_method>highest</calculation_method>
+    <copied_from_outcome_id>156410000000001275</copied_from_outcome_id>
+    <alignments>
+      <alignment>
+        <content_type>Rubric</content_type>
+        <content_id>g11e0eb47b194a917422cf11679f8b827</content_id>
+        <mastery_type>explicit_mastery</mastery_type>
+        <mastery_score/>
+        <position/>
+      </alignment>
+    </alignments>
+    <points_possible>1.0</points_possible>
+    <mastery_points>1.0</mastery_points>
+    <ratings>
+      <rating>
+        <description>Uppfyller förväntningarna</description>
+        <points>1.0</points>
+      </rating>
+      <rating>
+        <description>Uppfyller inte förväntningarna</description>
+        <points>0.0</points>
+      </rating>
+    </ratings>
+  </learningOutcome>
+</learningOutcomes>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="gfa73711cc36252173578508af5242c5f" title="Quiz 2 - Testning, Pseudokod, algoritmer">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <section ident="ge78683b12e2670e5e48f61c68b701688" title="Testning">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2604</sourcebank_ref>
+            <sourcebank_export_id>g50724ae54815f0cfc08648bad68f97f1</sourcebank_export_id>
+            <selection_number>1</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="g869adc54627c81986683a917b4c2e4bd" title="Algoritmer">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2602</sourcebank_ref>
+            <sourcebank_export_id>ge7673595522d9b2ef1caa32ec36c60a4</sourcebank_export_id>
+            <selection_number>2</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+      <section ident="g1126d38072ad2638b8a4b06a8e0d1e22" title="Debugging">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>2609</sourcebank_ref>
+            <sourcebank_export_id>g7d84fab0f16685de34cf2045e1ad8dfe</sourcebank_export_id>
+            <selection_number>2</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+              <sourcebank_context>course_2332</sourcebank_context>
+              <sourcebank_is_external>true</sourcebank_is_external>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+    </section>
+  </assessment>
+</questestinterop>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g184dabe8e6832e92aa13d71d061ca003">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA (Python):  Klasser och objekt</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g7ee02f566da80b84a0ce172e72ab1f08" title="Klasser och objekt">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>8437,6257,9691,6147</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad händer när följande programkod körs? (Fundera först innan du provkör!)&lt;/p&gt;
+&lt;pre&gt;&lt;span style="font-family: Courier New , Courier , monospace;"&gt;class test:
+     def __init__(self,txt="Hello World"):
+         self.txt = txt
+&amp;nbsp;
+     def display(self):
+         print(self.txt)
+
+obj=test()
+obj.display()&lt;/span&gt;&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="8437">
+              <material>
+                <mattext texttype="text/plain">Programmet är felaktigt, konstruktorer kan inte ha default-parametrar.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6257">
+              <material>
+                <mattext texttype="text/plain">Inget skrivs ut.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9691">
+              <material>
+                <mattext texttype="text/plain">"Hello World" skrivs ut på skärmen.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6147">
+              <material>
+                <mattext texttype="text/plain">Programmet är felaktigt, det saknas argument när display-funktionen anropas.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">9691</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g7993cc33e97ed182d4c6889ebbffc672" title="Klasser och objekt">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>557,5746,6212</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;&lt;br&gt;En [svar1] kan ses som en ritning över en egendefinierad datatyp. Den beskriver hur datatypens [svar2] är uppbyggda och vilka [svar3] man kan utföra på dessa objekt.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="557">
+              <material>
+                <mattext texttype="text/plain">klass</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="5746">
+              <material>
+                <mattext texttype="text/plain">objekt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="6212">
+              <material>
+                <mattext texttype="text/plain">operationer</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">557</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">5746</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">6212</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">33.33</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g030293aa8163541b10ca9774aa54d342" title="Objekt">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3578,8576,1010,2024</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad används för att skapa ett objekt?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3578">
+              <material>
+                <mattext texttype="text/plain">en klass</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8576">
+              <material>
+                <mattext texttype="text/plain">en konstruktor</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1010">
+              <material>
+                <mattext texttype="text/plain">en egendefinierad funktion</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2024">
+              <material>
+                <mattext texttype="text/plain">en inbyggd funktion</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8576</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g2fefb2a3c8de1495c2c14bb305f42140" title="Objekt">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6663,4717,3804,7544,1461,5695</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad stämmer in på ett objekt?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="6663">
+              <material>
+                <mattext texttype="text/plain">Ett objekt instansieras från en klass och man säger att ett objekt är en instans av en klass.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4717">
+              <material>
+                <mattext texttype="text/plain">En klass instansieras från ett objekt och man säger att en klass är en instans av ett objekt .</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3804">
+              <material>
+                <mattext texttype="text/plain">De operationer man kan utföra på ett objekt kallas metoder.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7544">
+              <material>
+                <mattext texttype="text/plain">De operationer man kan utföra på ett objekt kallas attribut.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1461">
+              <material>
+                <mattext texttype="text/plain">För att nå objektets attribut och metoder används en parameter som heter self.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5695">
+              <material>
+                <mattext texttype="text/plain">För att nå objektets attribut och metoder används en parameter som heter this.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">6663</varequal>
+              <not>
+                <varequal respident="response1">4717</varequal>
+              </not>
+              <varequal respident="response1">3804</varequal>
+              <not>
+                <varequal respident="response1">7544</varequal>
+              </not>
+              <varequal respident="response1">1461</varequal>
+              <not>
+                <varequal respident="response1">5695</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

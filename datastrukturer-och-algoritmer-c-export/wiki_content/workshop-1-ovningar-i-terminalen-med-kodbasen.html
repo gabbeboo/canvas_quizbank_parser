@@ -1,0 +1,534 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Workshop 1 - Övningar i terminalen med kodbasen</title>
+<meta name="identifier" content="g3e49250ed085d38e904709a65febc610"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org115be06">Syftet med Workshop 1</a></li>
+<li><a href="#orgdc58320">Övning 0 - Förberedelser</a>
+<ul>
+<li><a href="#org4bb13a4">Köra lokalt eller på CS datorer?</a></li>
+<li><a href="#orgdb3b494">Skapa arbetskatalog</a></li>
+<li><a href="#orgc4a9e30">Prompten och <i>current directory</i></a></li>
+<li><a href="#org2883d6b">De magiska tangenterna tab, uppåtpil och nedåtpil</a></li>
+</ul>
+</li>
+<li><a href="#orga04aa0b">Övning 1 - bekanta dig med kodbasen</a></li>
+<li><a href="#orgefad439">Övning 2 - skriv egen kod</a></li>
+<li><a href="#org2a2c01f">Övning 3 - Förbered för labbarna</a></li>
+<li><a href="#orgd4227c1">Dokumenthistorik</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org115be06" class="outline-2">
+<h2 id="org115be06">Syftet med Workshop 1</h2>
+<div class="outline-text-2" id="text-org115be06">
+<p>
+Syftet med denna workshop är att ni ska få bekanta er med att arbeta i
+terminalen: skapa kataloger, byta aktuell katalog, kompilera program,
+osv. Det kommer att vara en nödvändig kunskap under kursen. Ett annat
+syfte är att ni ska få bekanta er med den kodbas ni kommer att jobba
+med under kursen.
+</p>
+
+<p>
+Alla övningar nedan kommer att göras vid en kommandoprompt i ett
+terminalfönster. Ni kan välja mellan att köra lokalt på er egen dator
+eller att först logga in på CS datorer med ssh och köra där.
+Kommandona nedan är verifierade att fungera under Linux. Det är
+troligt att dom också fungerar under WSL2 (<i>Windows Subsystem for
+Linux, version 2</i>) och MacOS också.
+</p>
+
+<p>
+För en del så kommer detta vara repetition, men är till för att de som
+är lite mer osäker eller inte hållit på med C på ett tag ska komma
+igång snabbare.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdc58320" class="outline-2">
+<h2 id="orgdc58320">Övning 0 - Förberedelser</h2>
+<div class="outline-text-2" id="text-orgdc58320">
+</div>
+<div id="outline-container-org4bb13a4" class="outline-3">
+<h3 id="org4bb13a4">Köra lokalt eller på CS datorer?</h3>
+<div class="outline-text-3" id="text-org4bb13a4">
+<p>
+Workshopen går att köra endera lokalt eller på datorerna på CS via
+<code>ssh</code> eller motsvarande. Windowsanvändare kanske behöver använda
+programmet Putty. Jag rekommenderar att ni gör bägge.
+</p>
+
+<p>
+Workshop 2 går inte att köra via <code>ssh</code>, så den är bäst att köra direkt
+på en av datorerna i CS datorlab.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdb3b494" class="outline-3">
+<h3 id="orgdb3b494">Skapa arbetskatalog</h3>
+<div class="outline-text-3" id="text-orgdb3b494">
+<p>
+Verifiera att ni har en katalog <code>~/edu/doa</code> i er hemkatalog.
+Om katalogen saknas, gör följande i ett terminalfönster:
+</p>
+<pre class="example" id="orgeb09d39">cd ~
+mkdir ~/edu
+mkdir ~/edu/doa
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgc4a9e30" class="outline-3">
+<h3 id="orgc4a9e30">Prompten och <i>current directory</i></h3>
+<div class="outline-text-3" id="text-orgc4a9e30">
+<p>
+I övningarna nedan så visas kommandon ni ska köra i
+terminalfönstret. Före varje kommando står en s.k. <i>prompt</i> som
+avslutas med ett dollar-tecken. Prompten anger också den aktuella
+katalogen. Exempel:
+</p>
+<pre class="example" id="org6df5d72">niclas@earth:~$ cd edu
+niclas@earth:~/edu$ ls -a
+.  ..  doa
+</pre>
+<p>
+I exemplet ovan säger prompten att jag är inloggad som användaren
+<code>niclas</code> på datorn <code>earth</code>. Du kommer att ha ett annat användarnamn
+och datornamn. Det som står mellan <code>:</code> och <code>$</code> är den aktuella
+katalogen, som initialt är <code>~</code>, vilket motsvarar min hemkatalog.  När
+ni skriver in <code>cd edu</code> (<i>change directory</i>) och trycker return/enter
+så kommer aktuell katalog att förändras, vilket uppdaterar
+prompten. Slutligen, om ni skriver <code>ls -a</code> (<i>list files</i>) så skrivs
+namnet på alla filer och kataloger i aktuell katalog ut. Utskriften är
+en rad med tre katalognamn: <code>.</code>, <code>..</code> och <code>doa</code>. Det är tänkbart att
+era utskrifter är färdkodade. Katalogen <code>.</code> (''punkt'') symboliserar
+aktuell katalog, dvs. <code>~/edu</code>. Katalogen <code>..</code> (''punkt-punkt'')
+symboliserar katalogen ''ovanför'' aktuellt katalog, här:
+<code>~</code>. Slutligen så är <code>doa</code> namnet på en katalog som finns i aktuell
+katalog. I vanliga fall skrivs <code>.</code> och <code>..</code> inte ut, men finns alltid
+där.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2883d6b" class="outline-3">
+<h3 id="org2883d6b">De magiska tangenterna tab, uppåtpil och nedåtpil</h3>
+<div class="outline-text-3" id="text-org2883d6b">
+<p>
+Ett tips för att spara tid och minska felskrivningar nedan är att
+använda tab-tangenten och/eller uppåtpil och nedåtpil. Tabtangenten
+''expanderar'' det ord du påbörjat. Exempelvis, när du i uppgift A2
+nedan ska skriva <code>unzip datastructures-v1.0.14.3.zip</code> så kan du i
+stället skriva <code>unzip</code> följt av mellanslag och bokstaven ''d'' följt
+av tab-tangenten. Det påbörjade ordet ''d'' kommer då att expanderas
+till <code>datastructures-v1.0.14.3.zip</code>. Prova dig fram med
+tab-tangenten, den är snudd på magisk! Prova dig också fram med
+tangenterna uppåt-pil och nedåt-pil, som rullar mellan dina senast
+skrivna kommandon.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga04aa0b" class="outline-2">
+<h2 id="orga04aa0b">Övning 1 - bekanta dig med kodbasen</h2>
+<div class="outline-text-2" id="text-orga04aa0b">
+<dl class="org-dl">
+<dt>A</dt><dd>Ladda hem kodbasen ni ska använda i laborationerna. Den finns under
+<code>Filer/Datatypskod</code>. Detta dokument använder kodbasen v1.0.14.3.
+<dl class="org-dl">
+<dt>A1</dt><dd><p>
+Flytta filen till er arbetskatalog. Kommandot <code>mv</code> (<i>move</i>) flyttar en fil och/eller döper om den.
+</p>
+<pre class="example" id="orgb31de94">niclas@earth:$ mv ~/Downloads/datastructures-v1.0.14.3.zip ~/edu/doa
+</pre>
+<p>
+ Beroende på operativsystem så kan zip-filen ha hamnat i någon
+annan katalog, t.ex. <i>Hämtade filer</i> eller <i>Nedladdade
+filer</i>. Fråga om du behöver. Det går också att använda er
+filhanterare (dra-släpp filer med musen) om det känns enklare.
+</p>
+<ul class="org-ul">
+<li><p>
+Om ni behöver flytta över filen till CS datorer så kan kommandot
+<code>scp</code> gå att använda. Exemplet nedan visar hur jag kopierar över
+zip-filen till kataloger <code>~/edu/doa</code> på mitt konto på datorn
+<code>itchy</code>:
+</p>
+<pre class="example" id="org35cb7e5">niclas@earth:$ scp ~/Downloads/datastructures-v1.0.14.3.zip niclas@itchy:~/edu/doa
+</pre>
+<p>
+Windows-användare kanske behöver använda programmet WinSCP.
+</p></li>
+</ul></dd>
+<dt>A2</dt><dd><p>
+Gå till din arbetskatalog och packa upp filerna:
+</p>
+<pre class="example" id="org83f9959">niclas@earth:~$ cd ~/edu/doa
+niclas@earth:~/edu/doa$ unzip datastructures-v1.0.14.3.zip
+</pre></dd>
+<dt>A3</dt><dd><p>
+Ni bör få en katalog som heter <code>datastructures-v1.0.14.3</code>. Gå in
+i den katalogen:
+</p>
+<pre class="example" id="org95c05cf">niclas@earth:~/edu/doa$ cd datastructures-v1.0.14.3
+</pre></dd>
+<dt>A4</dt><dd><p>
+Lista filer och kataloger där (använd kommandot =ls) och verifiera att ni har katalogerna
+</p>
+<ul class="org-ul">
+<li><code>include/</code></li>
+<li><code>lib/</code></li>
+<li><code>src/</code></li>
+</ul>
+<p>
+samt några filer:
+</p>
+<pre class="example" id="org6b9029c">niclas@earth:~/edu/doa/datastructures-v1.0.14.3$ ls
+ChangeLog.txt  CODING_STYLE.md  include  lib  README.md  src
+</pre></dd>
+</dl></dd>
+<dt>B</dt><dd><p>
+Gå in i katalogen <code>include</code>
+</p>
+<pre class="example" id="org1dc3c7c">niclas@earth:~/edu/doa/datastructures-v1.0.14.3$ cd include
+</pre>
+<p>
+Här ligger s.k. <i>header</i>-filer som innehåller det publika gränssnittet för datatyperna.
+</p>
+<dl class="org-dl">
+<dt>B1</dt><dd><p>
+Lista filerna som finns där och se om ni förstår vad vilka datatyper som de motsvarar.
+</p>
+<pre class="example" id="org32d536f">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/include$ ls
+array_1d.h  dlist.h         int_list_array.h  int_stack.h  queue.h  table.h
+array_2d.h  int_array_1d.h  int_list.h        list.h       stack.h  util.h
+</pre></dd>
+<dt>B2</dt><dd>Öppna filen <code>int_list.h</code> med en editor
+<ol class="org-ol">
+<li>Vilken datatyp tror ni den representerar? Ni kanske inte har
+gått igenom den på föreläsningarna än. Gissa baserat på
+innehållet i filen.</li>
+<li>I början av filen finns det två <code>#include</code>-satser. Vad är det
+för skillnad på dessa två?</li>
+<li>I <code>int_list.h</code> finns många funktioner <i>deklarerade</i> men ingen
+funktion är <i>definierad</i> (det finns ingen kod som implementerar
+funktionerna). Varför inte det?</li>
+<li><p>
+Filen innehåller även raderna:
+</p>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #b22222;">// </span><span style="color: #b22222;">List type.</span>
+<span style="color: #a020f0;">typedef</span> <span style="color: #a020f0;">struct</span> <span style="color: #228b22;">list</span> <span style="color: #228b22;">list</span>;
+
+<span style="color: #b22222;">// </span><span style="color: #b22222;">List position type.</span>
+<span style="color: #a020f0;">typedef</span> <span style="color: #a020f0;">struct</span> <span style="color: #228b22;">cell</span> *<span style="color: #228b22;">list_pos</span>;
+</pre>
+</div>
+<p>
+Vad betyder dessa rader? Borde de inte innehålla något mer?
+</p></li>
+<li>Scrolla nedåt i filen och studera funktionsdeklarationerna. Se
+om du kan förstå vad funktionerna gör.</li>
+</ol></dd>
+</dl></dd>
+<dt>C</dt><dd><p>
+Nu ska vi titta på källkoden till <code>int_list</code>! Gå upp en nivå
+och in i katalogen <code>src</code>.
+</p>
+<pre class="example" id="orge1c8f1a">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/include$ cd ../src
+</pre>
+<p>
+I denna kataloger finns en mängd underkataloger. Varje underkatalog
+innehåller implementationen av en datatyp.
+</p>
+<dl class="org-dl">
+<dt>C1</dt><dd><p>
+Gå in i katalogen <code>int_list</code>.
+</p>
+<pre class="example" id="org949aeac">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src$ cd int_list
+</pre></dd>
+<dt>C2</dt><dd>Öppna filen <code>int_list.c</code>. Jämför den med <code>.h</code>-filen du kollade på innan.
+<ol class="org-ol">
+<li>Varför har man här en <code>#include &lt;int_list.h&gt;</code>?</li>
+<li>Filen innehåller inga <code>typedef</code>. Däremot innehåller den
+<code>struct</code>-satser som nu innehåller saker. Varför då och hur
+fungerar det?</li>
+<li>I <i>header</i>-filen fanns en massa funktionsdeklarationer. Denna fil innehåller kod. Finns det någon funktion här som inte fanns med i h-filen? Går det, och i så fall, varför kan och ibland bör man ha det?</li>
+</ol></dd>
+<dt>C3</dt><dd>Öppna och kolla i <code>int_list_mwe1.c</code>.
+<ol class="org-ol">
+<li>Vad är detta för fil?</li>
+<li>Varför är det bra att ha sådana här "Minimum Working Examples"
+när ni bygger egna funktionsbibliotek eller datastrukturer?</li>
+<li><p>
+Nu ska vi kompilera det första av dessa. Vi kommer att använda
+kompilatorn <code>gcc</code>. Testa kommandot
+</p>
+<pre class="example" id="org4299317">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc int_list_mwe.c
+</pre></li>
+<li><p>
+Det gick inte så bra… Vad gick fel och hur åtgärdar vi detta?
+</p>
+<pre class="example" id="org5c357b7">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc int_list_mwe.c 
+int_list_mwe.c:4:10: fatal error: int_list.h: No such file or directory
+    4 | #include &lt;int_list.h&gt;
+      |          ^~~~~~~~~~~~
+compilation terminated.
+</pre></li>
+<li><p>
+Man löser detta med att ange parametern <code>-I</code> som ska
+innehålla sökvägen till de h-filer som <code>int_list_mwe.c</code> behöver.
+</p>
+<pre class="example" id="org6f20c3c">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc -I ../../include/ int_list_mwe.c
+</pre></li>
+<li><p>
+Framgång, nu fick vi ett annat felmeddelande! Vad gick fel
+denna gång? Du bör ha fått ungefär följande utskrift:
+</p>
+<pre class="example" id="org8811ea0">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc -I ../../include/ int_list_mwe.c
+/usr/bin/ld: /tmp/cchUSfnh.o: in function `main':
+int_list_mwe.c:(.text+0x4b): undefined reference to `list_empty'
+/usr/bin/ld: int_list_mwe.c:(.text+0x5b): undefined reference to `list_first'
+/usr/bin/ld: int_list_mwe.c:(.text+0x6f): undefined reference to `list_insert'
+...
+</pre></li>
+<li>Är det kompilatorn eller är det något annat som ger dessa fel?</li>
+<li><p>
+För att få ett fungerande körbart program måste vi inkludera
+c-filer som implementera de funktioner som används. I detta
+fall måste vi lägga till filen <code>int_list.c</code> som innehåller
+definitionerna av funktionerna i gränsytan. Skriv följande i
+terminalen:
+</p>
+<pre class="example" id="org2bdaff3">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc -o int_list_mwe -I ../../include/ int_list_mwe.c int_list.c 
+</pre>
+<p>
+Den första parametergruppen <code>-o int_list_mwe</code> anger namnet på
+resultatfilen (<i>output file</i>). Notera att den ska inte ha någon
+ändelse! Speciellt viktigt är att inte skriva <code>int_list_mwe.c</code>
+för då kommer <code>int_list_mwe.c</code> att skrivas över! Sedan kommer
+include-gruppen och sedan alla c-filer som ska kompileras, en
+efter en (här: <code>int_list_mwe.c</code> och <code>int_list.c</code>).
+</p></li>
+<li><p>
+Kompileringen bör lyckas och ni bör få <code>int_list_mwe</code> (möjligen
+<code>int_list_mwe.exe</code> om ni kör Windows).
+</p>
+<pre class="example" id="orge25af2d">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ gcc -o int_list_mwe -I ../../include/ int_list_mwe.c int_list.c 
+niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ ls -lrt
+total 72
+-rw-r--r-- 1 niclas tdb   680 Jan 16 11:34 Makefile
+-rw-r--r-- 1 niclas tdb 36489 Jan 16 11:34 int_list_test.c
+-rw-r--r-- 1 niclas tdb  1448 Jan 16 11:34 int_list_mwe.c
+-rw-r--r-- 1 niclas tdb  7856 Jan 16 11:34 int_list.c
+-rwxr-xr-x 1 niclas tdb 17472 Mar 18 14:25 int_list_mwe
+</pre>
+<p>
+Flaggkombinationen <code>-lrt</code> till <code>ls</code> genererar en längre
+utskrift som är sorterad efter tidsstämpel på filerna, med
+nyaste filen sist (<code>-l</code> - <i>long print</i>, <code>-t</code> - <i>sort by time</i>,
+<code>-r</code> <i>sort reversed</i>). Vi kan se att den nyaste filen är
+<code>int_list_mwe</code>.
+</p></li>
+<li><p>
+Nu är det dags att köra exempelprogrammet! Skriv
+</p>
+<pre class="example" id="orgf787ee3">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ ./int_list_mwe 
+int_list_mwe.c, v1.11 2024-01-16: Create typed integer list.
+Code base version v1.0.14.3.
+
+List after inserting one value:
+[5]
+List after inserting second value at the end:
+[5]
+[8]
+List after inserting a third value in the middle:
+[5]
+[2]
+[8]
+List after removing first element:
+[2]
+[8]
+
+Normal exit.
+
+</pre>
+<p>
+Jämför gärna utskrifterna med källkoden. Bägge syftar till att
+hjälpa dig förstå hur datatypen <code>int_list</code> fungerar och kan
+användas.
+</p></li>
+</ol></dd>
+</dl></dd>
+<dt>D (Överkurs, kan hoppas över)</dt><dd><p>
+Nu ska vi kompilera hela kodbasen! Gå till katalogen <code>lib</code>:
+</p>
+<pre class="example" id="org13f7d09">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ cd ../../lib/
+</pre>
+<ol class="org-ol">
+<li><p>
+I denna katalog finns bara en fil:
+</p>
+<pre class="example" id="org57dc8c6">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/lib$ ls
+Makefile
+</pre>
+<ol class="org-ol">
+<li>Vad är detta för fil? Öppna den och kolla i den.</li>
+</ol></li>
+<li><p>
+Denna fil körs med kommandot <code>make</code>. Gör detta:
+</p>
+<pre class="example" id="orgb3ceb72">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/lib$ make
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/list/list.o ../src/list/list.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/stack/stack.o ../src/stack/stack.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/array_2d/array_2d.o ../src/array_2d/array_2d.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/table/table.o ../src/table/table.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/table/table2.o ../src/table/table2.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/array_1d/array_1d.o ../src/array_1d/array_1d.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/queue/queue.o ../src/queue/queue.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/dlist/dlist.o ../src/dlist/dlist.c
+gcc -std=c99 -Wall -I../include -g   -c -o ../src/version/version.o ../src/version/version.c
+ar r libdoa.a ../src/list/list.o ../src/stack/stack.o ../src/array_2d/array_2d.o ../src/table/table.o ../src/table/table2.o ../src/array_1d/array_1d.o ../src/queue/queue.o ../src/dlist/dlist.o ../src/version/version.o
+ar: creating libdoa.a
+ranlib libdoa.a
+</pre></li>
+<li><p>
+Kolla i katalogen, du har nu fått en ny fil. Vad är detta för
+fil?
+</p>
+<pre class="example" id="org1fb9b11">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/lib$ ls
+libdoa.a  Makefile
+</pre></li>
+</ol></dd>
+<dt>E (Överkurs, kan hoppas över)</dt><dd><p>
+Gå tillbaka till <code>int_list</code>-katalogen och kör
+<code>make</code> där:
+</p>
+<pre class="example" id="org915d525">niclas@earth:~/edu/doa/datastructures-v1.0.14.3/lib$ cd ../src/int_list
+niclas@earth:~/edu/doa/datastructures-v1.0.14.3/src/int_list$ make
+gcc -o int_list_test -std=c99 -Wall -I../../include -g int_list_test.c int_list.c
+</pre>
+<p>
+Filen <code>Makefile</code> innehåller instruktioner för att kompilera ett
+program till. Alla källkodskatalogerna innehåller en
+<code>Makefile</code>. Vill ni bara testköra något program utan att kompilera
+det själv kan ni använda kommandot <code>make</code> som en genväg.
+</p></dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orgefad439" class="outline-2">
+<h2 id="orgefad439">Övning 2 - skriv egen kod</h2>
+<div class="outline-text-2" id="text-orgefad439">
+<dl class="org-dl">
+<dt>A</dt><dd>Skapa arbetskataloger
+<ol class="org-ol">
+<li><p>
+Skapa en arbetskatalog och gå in i den:
+</p>
+<pre class="example" id="org73716a0">niclas@earth:~$ cd ~/edu/doa
+niclas@earth:~/edu/doa$ mkdir work
+niclas@earth:~/edu/doa$ cd work
+</pre></li>
+<li><p>
+Skapa en C-fil <code>read_num.c</code> med följande innehåll:
+</p>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #483d8b;">#include</span> <span style="color: #8b2252;">&lt;stdio.h&gt;</span>
+<span style="color: #228b22;">int</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">void</span>)
+{
+    <span style="color: #228b22;">int</span> <span style="color: #a0522d;">buf</span>[100];
+    <span style="color: #228b22;">int</span> <span style="color: #a0522d;">i</span> = 0;
+    <span style="color: #a020f0;">do</span> {
+        printf(<span style="color: #8b2252;">"Enter an integer: "</span>);
+        scanf(<span style="color: #8b2252;">"%d"</span>, &amp;buf[i]);
+        i++;
+    } <span style="color: #a020f0;">while</span> ((i &lt; 100) &amp;&amp; (buf[i - 1] &gt;= 0));
+
+    printf(<span style="color: #8b2252;">"Normal exit.\n"</span>);
+    <span style="color: #a020f0;">return</span> 0;
+}
+</pre>
+</div>
+<p>
+ Detta program läser in maximalt 100 heltal eller avbryter när man
+anger ett negativt tal.
+</p></li>
+<li>Kompilera och kör programmet. Mata in några positiva tal och
+sedan ett negativt för att verifiera att det fungerar.</li>
+</ol></dd>
+<dt>B</dt><dd>Detta program allokerar plats för exakt 100 element, oberoende
+av hur många som används.  Ett annat sätt är att använda en lista
+som dynamiskt allokerar plats för varje nytt element när det
+behövs. Vi ska använda datatypen Lista av Heltal (<code>int_list</code>) från
+kodbasen till att göra det!
+<ol class="org-ol">
+<li>Skapa en kopia <code>read_num_dynamic.c</code> av <code>read_num.c</code></li>
+<li>Modifiera kopian att inkludera <code>int_list.h</code>.</li>
+<li>I stället för att skapa ett statiskt fält <code>int buf[100]</code>,
+skapa en tom lista <code>l</code> där du kan lagra talen.</li>
+<li>Modifiera inläsningen så att den läser in ett tal i taget och
+lägger in detta tal sist i <code>l</code>.</li>
+<li>Lägg till kod som går igenom och skriver ut de tal som är inlästa
+EFTER du har läst in klart.</li>
+<li>Skriv kod som går igenom listan <code>l</code> och summerar ihop talen du
+nyss skrev ut.</li>
+<li>Skapa en ny lista <code>even</code> som innehåller alla JÄMNA tal du har i
+listan. Ta samtidigt bort de jämna talen från <code>l</code>.</li>
+<li>Skriv ut alla jämna tal i listan <code>even</code>.</li>
+<li>Skriv ut alla udda tal som är kvar i listan <code>l</code>.</li>
+<li>Avallokera alla listor så att allt minne återlämnas till
+systemet.</li>
+
+<li>Kompilera programmet med flaggorna <code>-Wall</code> och <code>-std=c99</code> för
+att motsvara kraven på labbarna.</li>
+</ol></dd>
+</dl>
+</div>
+</div>
+
+
+<div id="outline-container-org2a2c01f" class="outline-2">
+<h2 id="org2a2c01f">Övning 3 - Förbered för labbarna</h2>
+<div class="outline-text-2" id="text-org2a2c01f">
+<ul class="org-ul">
+<li><p>
+Skapa arbetskataloger för labbarna
+</p>
+<pre class="example" id="org67dcb88">niclas@earth:~$ cd ~/edu/doa
+niclas@earth:~/edu/doa$ mkdir ou1 ou3 ou4
+niclas@earth:~/edu/doa$ ls
+datastructures-v1.0.14.3  datastructures-v1.0.14.3.zip  ou1  ou3  ou4  work
+</pre></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4227c1" class="outline-2">
+<h2 id="orgd4227c1">Dokumenthistorik</h2>
+<div class="outline-text-2" id="text-orgd4227c1">
+<dl class="org-dl">
+<dt>v1.0 2024-01-15</dt><dd>Första publicerade version.</dd>
+<dt>v2.0 2024-01-15</dt><dd>Ny version som använder int<sub>list</sub> i stället för dlist.</dd>
+<dt>v3.0 2024-03-18</dt><dd>Lade till beskrivningar av prompter och magiska tangenter.</dd>
+<dt>v3.1 2024-03-19</dt><dd>Lade till syfte och sektionen om att köra lokalt.</dd>
+</dl>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gadc9813786adbc9bde288e2f94a64e0d">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Testning</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g4e4aec42a7b1d3f3f0514f92eea210c8" title="Testning">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>67027,52416,53113,12351</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;&lt;br&gt;Vad ska man tänka på när man testar en datatyp?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="67027">
+              <material>
+                <mattext texttype="text/plain">Börja med de enklaste testerna.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="52416">
+              <material>
+                <mattext texttype="text/plain">Testa gränsfall.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="53113">
+              <material>
+                <mattext texttype="text/plain">Testa alla operationer i en datatyp på en och samma gång.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="12351">
+              <material>
+                <mattext texttype="text/plain">Testa en operation i en datatyp åt gången.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">67027</varequal>
+              <varequal respident="response1">52416</varequal>
+              <not>
+                <varequal respident="response1">53113</varequal>
+              </not>
+              <varequal respident="response1">12351</varequal>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g4a9289d1905fe49ef81215a0718cb70a" title="Testning">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15236,58038,89516,35268</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vilket av följande är sant när man pratar om enhetstestning?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="15236">
+              <material>
+                <mattext texttype="text/plain">Syftet är att hitta och identifiera fel så att de kan rättas till så tidigt som möjligt.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="58038">
+              <material>
+                <mattext texttype="text/plain">Enhetstestning innebär att man testar en mjukvarukomponent isolerat från resten av programmet.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="89516">
+              <material>
+                <mattext texttype="text/plain">Syftet med enhetstestning är att övertyga sig om att mindre delar fungerar innan de används till ett större program.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35268">
+              <material>
+                <mattext texttype="text/plain">Man kan bevisa att programmet fungerar om man testat med enhetstestning.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">15236</varequal>
+              <varequal respident="response1">58038</varequal>
+              <varequal respident="response1">89516</varequal>
+              <not>
+                <varequal respident="response1">35268</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

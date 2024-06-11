@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g16bea9d248acddfd2822d954cddcff6e">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA: Asymptotisk analys</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g0feba557253d55c574370dc69dbf1d4f" title="Asymptotisk analys">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7427,2870,2494,7719,2107,7839</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;I denna del ska ni asymptotiskt anaysera en algoritm och sedan svara på ett antal frågor kring algoritmen.&lt;/p&gt;
+&lt;pre&gt;Algorithm maxLoad(bridgeLength,numTrainCars,carsLength[],carsWeight[])
+Calculates the maximum weight of a passing train on a bridge
+Input:
+    bridgeLength - The length of the bridge
+    numTrainCars - The number of cars in the train
+    carsLength   - Array containing numTrainCars elements describing the length of the
+                   individual cars
+    carsWeight   - Array containing numTrainCars elements describing the length of the
+                   individual cars
+Output:
+    The maximum weight that the train will have on the bridge while passing
+
+    maxWeight&amp;lt;-0
+    for i&amp;lt;-0 to numTrainCars-1 do
+        currentLength&amp;lt;-0
+        currentWeight&amp;lt;-0
+        j&amp;lt;-0
+        while currentLength&amp;lt;bridgelength&amp;amp;&amp;amp;i+j&amp;lt;numtraincars do
+            currentLength&amp;lt;-currentLength+carsLength[i+j]
+            currentWeight&amp;lt;-currentWeight+carsWeight[i+j]
+            j&amp;lt;-j+1
+        if currentWeight&amp;gt;maxWeight then 
+            maxWeight=currentWeight
+    return maxWeight&lt;/pre&gt;
+&lt;p&gt;Vad har algoritmen för värstafallskomplexitet?&lt;/p&gt;
+&lt;p&gt;n nedan hänvisar till problemstorleken som i algoritmen benämns &lt;span style="font-family: courier new , courier , monospace;"&gt;numTrainCars&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;/pre&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="7427">
+              <material>
+                <mattext texttype="text/plain">O(n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2870">
+              <material>
+                <mattext texttype="text/plain">O(n log n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2494">
+              <material>
+                <mattext texttype="text/plain">O(log n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7719">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;2&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2107">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;2&lt;/sup&gt; log n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7839">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;3&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7719</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g68d0d9d41e1abfd75570e69067fc7b20" title="Asymptotisk analys">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3353,2531,8947,9366,845,3300</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vad har algoritmen för bästafallskomplexitet?&lt;/p&gt;
+&lt;p&gt;n nedan hänvisar till problemstorleken som i algoritmen benämns&amp;nbsp;&lt;span style="font-family: 'courier new' , courier , monospace;"&gt;numTrainCars&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3353">
+              <material>
+                <mattext texttype="text/plain">O(log n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2531">
+              <material>
+                <mattext texttype="text/plain">O(n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8947">
+              <material>
+                <mattext texttype="text/plain">O(n log n)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9366">
+              <material>
+                <mattext texttype="text/plain">O(1)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="845">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;2&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3300">
+              <material>
+                <mattext texttype="text/html">O(n&lt;sup&gt;3&lt;/sup&gt;)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">2531</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gf517ced95d8137e7b3fba97c4b6b3ebc" title="Asymptotisk analys">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>numerical_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>7666</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Om vi antar att algoritmens medelkomplexitet ligger nära det värsta fallet. Och vi gjort ett test och funnit att algoritmen tagit 10s att köra då vi kört den för 100 tåg som var och en bestod av 100 vagnar.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;Ungefär hur lång tid kan vi då anta att testet tar att köra om vi kör det för 200 tåg med 200 vagnar? &lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib fibtype="Decimal">
+            <response_label ident="answer1"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <vargte respident="response1">70.0</vargte>
+            <varlte respident="response1">90.0</varlte>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

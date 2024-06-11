@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>GÖ1 - Algoritmer, pseudokod, stack och kö</title>
+<meta name="identifier" content="g2165ba93614e4256afa98c04524fa449"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<h2>Uppgift 1</h2>
+<p style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">Skatteverket vill ha din hjälp med att skriva en applikation för löntagare som snabbt vill räkna ut sin nettolön. För att få nettolönen skall först skatten dras bort och sedan eventuell fackföreningsavgift. Om personen tjänar mer än 30 000 ska skatten vara 45 %, i intervallet 20000 – 30000 är skatten 40 %, i intervallet 15 000 – 19 999 ska skatten vara 35 % och under 15 000 är den 30 % (Detta stämmer inte med verkligheten!). När skatten dragits bort skall sedan fackföreningsavgiften på 250 kronor dras bort, om personen är fackföreningsansluten. Skriv en algoritm i pseudokod som beskriver hur man går till väga för att räkna ut nettolönen.</p>
+<h2>Uppgift 2</h2>
+<p style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;"><em style="font-style: italic;">Max i lista</em><br>Utgå från listspecifikationen i kapitel 3.2 och skriv en algoritm i pseudokod som hittar det största talet i en lista av tal. Konstruktionen eller implementationen av funktionerna får inte påverka utformningen av algoritmen.</p>
+<p style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">abstract datatype List(val)<br>auxiliary pos<br>&nbsp;&nbsp;&nbsp; Empty() -&gt; List(val)<br>&nbsp;&nbsp;&nbsp; Insert(v:val,p:pos,l:List(val))-&gt;(List(val),pos)<br>&nbsp;&nbsp;&nbsp; Isempty(l:List(val)) -&gt; Bool<br>&nbsp;&nbsp;&nbsp; Inspect(p:pos,l:List(val)) -&gt; val<br>&nbsp;&nbsp;&nbsp; First(l:List(val)) -&gt; pos<br>&nbsp;&nbsp;&nbsp; End(l:List(val)) -&gt; pos<br>&nbsp;&nbsp;&nbsp; Next(p:pos,l:List(val)) -&gt; pos<br>&nbsp;&nbsp;&nbsp; Previous(p:pos,l:List(val)) -&gt; pos<br>&nbsp;&nbsp;&nbsp; Remove((p:pos,l:List(val)) -&gt;(List(val),pos)</p>
+<h2>Uppgift 3 (tentauppgift 2018-03-08)</h2>
+<p style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;"><em style="font-style: italic;">Snittmängd</em><br>Snittmängden s av två mängder s1 och s2 är en mängd som innehåller alla element e som ingår både i s1 och i s2.</p>
+<ol style="margin-top: 0px; margin-bottom: 0px; padding: 0px 0px 1em 1.5em !important; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">
+<li style="margin-top: 1em !important; position: relative;">Ge pseudokod för en algoritm som beräknar snittmängden där datatypen mängd är konstruerad som en (osorterad) Riktad lista.</li>
+<li style="margin-top: 1em !important; position: relative;">Ge pseudokod för en algoritm som beräknar snittmängden där datatypen mängd är konstruerad som en Riktad lista där elementvärdena är sorterade i stigande ordning. Tänk på att s ska vara sorterad på samma sätt. För fulla poäng ska algoritmen ha optimal komplexitet.</li>
+<li style="margin-top: 1em !important; position: relative;">Vad har algoritmerna för relativ (förenklad) tidskomplexitet om du antar att mängderna innehåller ungefär lika många element n?</li>
+</ol>
+<h2>Uppgift 4</h2>
+<p class="UmUNormal" style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">Beskriv hur man skulle konstruera en Stack i Lista på så sätt att sista elementet i listan är Stackens topp.</p>
+<h2>Uppgift 5</h2>
+<p class="UmUNormal" style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">Använd axiomen för stacken som finns i kursboken för att ta reda på vad resultatet blir för<br>Top(Pop(Push(3, Push(6, Pop(Push(7, Push(4, Empty)))))))</p>
+<h2>Uppgift 6</h2>
+<p class="UmUNormal" style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">Hur ser s (en stack) och q (en kö) ut efter att följande operationer utförts?</p>
+<p class="UmUNormal" style="margin: 0px 0px 10px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;"><span style="font-family: 'Courier New';" lang="EN-US">q &lt;- empty()<br>s &lt;- empty()<br>q &lt;- enqueue(1, q)<br>q &lt;- enqueue(2, q)<br>q &lt;- enqueue(3, q)<br>s &lt;- push(front(q), s)<br>q &lt;- dequeue(q)<br>s &lt;- push(front(q), s)<br>q &lt;- dequeue(q)<br>s &lt;- push(front(q), s)<br>q &lt;- dequeue(q)<br>q &lt;- enqueue(top(s))<br>s &lt;- pop(s)<br>q &lt;- enqueue(top(s))<br>s &lt;- pop(s)<br>q &lt;- enqueue(top(s))</span></p>
+<h2>Uppgift 7</h2>
+<p class="UmUNormal" style="margin: 0px; color: #414141; font-family: 'Gotham SSm A', 'Gotham SSm B', Verdana, sans-serif; font-size: 15px; font-style: normal; text-align: left; text-indent: 0px; white-space: normal; background-color: #ffffff;">Antag att du ska konstruera en kö med hjälp av 1-celler. Hur ska riktningen mellan cellerna organiseras, dvs ska fronten på kön på först eller sist i kedjan av celler? Varför?</p>
+<p>&nbsp;</p>
+</body>
+</html>

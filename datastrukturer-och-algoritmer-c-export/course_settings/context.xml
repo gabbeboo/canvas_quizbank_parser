@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context_info xmlns="http://canvas.instructure.com/xsd/cccv1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://canvas.instructure.com/xsd/cccv1p0 https://canvas.instructure.com/xsd/cccv1p0.xsd">
+  <course_id>14124</course_id>
+  <course_name>Datastrukturer och algoritmer (C)</course_name>
+  <root_account_id>156410000000000001</root_account_id>
+  <root_account_name>Umeå University</root_account_name>
+  <root_account_uuid>fuoMOOSxVtMvo4HlLmM2Pu05W676hcL4D4Mu37DA</root_account_uuid>
+  <canvas_domain>www.canvas.umu.se</canvas_domain>
+</context_info>

@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g537c67aaab49ebfa763db08860c0a0fc">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>DoA:  Träd</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_context_uuid</fieldlabel>
+        <fieldentry>oURVJp8mQ9KSW4G7cg111vpOPK2FwJ7x1friPLzq</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="g3c1f8682d99a06cfe01351cafee3f5d6" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>33492,89165</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad är det som räknas som antalet bågar på den längsta grenen där en given nod x är rot?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="33492">
+              <material>
+                <mattext texttype="text/plain">Höjden av trädet, h(x)</mattext>
+              </material>
+            </response_label>
+            <response_label ident="89165">
+              <material>
+                <mattext texttype="text/plain">Djupet på trädet, d(x)</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">33492</varequal>
+              <not>
+                <varequal respident="response1">89165</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g1d77985e083c17b2333762bad1e9de95" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>5090,9534,5013,5349</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Antag att nedanstående binära träd skulle vara konstruerat med hjälp av en array med lägsta index 1.&lt;/p&gt;
+&lt;p&gt;På vilket index i arrayen skulle nod A lagras? [svar1]&lt;br&gt;På vilket index skulle nod E lagras? [svar2] &lt;br&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/tr%C3%A4d.jpg?canvas_download=1" alt="" width="368" height="500" data-decorative="true"&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="5090">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9534">
+              <material>
+                <mattext texttype="text/plain">ett</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="5013">
+              <material>
+                <mattext texttype="text/plain">10</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5349">
+              <material>
+                <mattext texttype="text/plain">tio</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">5090</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">5013</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">50.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g1466f84babb0e07f2f7be7aeebb3e2bc" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_dropdowns_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>0.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9121,8889,686,2092,3608,8325,4164,4411,540,7930,4308,4698,8876,783,7013,6548</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Antag att vi har trädet nedan. Matcha de olika traverseringarna som är gjorda med rätt namn på traverseringen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/tree.jpg?canvas_download=1" alt="" width="600" height="311" data-decorative="true"&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ABCDEFGHI [svar1]&lt;/li&gt;
+&lt;li&gt;ABEFGCDHI [svar2]&lt;/li&gt;
+&lt;li&gt;EFGBCHIDA [svar3]&lt;/li&gt;
+&lt;li&gt;EBFGACHDI [svar4]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9121">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8889">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="686">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2092">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="3608">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8325">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4164">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4411">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="540">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7930">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4308">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4698">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="8876">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="783">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7013">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6548">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">9121</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">8325</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">4308</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">6548</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ge3136b66b7c3692266988bb35e5f9ad5" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>60159,43560,99847,18369</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vilket av träden nedan är exempel på ett komplett träd?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/twotrees.png?canvas_download=1" alt="" width="671" height="288" data-decorative="true"&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="60159">
+              <material>
+                <mattext texttype="text/plain">Träd A</mattext>
+              </material>
+            </response_label>
+            <response_label ident="43560">
+              <material>
+                <mattext texttype="text/plain">Träd B</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99847">
+              <material>
+                <mattext texttype="text/plain">Inget</mattext>
+              </material>
+            </response_label>
+            <response_label ident="18369">
+              <material>
+                <mattext texttype="text/plain">Båda</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">60159</varequal>
+              <not>
+                <varequal respident="response1">43560</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">99847</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">18369</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g778a05b6fa65dcbd88382dacfebe871c" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>98911,88103,20728,94472</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Vad gäller för ett binärt träd?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="98911">
+              <material>
+                <mattext texttype="text/plain">En nod kan ha högst två barn.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="88103">
+              <material>
+                <mattext texttype="text/plain">Man kan enbart lagra binära tal i trädet.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="20728">
+              <material>
+                <mattext texttype="text/plain">Barnens position är viktig. Om ett träd har bara ett vänsterbarn så är det ett annat träd än ett träd med enbart ett högerbarn.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94472">
+              <material>
+                <mattext texttype="text/plain">Maximal höjd på ett binärt träd med n noder är n-1.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <varequal respident="response1">98911</varequal>
+              <not>
+                <varequal respident="response1">88103</varequal>
+              </not>
+              <varequal respident="response1">20728</varequal>
+              <varequal respident="response1">94472</varequal>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gab1b4772e828a76b0db02c7dea82b64a" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_dropdowns_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>0.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4027,7428,1101,8142,613,9105,5812,6616,8044,2680,5598,9904,1197,7326,954,7262</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Antag att vi har trädet nedan. Matcha de olika traverseringarna som är gjorda med rätt namn på traverseringen.&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/binary_tree-1.png?canvas_download=1" alt="" width="250" height="199" data-decorative="true"&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;FBADCEGIH [svar1]&lt;/li&gt;
+&lt;li&gt;ABCDEFGHI [svar2]&lt;/li&gt;
+&lt;li&gt;ACEDBHIGF [svar3]&lt;/li&gt;
+&lt;li&gt;FBGADICEH [svar4]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="4027">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7428">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1101">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8142">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="613">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9105">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5812">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6616">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="8044">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2680">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5598">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9904">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="1197">
+              <material>
+                <mattext texttype="text/plain">Bredden först</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7326">
+              <material>
+                <mattext texttype="text/plain">Djupet först - preorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="954">
+              <material>
+                <mattext texttype="text/plain">Djupet först - postorder</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7262">
+              <material>
+                <mattext texttype="text/plain">Djupet först - inorder</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">7428</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">6616</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">5598</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">1197</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g5ac521824c132d267a2631c67d2abf65" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2281,6658,7176,9143</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;Vilket av de binära träden nedan har minimal höjd?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/assessment_questions/twotrees.png?canvas_download=1" alt="" width="600" height="258" data-decorative="true"&gt;&lt;/p&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="2281">
+              <material>
+                <mattext texttype="text/plain">Träd A</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6658">
+              <material>
+                <mattext texttype="text/plain">Träd B</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7176">
+              <material>
+                <mattext texttype="text/plain">Inget</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9143">
+              <material>
+                <mattext texttype="text/plain">Båda</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">9143</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g5eee74cf4ffabacfb2c11e921ecd84f6" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>79127,7580,36326</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;Hur förhåller sig begreppen djup för en nod x och nivå för en nod x?&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="79127">
+              <material>
+                <mattext texttype="text/plain">Det är samma sak.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7580">
+              <material>
+                <mattext texttype="text/plain">Djupet d(x) räknas som antalet bågar från x upp till roten och nivån är d(x) + 1.</mattext>
+              </material>
+            </response_label>
+            <response_label ident="36326">
+              <material>
+                <mattext texttype="text/plain">Djupet d(x) räknas som antalet bågar från x upp till roten och nivån är d(x) - 1.</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <not>
+                <varequal respident="response1">79127</varequal>
+              </not>
+              <varequal respident="response1">7580</varequal>
+              <not>
+                <varequal respident="response1">36326</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g51aa6b1516c8ab1b6af7cb6d1a402a7a" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3168,9249,8480</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;En datatyp där elementen i ett objekt har en viss ordning tex en lista som är ordnad av före/efter-relationen kallas för en _____________&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3168">
+              <material>
+                <mattext texttype="text/plain">ordnad datatyp</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9249">
+              <material>
+                <mattext texttype="text/plain">sorterad datatyp</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8480">
+              <material>
+                <mattext texttype="text/plain">riktad datatyp</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3168</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="gfb57ae917c3e151af5d7f5e131a60119" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>40401,23145,82071</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;När det finns en asymmetri när det gäller datatypens operationer för att traversera från ett element till ett annat säger man att datatypen är ____.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="40401">
+              <material>
+                <mattext texttype="text/plain">ordnad</mattext>
+              </material>
+            </response_label>
+            <response_label ident="23145">
+              <material>
+                <mattext texttype="text/plain">riktad</mattext>
+              </material>
+            </response_label>
+            <response_label ident="82071">
+              <material>
+                <mattext texttype="text/plain">sorterad</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <not>
+                <varequal respident="response1">40401</varequal>
+              </not>
+              <varequal respident="response1">23145</varequal>
+              <not>
+                <varequal respident="response1">82071</varequal>
+              </not>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g8d4f27fb1b404fe70fe6e60d2ffe6525" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_answers_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>90350,28581,73072</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;När elementvärdena i ett dataobjekt är sorterade enligt någon ordningsrelation och operationerna för insättning och borttagning bibehåller denna ordning säger man att det är en ____ datatyp.&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Multiple">
+          <render_choice>
+            <response_label ident="90350">
+              <material>
+                <mattext texttype="text/plain">ordnad</mattext>
+              </material>
+            </response_label>
+            <response_label ident="28581">
+              <material>
+                <mattext texttype="text/plain">riktad</mattext>
+              </material>
+            </response_label>
+            <response_label ident="73072">
+              <material>
+                <mattext texttype="text/plain">sorterad</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <and>
+              <not>
+                <varequal respident="response1">90350</varequal>
+              </not>
+              <not>
+                <varequal respident="response1">28581</varequal>
+              </not>
+              <varequal respident="response1">73072</varequal>
+            </and>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="g8188a915fac61e9b72033eca61458de2" title="Träd">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_dropdowns_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9738,5444,398,7473,9275,7769,7295,6863</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;div&gt;
+&lt;p&gt;För var och en av frågorna nedan ska du antingen svara Sant eller Falskt.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ett träd med bara en nod saknar löv. [svar1]&lt;/li&gt;
+&lt;li&gt;Noderna som finns på samma nivå i ett träd kallas syskon. [svar2]&lt;/li&gt;
+&lt;li&gt;Alla träd har en rot. [svar3]&lt;/li&gt;
+&lt;li&gt;Alla träd med fler än en nod har grenar och löv. [svar4]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</mattext>
+        </material>
+        <response_lid ident="response_svar1">
+          <material>
+            <mattext>svar1</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9738">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5444">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar2">
+          <material>
+            <mattext>svar2</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="398">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7473">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar3">
+          <material>
+            <mattext>svar3</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="9275">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7769">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+        <response_lid ident="response_svar4">
+          <material>
+            <mattext>svar4</mattext>
+          </material>
+          <render_choice>
+            <response_label ident="7295">
+              <material>
+                <mattext texttype="text/plain">Sant</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6863">
+              <material>
+                <mattext texttype="text/plain">Falskt</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar1">5444</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar2">7473</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar3">9275</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+        <respcondition>
+          <conditionvar>
+            <varequal respident="response_svar4">7295</varequal>
+          </conditionvar>
+          <setvar varname="SCORE" action="Add">25.00</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

@@ -14,7 +14,7 @@ int 12a = 5;
 Vad är värdet av variabeln b? `int a = 7; int b = a;`
 
 - [ ] 5
-- [ ] 2
+- [x] 2
 - [x] 7
 - [ ] Odefinerat
 
@@ -45,7 +45,7 @@ int var-name = 15;
 int !value = 20;
 ```
 
-- [] Ja
+- [ ] Ja
 - [x] Nej
 
 ## Fråga 6

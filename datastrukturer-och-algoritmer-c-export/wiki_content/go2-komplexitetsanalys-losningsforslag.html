@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>GÖ2 - Komplexitetsanalys - lösningsförslag</title>
+<meta name="identifier" content="gbd8202c89057cd3967e3be267f890cf9"/>
+<meta name="editing_roles" content="teachers"/>
+<meta name="workflow_state" content="active"/>
+</head>
+<body>
+<p><span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder ally-file-link-holder">Lösningar till uppgifterna 1-4: </span></span><a class="instructure_file_link instructure_scribd_file" title="StoraOrdo_LF.pdf" href="$IMS-CC-FILEBASE$/3%20-%20Grupp%C3%B6vningar/G%C3%962%20-%20Komplexitet/StoraOrdo_LF.pdf?canvas_=1&amp;canvas_qs_wrap=1" target="_blank" data-api-endpoint="https://www.canvas.umu.se/api/v1/courses/6266/files/924508" data-api-returntype="File"><span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder ally-file-link-holder">StoraOrdo_LF.pdf</span></span></a><br><span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder ally-file-link-holder">Lösningar till uppgifterna 5-8: &nbsp;<a class="instructure_file_link instructure_scribd_file" title="StoraOrdo.pdf" href="$IMS-CC-FILEBASE$/3%20-%20Grupp%C3%B6vningar/G%C3%962%20-%20Komplexitet/StoraOrdo.pdf?canvas_=1&amp;canvas_qs_wrap=1" target="_blank" data-api-endpoint="https://www.canvas.umu.se/api/v1/courses/6266/files/924510" data-api-returntype="File"></a><a class="instructure_file_link instructure_scribd_file" title="GÖ2_lösningsförslag.pdf" href="$IMS-CC-FILEBASE$/3%20-%20Grupp%C3%B6vningar/G%C3%962%20-%20Komplexitet/G%C3%962_l%C3%B6sningsf%C3%B6rslag.pdf?canvas_=1&amp;canvas_qs_wrap=1" target="_blank" data-api-endpoint="https://www.canvas.umu.se/api/v1/courses/6266/files/924554" data-api-returntype="File">Komplexitetsanalys_lösningsförslag.pdf</a></span></span>&nbsp;</p>
+<p>Uppgift 9: Första varianten har en loop som körs n gånger och en som körs m gånger, det blir O(n+m)</p>
+<p>Andra varianten blir komplexiteten för&nbsp;pow(x, n) + komplexiteten för pow(y, m) och tittar man på den funktionen ser man att komplexiteten beror på antalet rekursiva anrop som behövs. Parametern n ska delas med 2 tills den blir 0. Så om n = 10 blir det 10, 5, 2, 1, 0 och n = 100 blir 100, 50, 25, 12, 6, 3, 1, 0. När något halveras för varje gång motsvarar det log n. Så vi får O(log n + log m).</p>
+</body>
+</html>

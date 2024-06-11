@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
-  <objectbank ident="558e9e09-68c1-4553-9ad2-78495e08ba8b">
+  <objectbank ident="4666fbb6-72df-472d-84f4-5017e448ca39">
     <qtimetadata>
       <qtimetadatafield>
         <fieldlabel>bank_title</fieldlabel>
         <fieldentry>C &amp; M Variabler</fieldentry>
       </qtimetadatafield>
     </qtimetadata>
-    <item ident="070273f7-9afb-4eae-a5fe-6746851abf7f" title="Fråga 1">
+    <item ident="42d82935-9c07-4efa-b1b8-3da2ba7b00bd" title="Fråga 1">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -52,7 +52,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="843fc37c-8a8f-40af-b953-87d90e346517" title="Fråga 2">
+    <item ident="e2d04350-950d-4f35-9a33-a31b203445b9" title="Fråga 2">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -67,13 +67,28 @@
       </itemmetadata>
       <presentation>
         <material>
-          <mattext texttype="text/html">Vad är värdet av variabeln &lt;pre&gt;&lt;code&gt;b&lt;/code&gt;&lt;/pre&gt; om &lt;pre&gt;&lt;code&gt;int a = 7; int b = a;&lt;/code&gt;&lt;/pre&gt;?</mattext>
+          <mattext texttype="text/html">Vad är värdet av variabeln b? &lt;pre&gt;&lt;code&gt;int a = 7; int b = a;&lt;/code&gt;&lt;/pre&gt;</mattext>
         </material>
-        <response_lid ident="svar1" rcardinality="Single">
+        <response_lid ident="svar1" rcardinality="Multiple">
           <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
             <response_label ident="korrekt1">
               <material>
+                <mattext texttype="text/plain">2</mattext>
+              </material>
+            </response_label>
+            <response_label ident="korrekt2">
+              <material>
                 <mattext texttype="text/plain">7</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fel2">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -86,12 +101,14 @@
         <respcondition>
           <conditionvar>
             <varequal respident="svar1">korrekt1</varequal>
+            <varequal respident="svar1">korrekt2</varequal>
           </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
           <setvar action="Set" varname="SCORE">100</setvar>
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="b4223613-975d-42fa-8afe-c146bb66bd90" title="Fråga 3">
+    <item ident="e3f849c0-6dbd-4f61-9af3-0183553650b2" title="Fråga 3">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -136,7 +153,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="eaa27dae-add2-4e5f-98b7-5dcb37554fb9" title="Fråga 4">
+    <item ident="33c9ab5d-e71b-40dc-bb51-c125e1eddf7b" title="Fråga 4">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -181,7 +198,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="40062811-4e58-49ca-8bda-72933ab8d2f9" title="Fråga 5">
+    <item ident="30e1d22d-1c7a-4d0f-9130-10e63c72fbe0" title="Fråga 5">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -197,7 +214,7 @@
       <presentation>
         <material>
           <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
-&lt;pre&gt;&lt;code&gt;int $value = 20;&lt;/code&gt;&lt;/pre&gt;</mattext>
+&lt;pre&gt;&lt;code&gt;int !value = 20;&lt;/code&gt;&lt;/pre&gt;</mattext>
         </material>
         <response_lid ident="svar1" rcardinality="Single">
           <render_choice>
@@ -226,7 +243,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="84b7d5e2-3f14-41d0-8247-3a820a1299a1" title="Fråga 6">
+    <item ident="9396cb2b-0407-4438-a1e5-634169496add" title="Fråga 6">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -271,7 +288,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="476d942c-6f1a-4913-8d8e-36dddb9244e5" title="Fråga 7">
+    <item ident="32cac83b-56cf-4833-bc86-ab7c948ac017" title="Fråga 7">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
@@ -286,13 +303,28 @@
       </itemmetadata>
       <presentation>
         <material>
-          <mattext texttype="text/html">Vad är värdet av variabeln &lt;pre&gt;&lt;code&gt;x&lt;/code&gt;&lt;/pre&gt; om &lt;pre&gt;&lt;code&gt;int x = 5 * 5;&lt;/code&gt;&lt;/pre&gt;?</mattext>
+          <mattext texttype="text/html">Vad är värdet av variabeln x? &lt;pre&gt;&lt;code&gt;int x = 5 * 5;&lt;/code&gt;&lt;/pre&gt;</mattext>
         </material>
         <response_lid ident="svar1" rcardinality="Single">
           <render_choice>
+            <response_label ident="fel1">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fel2">
+              <material>
+                <mattext texttype="text/plain">10</mattext>
+              </material>
+            </response_label>
             <response_label ident="korrekt1">
               <material>
                 <mattext texttype="text/plain">25</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fel3">
+              <material>
+                <mattext texttype="text/plain">50</mattext>
               </material>
             </response_label>
           </render_choice>
@@ -310,7 +342,7 @@
         </respcondition>
       </resprocessing>
     </item>
-    <item ident="5d350469-c1dd-4a55-9a63-bc8a0cb68a20" title="Fråga 8">
+    <item ident="69cd00f1-3852-4ecc-bb7c-116bfb7d694a" title="Fråga 8">
       <itemmetadata>
         <qtimetadata>
           <qtimetadatafield>
