@@ -4,7 +4,22 @@ from xml.dom import minidom
 import re
 import uuid
 
-def parse_markdown_to_qti(markdown_file):
+"""
+"Zip XML file, takes an XML file as input and zips it into a file with the same name but with the extension .zip"
+"Input: xml_file: str, the name of the XML file to be zipped"
+"Output: Zip file with the same name as the input XML file but with the extension .zip"
+"Example: zip_xml_file('quiz.xml') -> 'quiz.zip'"
+"""
+def zip_xml_file(xml_file):
+    import zipfile
+    import os
+
+    # Create a Zip file
+    with zipfile.ZipFile(xml_file.replace('.xml', '.zip'), 'w') as zipf:
+        zipf.write(xml_file)
+
+
+def parse_markdown_to_xml(markdown_file):
     # Read Markdown file
     with open(markdown_file, 'r', encoding='utf-8') as f:
         markdown_content = f.read()
@@ -118,4 +133,4 @@ def parse_markdown_to_qti(markdown_file):
         f.write(pretty_xml_str)
 
 # Usage example
-parse_markdown_to_qti("quizbank_variabler.md")
+parse_markdown_to_xml("quizbank_variabler.md")

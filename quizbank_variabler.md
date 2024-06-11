@@ -58,7 +58,7 @@ int a_variable = 25;
 ## Fråga 7
 Vad är värdet av variabeln `x` om `int x = 5 * 5;`?
 
-- Numeriskt svar: [x] 25
+- [x] 25
 
 ## Fråga 8
 Är nedanstående ett giltigt variabelnamn?
