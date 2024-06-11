@@ -11,9 +11,12 @@ int 12a = 5;
 - [x] Nej
 
 ## Fråga 2
-Vad är värdet av variabeln `b` om `int a = 7; int b = a;`?
+Vad är värdet av variabeln b? `int a = 7; int b = a;`
 
+- [ ] 5
+- [ ] 2
 - [x] 7
+- [ ] Odefinerat
 
 ## Fråga 3
 Är nedanstående ett giltigt variabelnamn?
@@ -39,10 +42,10 @@ int var-name = 15;
 Är nedanstående ett giltigt variabelnamn?
 
 ```
-int $value = 20;
+int !value = 20;
 ```
 
-- [ ] Ja
+- [] Ja
 - [x] Nej
 
 ## Fråga 6
@@ -56,9 +59,12 @@ int a_variable = 25;
 - [ ] Nej
 
 ## Fråga 7
-Vad är värdet av variabeln `x` om `int x = 5 * 5;`?
+Vad är värdet av variabeln x? `int x = 5 * 5;`
 
+- [ ] 5
+- [ ] 10
 - [x] 25
+- [ ] 50
 
 ## Fråga 8
 Är nedanstående ett giltigt variabelnamn?

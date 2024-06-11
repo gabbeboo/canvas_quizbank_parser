@@ -1,3 +1,22 @@
+
+
+"""
+Quizbank Parser
+
+Description:
+    This script converts a Markdown file with multiple choice questions to an XML file in the 
+    QTI format. The script also zips the XML file so that it is ready to be imported into
+    canvas.
+
+Author:
+    Gabriel Morberg
+
+Date:
+    2024-06-11
+
+Limitations : 
+
+"""
 import markdown
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
@@ -19,6 +38,24 @@ def zip_xml_file(xml_file):
         zipf.write(xml_file)
 
 
+"""
+"Find bank title, takes a Markdown file as input and returns the title of the bank"
+"Input: markdown_file: str, the name of the Markdown file"
+"Output: bank_title: str, the title of the bank"
+"Example: find_bank_title('quizbank_variabler.md') -> 'Variabler'"
+"""
+def find_bank_title(markdown_file):
+    with open(markdown_file, 'r', encoding='utf-8') as f:
+        for line in f:
+            if line.startswith('#'):
+                bank_title = line.replace('#', '')  
+                bank_title = bank_title.strip()
+                print(bank_title)
+                break
+        else:
+            bank_title = "Untitled Bank"
+    return bank_title
+
 def parse_markdown_to_xml(markdown_file):
     # Read Markdown file
     with open(markdown_file, 'r', encoding='utf-8') as f:
@@ -33,11 +70,6 @@ def parse_markdown_to_xml(markdown_file):
     root.set('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
     root.set('xsi:schemaLocation', 'http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd')
 
-    # Read bank title from the first line of the Markdown file
-    with open(markdown_file, 'r', encoding='utf-8') as f:
-        bank_title = f.readline().strip()
-        
-
     # Create objectbank-tag with identifier and title
     objectbank_ident = str(uuid.uuid4())
     objectbank = ET.SubElement(root, 'objectbank', ident=objectbank_ident)
@@ -47,6 +79,8 @@ def parse_markdown_to_xml(markdown_file):
     qtimetadatafield1 = ET.SubElement(qtimetadata, 'qtimetadatafield')
     fieldlabel1 = ET.SubElement(qtimetadatafield1, 'fieldlabel')
     fieldlabel1.text = 'bank_title'
+
+    bank_title = find_bank_title(markdown_file)
     fieldentry1 = ET.SubElement(qtimetadatafield1, 'fieldentry')
     fieldentry1.text = bank_title
 
@@ -134,3 +168,4 @@ def parse_markdown_to_xml(markdown_file):
 
 # Usage example
 parse_markdown_to_xml("quizbank_variabler.md")
+zip_xml_file("quiz.xml")
