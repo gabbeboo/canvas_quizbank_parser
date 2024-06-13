@@ -3,7 +3,7 @@
 
 int main (void) {
 
-    int $baj = 0;
+    int !(baj) = 0;
 
     return 0;
 }

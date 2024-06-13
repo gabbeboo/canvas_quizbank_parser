@@ -1,8 +1,21 @@
+"""
+Author: Gabriel Morberg
+Email: gabrielmorberg13@gmail.com / c21gmg@cs.umu.se
+Date: 2024-06-13
+Version: 1.0
+Description: This script takes a markdown file as input and converts it to a XML file that is compatible with 
+             the IMS QTI standard. Thereafter the zip file can be used to import a quizbank in the Canvas LMS.
+             For format of the markdown file see the README.md file.
+Usage : python3 qparser.py <markdown_file.md>
+"""
+
+
 import markdown
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import re
 import uuid
+import sys
 
 def zip_xml_file(xml_file):
     import zipfile
@@ -44,18 +57,26 @@ def parse_markdown_to_xml(markdown_file):
     fieldentry1.text = bank_title
 
     questions = re.findall(r'<h2>(.*?)<\/h2>(.*?)<\/ul>', html_content, re.DOTALL)
-    for title, question_content in questions:
+    # Question title is the name after the colon in the bank title
+    questions_title = bank_title.split(":")[1].strip()
+    
+    if not questions_title:
+        #Handle case where there is no colon in the bank title
+        questions_title = "Fråga"
+
+    for index, (title, question_content) in enumerate(questions):
+        #Create unique identifier for each question
         ident = str(uuid.uuid4())
-       
-        item = ET.SubElement(objectbank, 'item', ident=ident, title=title.strip())
+
+        # Hardcode the title
+        item = ET.SubElement(objectbank, 'item', ident=ident, title=questions_title)
         itemmetadata = ET.SubElement(item, 'itemmetadata')
         qtimetadata = ET.SubElement(itemmetadata, 'qtimetadata')
-        
+
         qtimetadatafield1 = ET.SubElement(qtimetadata, 'qtimetadatafield')
         fieldlabel1 = ET.SubElement(qtimetadatafield1, 'fieldlabel')
         fieldlabel1.text = 'question_type'
         fieldentry1 = ET.SubElement(qtimetadatafield1, 'fieldentry')
-        fieldentry1.text = 'multiple_choice_question'
 
         qtimetadatafield2 = ET.SubElement(qtimetadata, 'qtimetadatafield')
         fieldlabel2 = ET.SubElement(qtimetadatafield2, 'fieldlabel')
@@ -66,57 +87,77 @@ def parse_markdown_to_xml(markdown_file):
         presentation = ET.SubElement(item, 'presentation')
         material = ET.SubElement(presentation, 'material')
         mattext = ET.SubElement(material, 'mattext', texttype="text/html")
-        
+     
         paragraphs = re.findall(r'<p>(.*?)</p>', question_content, re.DOTALL)
         cleaned_question = '\n'.join(paragraphs)
-        cleaned_question = re.sub(r'<code>(.*?)</code>', r'<pre><code>\1</code></pre>', cleaned_question)
-
+        cleaned_question = re.sub(r'<code>(.*?)</code>', r'<pre><code>\1</code></pre>', cleaned_question,flags=re.DOTALL)
+        
         mattext.text = cleaned_question
 
-        response_lid = ET.SubElement(presentation, 'response_lid', ident="svar1")
+        response_lid = ET.SubElement(presentation, 'response_lid', ident="response1")
         render_choice = ET.SubElement(response_lid, 'render_choice')
 
         answers = re.findall(r'<li>\[(x| )\] (.*?)<\/li>', question_content)
         correct_count = sum(1 for is_correct, _ in answers if is_correct.strip() == 'x')
 
-        # Determine rcardinality based on the count of correct responses
         rcardinality = "Single" if correct_count == 1 else "Multiple"
         response_lid.set('rcardinality', rcardinality)
 
-        correct_index = 1
-        incorrect_index = 1
-        for is_correct, answer_text in answers:
+        original_answer_ids = []
+        correct_answers = []
+        for index, (is_correct, answer_text) in enumerate(answers):
+            response_ident = str(uuid.uuid4())
+            original_answer_ids.append(response_ident)
             if is_correct.strip() == 'x':
-                ident = "korrekt" + str(correct_index)
-                correct_index += 1
-            else:
-                ident = "fel" + str(incorrect_index)
-                incorrect_index += 1
+                correct_answers.append(response_ident)
 
-            response_label = ET.SubElement(render_choice, 'response_label', ident=ident)
+            response_label = ET.SubElement(render_choice, 'response_label', ident=response_ident)
             material = ET.SubElement(response_label, 'material')
             mattext = ET.SubElement(material, 'mattext', texttype="text/plain")
             mattext.text = answer_text.strip()
 
+        qtimetadatafield3 = ET.SubElement(qtimetadata, 'qtimetadatafield')
+        fieldlabel3 = ET.SubElement(qtimetadatafield3, 'fieldlabel')
+        fieldlabel3.text = 'original_answer_ids'
+        fieldentry3 = ET.SubElement(qtimetadatafield3, 'fieldentry')
+        fieldentry3.text = ','.join(original_answer_ids)
+
         resprocessing = ET.SubElement(item, 'resprocessing')
         outcomes = ET.SubElement(resprocessing, 'outcomes')
         decvar = ET.SubElement(outcomes, 'decvar', maxvalue="100", minvalue="0", varname="SCORE", vartype="Decimal")
-        
-        respcondition = ET.SubElement(resprocessing, 'respcondition')
-        conditionvar = ET.SubElement(respcondition, 'conditionvar')
 
-        for i in range(1, correct_index):
-            varequal = ET.SubElement(conditionvar, 'varequal', respident="svar1")
-            varequal.text = "korrekt" + str(i)
-            setvar = ET.SubElement(respcondition, 'setvar', action="Set", varname="SCORE")
-            setvar.text = '100'
+        respcondition = ET.SubElement(resprocessing, 'respcondition')
+        respcondition.set('continue', "No")
+        conditionvar = ET.SubElement(respcondition, 'conditionvar')
+        
+        if correct_count == 1:
+            fieldentry1.text = 'multiple_choice_question'
+            varequal = ET.SubElement(conditionvar, 'varequal', respident="response1")
+            varequal.text = correct_answers[0]
+        else:
+            fieldentry1.text = 'multiple_answers_question'
+            condition_and = ET.SubElement(conditionvar, 'and')
+            for correct_answer in correct_answers:
+                varequal = ET.SubElement(condition_and, 'varequal', respident="response1")
+                varequal.text = correct_answer
+            for incorrect_answer in set(original_answer_ids) - set(correct_answers):
+                not_condition = ET.SubElement(condition_and, 'not')
+                varequal = ET.SubElement(not_condition, 'varequal', respident="response1")
+                varequal.text = incorrect_answer
+
+        setvar = ET.SubElement(respcondition, 'setvar', action="Set", varname="SCORE")
+        setvar.text = "100"
 
     xml_str = ET.tostring(root, encoding='unicode', xml_declaration=True)
     xml_dom = minidom.parseString(xml_str)
     pretty_xml_str = xml_dom.toprettyxml(indent="  ")
+    markdown_file_xml = markdown_file.replace('.md', '.xml')
 
-    with open('quiz.xml', 'w', encoding='utf-8') as f:
+    with open(markdown_file_xml, 'w', encoding='utf-8') as f:
         f.write(pretty_xml_str)
 
-parse_markdown_to_xml("quizbank_variabler.md")
-zip_xml_file("quiz.xml")
+md_file = sys.argv[1]
+parse_markdown_to_xml(md_file)
+
+mdfile_name = md_file.split(".")[0]
+zip_xml_file(mdfile_name + ".xml")

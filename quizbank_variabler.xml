@@ -1,0 +1,750 @@
+<?xml version="1.0" ?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="d1bdb194-fc67-40d9-bacb-8fab466c449b">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>C &amp; M : Variabler</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="0d7a81bc-8914-4384-90a5-dd9c30c529ce" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>617124ff-262b-4c4b-b4ba-96c946cad1c2,8a5fbff0-ebb8-4f5e-b607-123b58ce0b88</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int 12a = 5;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="617124ff-262b-4c4b-b4ba-96c946cad1c2">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8a5fbff0-ebb8-4f5e-b607-123b58ce0b88">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8a5fbff0-ebb8-4f5e-b607-123b58ce0b88</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="c1e02608-56c8-4224-ad8a-f6b22d4603d3" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>b0288a61-b191-4947-ad1c-1477e5f2008c,5e402d82-492d-4388-aaf7-ef861f84e563,239a480c-76f8-4320-8345-f4b4bd65b24d,1923d946-0990-403b-9ad9-d9d971a4e22d</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b? 
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = a;
+int a = 0;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="b0288a61-b191-4947-ad1c-1477e5f2008c">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5e402d82-492d-4388-aaf7-ef861f84e563">
+              <material>
+                <mattext texttype="text/plain">10</mattext>
+              </material>
+            </response_label>
+            <response_label ident="239a480c-76f8-4320-8345-f4b4bd65b24d">
+              <material>
+                <mattext texttype="text/plain">7</mattext>
+              </material>
+            </response_label>
+            <response_label ident="1923d946-0990-403b-9ad9-d9d971a4e22d">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">239a480c-76f8-4320-8345-f4b4bd65b24d</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="d261586c-7925-48de-89b2-c11e46ad6c7f" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>9637eea1-57c0-4fda-808b-8e26842e8b31,307f841a-4d9a-4f45-aa95-61805dab00ac</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int _varName = 10;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="9637eea1-57c0-4fda-808b-8e26842e8b31">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="307f841a-4d9a-4f45-aa95-61805dab00ac">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">9637eea1-57c0-4fda-808b-8e26842e8b31</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="aadb96e3-5849-4b52-9e76-138e19026828" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>789fb1a6-49e1-4168-a220-248d74bf56f4,fc92f621-7dd9-432e-bf80-2bd2a09ebeab</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int var-name = 15;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="789fb1a6-49e1-4168-a220-248d74bf56f4">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="fc92f621-7dd9-432e-bf80-2bd2a09ebeab">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">fc92f621-7dd9-432e-bf80-2bd2a09ebeab</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="757181b7-fe8e-4730-83f3-a4e3a328ac40" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>58a74a2c-15a7-4241-88a7-d60632bdc0aa,2e5582b5-99fc-43ec-b4fe-e8d1d28a00bb</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int !value = 20;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="58a74a2c-15a7-4241-88a7-d60632bdc0aa">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2e5582b5-99fc-43ec-b4fe-e8d1d28a00bb">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">2e5582b5-99fc-43ec-b4fe-e8d1d28a00bb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ce76b4e7-8ef1-473a-b68b-219bd50dbc18" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>ccff62d9-0402-4c8f-86f1-1b56e41406b4,5c45a2e0-4188-4a35-b2af-8c10833565ea</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int a_variable = 25;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="ccff62d9-0402-4c8f-86f1-1b56e41406b4">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5c45a2e0-4188-4a35-b2af-8c10833565ea">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">ccff62d9-0402-4c8f-86f1-1b56e41406b4</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="13d49de3-d794-4ab3-8ee7-1d668ce172c3" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3e225554-ecc6-4ed0-9aeb-df0df26cdb42,e78f3d08-df3e-4b23-a07e-f2a4292be85f</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Är nedanstående ett giltigt variabelnamn?
+&lt;pre&gt;&lt;code&gt;int int = 30;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="3e225554-ecc6-4ed0-9aeb-df0df26cdb42">
+              <material>
+                <mattext texttype="text/plain">Ja</mattext>
+              </material>
+            </response_label>
+            <response_label ident="e78f3d08-df3e-4b23-a07e-f2a4292be85f">
+              <material>
+                <mattext texttype="text/plain">Nej</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">e78f3d08-df3e-4b23-a07e-f2a4292be85f</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="76928cfa-1f5b-47fa-996c-5966d09c44ff" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>27e14ed7-1d4f-4465-830a-068f6625421f,d2d828ac-3cf4-4afe-a782-b8621b2356c8,f44adb49-86f3-4a4f-b150-a4c979366018,0fc622c8-9d0b-44bb-9016-0d55ded194a9</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="27e14ed7-1d4f-4465-830a-068f6625421f">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d2d828ac-3cf4-4afe-a782-b8621b2356c8">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f44adb49-86f3-4a4f-b150-a4c979366018">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0fc622c8-9d0b-44bb-9016-0d55ded194a9">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">27e14ed7-1d4f-4465-830a-068f6625421f</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ae0297e0-e32a-4dba-94c0-fa7e9d0b1d5f" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0ef1a8a1-8d44-4a0b-ac13-b79815e298e0,69b7230b-e85a-48a8-a091-868c511ad728,ab804b2f-cfea-4540-ae14-ffbcc987932c,9680ef3d-c397-43c9-8f5e-970563a3ddb2</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="0ef1a8a1-8d44-4a0b-ac13-b79815e298e0">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="69b7230b-e85a-48a8-a091-868c511ad728">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab804b2f-cfea-4540-ae14-ffbcc987932c">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="9680ef3d-c397-43c9-8f5e-970563a3ddb2">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">0ef1a8a1-8d44-4a0b-ac13-b79815e298e0</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="7acc6feb-22c1-495c-9d0f-ecbd106fc54e" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>33dc1453-e2af-4fa5-8375-73a9f383abcc,4f59fe67-81b2-4558-8ad9-1b1375010543,2702a40b-9771-471c-9121-96f0f73c374f,6d0526c0-2a52-4528-bcdb-0eeb884bb058</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="33dc1453-e2af-4fa5-8375-73a9f383abcc">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4f59fe67-81b2-4558-8ad9-1b1375010543">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="2702a40b-9771-471c-9121-96f0f73c374f">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6d0526c0-2a52-4528-bcdb-0eeb884bb058">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">33dc1453-e2af-4fa5-8375-73a9f383abcc</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="d31675f2-611e-4938-a6b8-6d4f74f12b7b" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>4e263722-349f-410f-a879-6330a99f9acb,d03642d8-cdc0-437b-a573-61482b08f120,df72c273-6878-4c4d-96cf-a5deac35e165,b88c9854-a85b-4e45-9a86-d0cc1865b04e</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="4e263722-349f-410f-a879-6330a99f9acb">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03642d8-cdc0-437b-a573-61482b08f120">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="df72c273-6878-4c4d-96cf-a5deac35e165">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b88c9854-a85b-4e45-9a86-d0cc1865b04e">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">4e263722-349f-410f-a879-6330a99f9acb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="4e8e2f53-1298-440d-96ef-0373f3bb5360" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a0c7224e-9fb0-47fd-8bae-5d70077deae0,e49d8186-ccff-4039-b407-e209a7db1df7,a4c798d6-d215-4147-8bcd-044698a81869,b9f7a9e4-b543-40dc-9ed6-1aa9c9a4f547</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="a0c7224e-9fb0-47fd-8bae-5d70077deae0">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="e49d8186-ccff-4039-b407-e209a7db1df7">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a4c798d6-d215-4147-8bcd-044698a81869">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b9f7a9e4-b543-40dc-9ed6-1aa9c9a4f547">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a0c7224e-9fb0-47fd-8bae-5d70077deae0</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="999e173b-cda7-4fc6-913c-f68ee4a92fbd" title="Variabler">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry>1.0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>13cc69f7-fc43-4d40-bbd2-3318377a9024,7b12ce39-99e3-43d5-9f82-8ffbc4c46012,ece54f67-f15c-4524-9dad-093192656e9c,c2e1c82d-45e4-4573-a9c5-269fc8f675b1</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">Vad är värdet av variabeln b?
+&lt;pre&gt;&lt;code&gt;int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;&lt;/code&gt;&lt;/pre&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="13cc69f7-fc43-4d40-bbd2-3318377a9024">
+              <material>
+                <mattext texttype="text/plain">5</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7b12ce39-99e3-43d5-9f82-8ffbc4c46012">
+              <material>
+                <mattext texttype="text/plain">3</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ece54f67-f15c-4524-9dad-093192656e9c">
+              <material>
+                <mattext texttype="text/plain">1</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c2e1c82d-45e4-4573-a9c5-269fc8f675b1">
+              <material>
+                <mattext texttype="text/plain">Odefinerat</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">13cc69f7-fc43-4d40-bbd2-3318377a9024</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

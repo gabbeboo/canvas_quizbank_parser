@@ -1,0 +1,7 @@
+- Man kan bara skriva kodblock just nu, implementera så att endast
+  ett ` gör en liten kod highlight och ``` gör ett kodblock. 
+
+- Köra parsern i en container för att slippa dependencies huvudvärk? (Kanske overkill)
+
+
+- Går ej att uppladda media just nu. 

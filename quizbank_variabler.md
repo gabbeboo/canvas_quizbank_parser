@@ -1,4 +1,4 @@
-# C & M Variabler
+# C & M : Variabler
 
 ## Fråga 1
 Är nedanstående ett giltigt variabelnamn?
@@ -11,14 +11,21 @@ int 12a = 5;
 - [x] Nej
 
 ## Fråga 2
-Vad är värdet av variabeln b? `int a = 7; int b = a;`
+Vad är värdet av variabeln b? 
+
+```
+int a = 5;
+int b = a;
+int a = 0;
+```
 
 - [ ] 5
-- [x] 2
+- [ ] 10
 - [x] 7
 - [ ] Odefinerat
 
 ## Fråga 3
+
 Är nedanstående ett giltigt variabelnamn?
 
 ```
@@ -58,14 +65,6 @@ int a_variable = 25;
 - [x] Ja
 - [ ] Nej
 
-## Fråga 7
-Vad är värdet av variabeln x? `int x = 5 * 5;`
-
-- [ ] 5
-- [ ] 10
-- [x] 25
-- [ ] 50
-
 ## Fråga 8
 Är nedanstående ett giltigt variabelnamn?
 
@@ -75,3 +74,106 @@ int int = 30;
 
 - [ ] Ja
 - [x] Nej
+
+## Fråga 9
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
+## Fråga 10
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
+## Fråga 11
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
+## Fråga 11
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
+## Fråga 11
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
+## Fråga 11
+Vad är värdet av variabeln b?
+
+```
+int a = 5;
+int b = 3;
+int c = 1;
+c = b;
+b = a;
+a = c;
+```
+
+- [x] 5
+- [ ] 3
+- [ ] 1
+- [ ] Odefinerat
+
