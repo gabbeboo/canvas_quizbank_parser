@@ -5,6 +5,6 @@ todo.txt
 *.zip
 *.xml.qti
 *.c
-
+.vscode
 *.md
 !README.md
