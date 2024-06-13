@@ -1,8 +1,9 @@
 
-# Quiz-parser 
+# Quizbank-parser 
 
+Quizbank parser is a simple python script that takes a markdown file as input and converts it to a QTI-zip file that can be imported to Canvas as a quizbank. The markdown file should contain questions and alternatives in a specific format.
 
-## How to use the quiz-parser
+## Usage
 
 - Clone the repository
 - "cd" into the repository
@@ -13,7 +14,7 @@
 
 
 
-## What should the quiz-bank markdown file look like?
+## Markdown file format
 
 - The file should be a markdown file with the extension .md
 - The file should contain questions and alternatives in the following format:

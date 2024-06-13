@@ -65,7 +65,7 @@ def parse_markdown_to_xml(markdown_file):
     
     if not questions_title:
         #Handle case where there is no colon in the bank title
-        questions_title = "Fråga"
+        questions_title = "Question"
 
     for index, (title, question_content) in enumerate(questions):
         #Create unique identifier for each question
