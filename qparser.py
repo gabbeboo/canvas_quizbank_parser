@@ -7,8 +7,9 @@ Description: This script takes a markdown file as input and converts it to a XML
              the IMS QTI standard. Thereafter the zip file can be used to import a quizbank in the Canvas LMS.
              For format of the markdown file see the README.md file.
 Usage : python3 qparser.py <markdown_file.md>
+Limitations : The script only supports multiple choice and multiple answers questions.
+              The questions can only be formatted in text and code blocks.
 """
-
 
 import markdown
 import xml.etree.ElementTree as ET
@@ -16,12 +17,13 @@ from xml.dom import minidom
 import re
 import uuid
 import sys
+import zipfile
 
-def zip_xml_file(xml_file):
-    import zipfile
+def zip_xml_file(xml_content,zip_filename):
 
-    with zipfile.ZipFile(xml_file.replace('.xml', '.zip'), 'w') as zipf:
-        zipf.write(xml_file)
+    zip_filename = zip_filename + ".zip"
+    with zipfile.ZipFile(zip_filename, 'w') as zipf:
+        zipf.writestr("output.xml", xml_content)
 
 def find_bank_title(markdown_file):
     with open(markdown_file, 'r', encoding='utf-8') as f:
@@ -32,6 +34,7 @@ def find_bank_title(markdown_file):
                 break
         else:
             bank_title = "Untitled Bank"
+            print("No title found in markdown file, using default title")
     return bank_title
 
 def parse_markdown_to_xml(markdown_file):
@@ -151,13 +154,19 @@ def parse_markdown_to_xml(markdown_file):
     xml_str = ET.tostring(root, encoding='unicode', xml_declaration=True)
     xml_dom = minidom.parseString(xml_str)
     pretty_xml_str = xml_dom.toprettyxml(indent="  ")
-    markdown_file_xml = markdown_file.replace('.md', '.xml')
+    return pretty_xml_str
 
-    with open(markdown_file_xml, 'w', encoding='utf-8') as f:
-        f.write(pretty_xml_str)
+
+
+
+
+if len(sys.argv) != 2:
+    print("Usage: python3 qparser.py <markdown_file.md>")
+    sys.exit(1)
 
 md_file = sys.argv[1]
-parse_markdown_to_xml(md_file)
+xml_content = parse_markdown_to_xml(md_file)
 
 mdfile_name = md_file.split(".")[0]
-zip_xml_file(mdfile_name + ".xml")
+
+zip_xml_file(xml_content,mdfile_name)

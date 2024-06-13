@@ -44,3 +44,11 @@
     - [ ] 10
     - [ ] 7
     - [ ] Undefined
+
+# Generating questions with LLM(ChatGPT)
+- This program works well with auto generating questions
+  From a larger language model like GPT-3 or GPT-4
+
+  However the triple backticks ```makes chat render its own code and makes it hard to copy. Therefore prompt it with "Escape all the backticks in the markdown file" and it should now be all in a single code block, ready to be copied. Remove these escape characters before running the quiz-parser(I recommend just Ctrl+F and replace all of them with nothing).
+
+  Working with GitHub Co-pilot in your editor is also a good idea, as it can help you generate the questions and alternatives.

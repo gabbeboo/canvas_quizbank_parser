@@ -1,3 +1,10 @@
 datastrukturer-och-algoritmer-c-export/
 *.xml
 todo.txt
+*.out
+*.zip
+*.xml.qti
+*.c
+
+*.md
+!README.md
