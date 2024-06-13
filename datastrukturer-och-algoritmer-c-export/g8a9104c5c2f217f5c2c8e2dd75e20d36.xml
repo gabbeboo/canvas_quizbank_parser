@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<topic xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imsdt_v1p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsccv1p1/imsdt_v1p1  http://www.imsglobal.org/profile/cc/ccv1p1/ccv1p1_imsdt_v1p1.xsd">
-  <title>Korrigerat lösningsförslag Set-union</title>
-  <text texttype="text/html">&lt;p&gt;Hej!&lt;/p&gt;&lt;p&gt;Vid tentamensgenomgången nyss så upptäckte jag att jag slarvat i mitt lösningsförslag på pseudokodsuppgiften: jag glömde att lägga till 'return u' i bägge Set-union-...&lt;/p&gt;&lt;p&gt;Bifogar ett korrigerat lösningsförslag inkl rättningsmall.&lt;/p&gt;&lt;p&gt;Mvh,&lt;/p&gt;&lt;p&gt;/Niclas&lt;/p&gt;</text>
-  <attachments>
-    <attachment href="$IMS-CC-FILEBASE$/unfiled 5/exam-2024-05-13-with-grading-comments.pdf"/>
-  </attachments>
-</topic>
