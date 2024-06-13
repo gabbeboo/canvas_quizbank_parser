@@ -46,7 +46,6 @@
     - [ ] 10
     - [ ] 7
     - [ ] Undefined
-
 ```markdown
 
 # Generating questions with LLM(ChatGPT)
