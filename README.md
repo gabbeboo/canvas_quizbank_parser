@@ -46,7 +46,7 @@
     - [ ] 10
     - [ ] 7
     - [ ] Undefined
-```markdown
+```
 
 # Generating questions with LLM(ChatGPT)
 - This program works well with auto generating questions
