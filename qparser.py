@@ -71,7 +71,6 @@ def parse_markdown_to_xml(markdown_file):
         #Create unique identifier for each question
         ident = str(uuid.uuid4())
 
-        # Hardcode the title
         item = ET.SubElement(objectbank, 'item', ident=ident, title=questions_title)
         itemmetadata = ET.SubElement(item, 'itemmetadata')
         qtimetadata = ET.SubElement(itemmetadata, 'qtimetadata')
@@ -90,9 +89,11 @@ def parse_markdown_to_xml(markdown_file):
         presentation = ET.SubElement(item, 'presentation')
         material = ET.SubElement(presentation, 'material')
         mattext = ET.SubElement(material, 'mattext', texttype="text/html")
-     
+
+
         paragraphs = re.findall(r'<p>(.*?)</p>', question_content, re.DOTALL)
         cleaned_question = '\n'.join(paragraphs)
+        # Replace code blocks with pre code blocks
         cleaned_question = re.sub(r'<code>(.*?)</code>', r'<pre><code>\1</code></pre>', cleaned_question,flags=re.DOTALL)
         
         mattext.text = cleaned_question
@@ -100,6 +101,7 @@ def parse_markdown_to_xml(markdown_file):
         response_lid = ET.SubElement(presentation, 'response_lid', ident="response1")
         render_choice = ET.SubElement(response_lid, 'render_choice')
 
+        #Retrieve answers and correct answers
         answers = re.findall(r'<li>\[(x| )\] (.*?)<\/li>', question_content)
         correct_count = sum(1 for is_correct, _ in answers if is_correct.strip() == 'x')
 
