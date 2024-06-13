@@ -1,7 +1,7 @@
 """
 Author: Gabriel Morberg
 Email: gabrielmorberg13@gmail.com / c21gmg@cs.umu.se
-Date: 2024-06-13
+Since: 2024-06-13
 Version: 1.0
 Description: This script takes a markdown file as input and converts it to a XML file that is compatible with 
              the IMS QTI standard. Thereafter the zip file can be used to import a quizbank in the Canvas LMS.
