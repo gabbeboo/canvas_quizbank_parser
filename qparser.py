@@ -95,7 +95,9 @@ def parse_markdown_to_xml(markdown_file):
         cleaned_question = '\n'.join(paragraphs)
         # Replace code blocks with pre code blocks
         cleaned_question = re.sub(r'<code>(.*?)</code>', r'<pre><code>\1</code></pre>', cleaned_question,flags=re.DOTALL)
-        
+        #Remove all escape characters
+        cleaned_question = re.sub(r'\\', '', cleaned_question)
+        print(cleaned_question)
         mattext.text = cleaned_question
 
         response_lid = ET.SubElement(presentation, 'response_lid', ident="response1")
@@ -103,6 +105,8 @@ def parse_markdown_to_xml(markdown_file):
 
         #Retrieve answers and correct answers
         answers = re.findall(r'<li>\[(x| )\] (.*?)<\/li>', question_content)
+
+        
         correct_count = sum(1 for is_correct, _ in answers if is_correct.strip() == 'x')
 
         rcardinality = "Single" if correct_count == 1 else "Multiple"

@@ -34,6 +34,8 @@ Quizbank parser is a simple python script that takes a markdown file as input an
   If there are multiple correct answers, they should all be marked with an 'x', this will automatically
   make the question a multiple choice question in the quizbank. Wrong answers are left unmarked.
 
+- If you wish to include hashtags in the question, you can escape them with two backslashes, for example "\\#include <iostream>" This is because the '#' character is used for headers in markdown.
+
 - Example file : 
 ```markdown
     # Java : Variables

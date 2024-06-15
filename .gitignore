@@ -8,3 +8,4 @@ datastrukturer-och-algoritmer-c-export/
 .vscode
 *.md
 !README.md
+main
