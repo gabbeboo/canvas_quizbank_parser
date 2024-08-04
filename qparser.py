@@ -8,7 +8,7 @@ Description: This script takes a markdown file as input and converts it to a XML
              For format of the markdown file see the README.md file.
 Usage : python3 qparser.py <markdown_file.md>
 Limitations : The script only supports multiple choice and multiple answers questions.
-              The questions can only be formatted in text and code blocks.
+              The questions can only be formatted in text and code blocks. Avoid blank spaces between code lines, this causes issues.
 """
 
 import markdown
@@ -105,7 +105,11 @@ def parse_markdown_to_xml(markdown_file):
 
         #Retrieve answers and correct answers
         answers = re.findall(r'<li>\[(x| )\] (.*?)<\/li>', question_content)
-
+        #If there is &lt; or &gt; in the answer, replace it with < and > respectively
+        answers = [(is_correct, answer_text.replace('&lt;', '<').replace('&gt;', '>')) for is_correct, answer_text in answers]
+        #reaplce &amp; with & in the answer
+        answers = [(is_correct, answer_text.replace('&amp;', '&')) for is_correct, answer_text in answers]
+        print(answers)
         
         correct_count = sum(1 for is_correct, _ in answers if is_correct.strip() == 'x')
 
