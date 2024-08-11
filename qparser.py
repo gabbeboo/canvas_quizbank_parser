@@ -109,6 +109,8 @@ def parse_markdown_to_xml(markdown_file):
         answers = [(is_correct, answer_text.replace('&lt;', '<').replace('&gt;', '>')) for is_correct, answer_text in answers]
         #reaplce &amp; with & in the answer
         answers = [(is_correct, answer_text.replace('&amp;', '&')) for is_correct, answer_text in answers]
+        #replace <em> and </em> with * in the answer
+        answers = [(is_correct, answer_text.replace('<em>', '*').replace('</em>', '*')) for is_correct, answer_text in answers]
         print(answers)
         
         correct_count = sum(1 for is_correct, _ in answers if is_correct.strip() == 'x')
