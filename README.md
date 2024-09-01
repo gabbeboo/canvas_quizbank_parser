@@ -7,7 +7,7 @@ Quizbank parser is a simple python script that takes a markdown file as input an
 
 - Clone the repository
 - "cd" into the repository
-- "python3 quiz_parser.py <input_file.md>"
+- "python3 qparser.py <input_file.md>"
 - Install the required packages if you don't have them already
 - Output will be a zip file with the same name as the input file
 - Go to Canvas and navigate to the starting page for your course
